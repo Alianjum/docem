@@ -15,7 +15,7 @@
     </PageTitle>
 
     <!-- Contact Info -->
-    <section class="flat-row row-nopading background-light">
+    <section class="flat-row row-nopading contact_us_box_above">
       <div class="container">
         <div class="row">
           <div class="flat-on-four">
@@ -34,8 +34,8 @@
     <!-- Contact Form -->
     <section class="flat-row">
       <div class="container">
-        <div class="row">
-          <div class="col-md-12">
+        <div class="contact_form_main">
+          <div class="contact_form_inner">
             <div class="title-box">
               <div class="title">{{ $t('contact.form.title') }}</div>
             </div>

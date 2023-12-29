@@ -126,6 +126,8 @@ export default {
     formPhone: 'Numéro de téléphone',
     formWebsite: 'Votre site web',
     formSubmit: 'Demandez une présentation',
+    formcomment: 'Comments',
+    independentCheck: 'I am a(n).. Independent broker / brokerage',
     thanks: 'Merci pour votre soumission.',
     error: 'Il y avait une erreur. Veuillez réessayer.',
   },

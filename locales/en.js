@@ -123,6 +123,8 @@ export default {
     formLastname: 'Last Name',
     formEmail: 'Email Address',
     formPhone: 'Phone Number',
+    formcomment: 'Comments',
+    independentCheck: 'I am a(n).. Independent broker / brokerage',
     formWebsite: 'Your Website',
     formSubmit: 'Request Presentation',
     thanks: 'Thank you for your submission.',

@@ -1,13 +1,13 @@
 <template>
-  <section class="flat-row row-getaudit background-black">
+  <section class="flat-row row-getaudit request_form_section">
     <div class="overlay"></div>
     <div class="row-overlay"></div>
     <div class="container">
-      <div class="row">
-        <div class="col-md-12">
+      <div class="request_form_heading">
+        <div class="">
           <div class="title-section color-white">
             <h1 class="title">{{ $t('rfp.title') }}</h1>
-            <div class="sub-title mb-15">
+            <div class="">
               <p>{{ $t('rfp.desc') }}</p>
             </div>
             <h2 class="mb-15">
@@ -17,15 +17,13 @@
                 <span v-else>${{ pricing }}</span>
               </span>
             </h2>
-            <div class="sub-title color-label">
-              <span v-if="footnote"> * {{ $t('rfp.footnote') }} </span>
-              <span v-if="footnoteAlt"> * {{ $t('rfp.footnoteAlt') }} </span>
-              <span v-if="footnoteAlt2"> * {{ $t('rfp.footnoteAlt2') }} </span>
-            </div>
+            <h6>
+              * brokerage pricing starts at $250.
+            </h6>
           </div>
         </div>
-        <div class="col-md-6 col-md-push-3">
-          <div class="flat-padl30">
+        <div class="">
+          <div class="form_main_">
             <form
               id="getaudit"
               action="https://preprod.docem.ca/faq/RequestPresentation"
@@ -79,10 +77,25 @@
                   required="required"
                 />
               </p>
+              <p class="independentCheck" style="width: 100%;">
+                <input
+                  id="independentCheck"
+                  name="independentCheck"
+                  type="checkbox"
+                />
+                <label for="independentCheck">
+                  {{ $t('rfp.independentCheck') }}
+                </label>
+              </p>
 
               <p class="website" style="width: 100%;">
                 <label for="website">{{ $t('rfp.formWebsite') }}</label>
                 <input id="website" name="Website" type="text" />
+              </p>
+
+              <p class="comment" style="width: 100%;">
+                <label for="comment">{{ $t('rfp.formcomment') }}</label>
+                <input id="comment" name="comment" type="text" />
               </p>
 
               <p class="form-submit" style="width: 100%;">
