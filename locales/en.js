@@ -38,7 +38,7 @@ export default {
     Rent: 'Rent',
     Workflow: 'Workflow',
     agent: 'Agent',
-    manager: 'Property Manager',
+    manager: 'Property Manager & Landlord',
     landlord: 'Landlord',
     about: 'About',
     contact: 'Contact',
@@ -75,7 +75,7 @@ export default {
       desc: 'Spend your time selling and chasing more leads, less paper.',
     },
     slide4: {
-      title: 'for Property Managers',
+      title: 'for Property Manager & Landlord',
       desc: 'A simple way to manage and collect faster.',
     },
     slide5: {

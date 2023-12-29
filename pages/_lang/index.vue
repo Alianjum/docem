@@ -49,7 +49,50 @@
                 &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-chevron-right"></i>
               </div>
             </li> -->
+            <li
+              data-transition="random-static"
+              data-slotamount="7"
+              data-masterspeed="1000"
+              data-saveperformance="on"
+            >
+              <img src="~assets/images/slides/slide2.jpg" alt="slider-image" />
+              <div
+                class="tp-caption sfl title-slide color-white center"
+                data-x="15"
+                data-y="110"
+                data-speed="1000"
+                data-start="1000"
+                data-easing="Power3.easeInOut"
+              >
+                <span>{{ siteName }}</span
+                ><br />
+                {{ $t('hero.slide5.title') }}
+              </div>
+              <div
+                class="tp-caption sfr desc-slide color-white center"
+                data-x="15"
+                data-y="250"
+                data-speed="1000"
+                data-start="1500"
+                data-easing="Power3.easeInOut"
+              >
+                {{ $t('hero.slide5.desc') }}
+              </div>
 
+              <div
+                class="tp-caption sfl flat-button-slider bg-button-slider-32bfc0"
+                data-x="15"
+                data-y="360"
+                data-speed="1000"
+                data-start="2500"
+                data-easing="Power3.easeInOut"
+              >
+                <NuxtLink :to="localePath('associations_boards')">
+                  {{ $t('links.learnMore') }}
+                </NuxtLink>
+                &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-chevron-right"></i>
+              </div>
+            </li>
             <li
               data-transition="random-static"
               data-slotamount="7"
@@ -179,51 +222,6 @@
                 data-easing="Power3.easeInOut"
               >
                 <NuxtLink :to="localePath('manager')">
-                  {{ $t('links.learnMore') }}
-                </NuxtLink>
-                &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-chevron-right"></i>
-              </div>
-            </li>
-
-            <li
-              data-transition="random-static"
-              data-slotamount="7"
-              data-masterspeed="1000"
-              data-saveperformance="on"
-            >
-              <img src="~assets/images/slides/slide2.jpg" alt="slider-image" />
-              <div
-                class="tp-caption sfl title-slide color-white center"
-                data-x="15"
-                data-y="110"
-                data-speed="1000"
-                data-start="1000"
-                data-easing="Power3.easeInOut"
-              >
-                <span>{{ siteName }}</span
-                ><br />
-                {{ $t('hero.slide5.title') }}
-              </div>
-              <div
-                class="tp-caption sfr desc-slide color-white center"
-                data-x="15"
-                data-y="250"
-                data-speed="1000"
-                data-start="1500"
-                data-easing="Power3.easeInOut"
-              >
-                {{ $t('hero.slide5.desc') }}
-              </div>
-
-              <div
-                class="tp-caption sfl flat-button-slider bg-button-slider-32bfc0"
-                data-x="15"
-                data-y="360"
-                data-speed="1000"
-                data-start="2500"
-                data-easing="Power3.easeInOut"
-              >
-                <NuxtLink :to="localePath('landlord')">
                   {{ $t('links.learnMore') }}
                 </NuxtLink>
                 &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-chevron-right"></i>

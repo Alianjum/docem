@@ -2,7 +2,7 @@
   <div class="container">
     <div class="row">
       <div class="header-wrap clearfix">
-        <div class="col-md-3">
+        <div class="col-md-2">
           <div id="logo" class="logo">
             <NuxtLink :to="localePath('index')" exact>
               <img src="~assets/images/logo.png" alt="Docem Logo" />
@@ -14,7 +14,7 @@
           </div>
           <!-- //mobile menu button -->
         </div>
-        <div class="col-md-9">
+        <div class="col-md-10">
           <div class="nav-wrap">
             <!-- <ul class="menu menu-extra">
                 <li class="cart">

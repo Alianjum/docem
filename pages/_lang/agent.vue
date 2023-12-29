@@ -184,6 +184,142 @@
         </div>
       </section>
     </div>
+    <!-- Pricing -->
+    <div class="col-md-4">
+      <div class="flat-price-table">
+        <h4 class="price-title">
+          {{ $t('pricing.agent.plan1.title') }}
+        </h4>
+        <div class="sub-title">
+          {{ $t('pricing.agent.plan1.subTitle') }}
+        </div>
+        <div v-if="$i18n.locale == 'fr'" class="price">
+          <span class="money">29.99</span>
+          <span class="currency-unit">$</span>
+          <span class="time">{{ $t('pricing.agent.plan1.time') }}</span>
+        </div>
+        <div v-else class="price">
+          <span class="currency-unit">$</span>
+          <span class="money">29.99</span>
+          <span class="time">{{ $t('pricing.agent.plan1.time') }}</span>
+        </div>
+        <!-- <div class="sub-title pt-15">
+          * {{ $t('pricing.agent.plan1.creditNote') }}
+        </div> -->
+        <div class="p-15 background-light">
+          <label
+            for="province-select"
+            style="text-align: left; margin: 0 0 10px; display: block;"
+            >{{ $t('province.chooseAlt') }}:</label
+          >
+          <select
+            id="province-select"
+            v-model="selected"
+            class="form-control mb-0"
+          >
+            <option
+              v-for="option in options"
+              :key="option.value"
+              :value="option.id"
+              >{{ option.province }}</option
+            >
+          </select>
+        </div>
+        <div class="background-light">
+          <a
+            v-if="selected === 2"
+            href="https://qc.docem.ca/Team/Agent/Register"
+            class="price-buynow"
+            target="_blank"
+            >{{ $t('links.register') }}</a
+          >
+          <a
+            v-else-if="selected != 0"
+            href="https://on.docem.ca/Team/Agent/Register"
+            class="price-buynow"
+            target="_blank"
+            >{{ $t('links.register') }}</a
+          >
+          <!-- <a
+            v-if="selected === 3"
+            href="https://bc.docem.ca/Team/Agent/Register"
+            class="price-buynow"
+            target="_blank"
+            >{{ $t('links.register') }}</a
+          >
+          <a
+            v-if="selected === 4"
+            href="https://ab.docem.ca/Team/Agent/Register"
+            class="price-buynow"
+            target="_blank"
+            >{{ $t('links.register') }}</a
+          >
+          <a
+            v-if="selected === 5"
+            href="https://sk.docem.ca/Team/Agent/Register"
+            class="price-buynow"
+            target="_blank"
+            >{{ $t('links.register') }}</a
+          >
+          <a
+            v-if="selected === 6"
+            href="https://mb.docem.ca/Team/Agent/Register"
+            class="price-buynow"
+            target="_blank"
+            >{{ $t('links.register') }}</a
+          >
+          <a
+            v-if="selected === 7"
+            href="https://ns.docem.ca/Team/Agent/Register"
+            class="price-buynow"
+            target="_blank"
+            >{{ $t('links.register') }}</a
+          >
+          <a
+            v-if="selected === 8"
+            href="https://nb.docem.ca/Team/Agent/Register"
+            class="price-buynow"
+            target="_blank"
+            >{{ $t('links.register') }}</a
+          >
+          <a
+            v-if="selected === 9"
+            href="https://pe.docem.ca/Team/Agent/Register"
+            class="price-buynow"
+            target="_blank"
+            >{{ $t('links.register') }}</a
+          >
+          <a
+            v-if="selected === 10"
+            href="https://nl.docem.ca/Team/Agent/Register"
+            class="price-buynow"
+            target="_blank"
+            >{{ $t('links.register') }}</a
+          >
+          <a
+            v-if="selected === 11"
+            href="https://nt.docem.ca/Team/Agent/Register"
+            class="price-buynow"
+            target="_blank"
+            >{{ $t('links.register') }}</a
+          >
+          <a
+            v-if="selected === 12"
+            href="https://nu.docem.ca/Team/Agent/Register"
+            class="price-buynow"
+            target="_blank"
+            >{{ $t('links.register') }}</a
+          >
+          <a
+            v-if="selected === 13"
+            href="https://yt.docem.ca/Team/Agent/Register"
+            class="price-buynow"
+            target="_blank"
+            >{{ $t('links.register') }}</a
+          > -->
+        </div>
+      </div>
+    </div>
     <!-- Request For Proposal -->
     <Rfp pricing="250" footnote-alt2></Rfp>
   </div>

@@ -16,7 +16,7 @@
             <div>
               <NuxtLink
                 v-if="!isOnAbout"
-                :to="localePath('about')"
+                :to="'#request_form_section'"
                 class="flat-button border-radius-small"
               >
                 {{ $t('links.BookaDemo') }}

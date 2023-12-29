@@ -38,7 +38,7 @@ export default {
     Rent: 'Rent',
     Workflow: 'Workflow',
     agent: 'Courtier',
-    manager: "Gestionnaire d'immeuble",
+    manager: 'Gestionnaire immobilier et propriétaire',
     landlord: 'Propriétaire',
     about: 'À propos de',
     contact: 'Contact',
@@ -75,7 +75,7 @@ export default {
       desc: 'Consacrez plus de temps à vendre et moins de temps aux paperasses',
     },
     slide4: {
-      title: 'pour gestionnaire de propriétés',
+      title: 'Gestionnaire immobilier et propriétaire',
       desc: 'Pour une gestion et collecter rapidement',
     },
     slide5: {
