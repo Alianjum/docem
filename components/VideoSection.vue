@@ -10,7 +10,11 @@
               </div>
             </div>
             <p>
-              {{ $t('about.video.desc') }}
+              {{ $t('about.video.desc1') }}
+              <b>
+                {{ $t('about.video.desc2') }}
+              </b>
+              {{ $t('about.video.desc3') }}
             </p>
             <div class="empty-space height30"></div>
             <div>

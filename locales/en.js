@@ -43,9 +43,11 @@ export default {
     about: 'About',
     contact: 'Contact',
     learnMore: 'Learn More',
-    BookaDemo: 'Book a Demo',
+    BookaDemo: 'Request a Demo',
     register: 'Register Now',
     portal: 'Login to Portal',
+    privacy_policy: 'Privacy Policy',
+    terms_of_services: 'Terms of Services',
   },
   province: {
     default: '-- Select your province',
@@ -86,8 +88,11 @@ export default {
   about: {
     video: {
       title: 'Makes it Easy',
-      desc:
-        'DocEM is a self-serve front/back office application designed for real estate brokerages and agents who want to optimize their workflow with a paperless solution for day-to-day business operations. An intuitive dashboard that’s easy to master, DocEM is an efficient way to acquire, file, track, store and archive the dozens of documents required for each real estate transaction; It also allows you to manage your showings, invoices, payments and much more. It’s web based, with secure access via the internet, so agents benefit from the convenience of a mobile office.',
+      desc1:
+        'DocEM is a self-serve front/back office application designed for real estate brokerages,',
+      desc2: 'independent brokers',
+      desc3:
+        'and agents who want to optimize their workflow with a paperless solution for day-to-day business operations. An intuitive dashboard that’s easy to master, DocEM is an efficient way to acquire, file, track, store and archive the dozens of documents required for each real estate transaction; It also allows you to manage your showings, invoices, payments and much more. It’s web based, with secure access via the internet, so agents benefit from the convenience of a mobile office.',
     },
   },
   platforms: {
@@ -112,7 +117,7 @@ export default {
     list6: 'Reduces administrative staff',
   },
   rfp: {
-    title: 'Request Presentation',
+    title: 'Request a Demo',
     desc:
       'Submit a request, one of our representatives will contact you to demonstrate how easy and user friendly it is to navigate within the application.',
     starting: 'Starting from',
@@ -124,9 +129,9 @@ export default {
     formEmail: 'Email Address',
     formPhone: 'Phone Number',
     formcomment: 'Comments',
-    independentCheck: 'I am a(n).. Independent broker / brokerage',
+    independentCheck: 'I am a(n).. Independent broker',
     formWebsite: 'Your Website',
-    formSubmit: 'Request Presentation',
+    formSubmit: 'Request a Demo',
     thanks: 'Thank you for your submission.',
     error: 'There was an error. Please try again.',
   },
@@ -209,7 +214,7 @@ export default {
         },
       },
       box8: {
-        title: 'Electronic Document Management',
+        title: 'Electronic Document Storage',
         list: {
           list1: 'Approved by OACIQ',
           list2: 'Unlimited online storage',

@@ -35,6 +35,11 @@
                     {{ $t('links.brokerage') }}
                   </NuxtLink>
                 </li>
+                <li>
+                  <NuxtLink :to="localePath('manager')">
+                    {{ $t('links.manager') }}
+                  </NuxtLink>
+                </li>
               </ul>
 
               <ul class="one-half">
@@ -44,13 +49,18 @@
                   </NuxtLink>
                 </li>
                 <li>
-                  <NuxtLink :to="localePath('manager')">
-                    {{ $t('links.manager') }}
+                  <NuxtLink :to="localePath('contact-us')">
+                    {{ $t('links.contact') }}
                   </NuxtLink>
                 </li>
                 <li>
-                  <NuxtLink :to="localePath('contact-us')">
-                    {{ $t('links.contact') }}
+                  <NuxtLink :to="localePath('privacy_policy')">
+                    {{ $t('links.privacy_policy') }}
+                  </NuxtLink>
+                </li>
+                <li>
+                  <NuxtLink :to="localePath('terms_of_services')">
+                    {{ $t('links.terms_of_services') }}
                   </NuxtLink>
                 </li>
               </ul>

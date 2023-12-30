@@ -321,7 +321,7 @@
       </div>
     </div>
     <!-- Request For Proposal -->
-    <Rfp pricing="250" footnote-alt2></Rfp>
+    <Rfp pricing="150" footnote-alt2></Rfp>
   </div>
 </template>
 

@@ -1,5 +1,5 @@
 $('.flat-testimonials').owlCarousel({
-  loop: false,
+  loop: true,
   margin: 30,
   nav: $('.flat-testimonials').data('nav'),
   dots: $('.flat-testimonials').data('dots'),
@@ -15,7 +15,7 @@ $('.flat-testimonials').owlCarousel({
       items: 1,
     },
     1200: {
-      items: $('.flat-testimonials').data('item'),
+      items: 1,
     },
   },
 })

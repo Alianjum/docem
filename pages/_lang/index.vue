@@ -250,6 +250,33 @@
           <div class="col-md-3">
             <div class="iconbox center circle large platform_card_main">
               <div class="box-header">
+                <!-- <img src="~assets/images/icon/icon2.svg" alt="icon" /> -->
+                <div><i class="fa fa-home"></i></div>
+                <div class="box-title">
+                  <NuxtLink :to="localePath('associations_boards')">
+                    {{ $t('links.association_boards') }}
+                  </NuxtLink>
+                </div>
+              </div>
+              <div class="box-content">
+                {{ $t('platforms.association_boardsDesc') }}
+                <div class="empty-space height30"></div>
+                <div>
+                  <NuxtLink
+                    :to="localePath('associations_boards')"
+                    class="flat-button border-radius-small"
+                  >
+                    {{ $t('links.learnMore') }}
+                  </NuxtLink>
+                </div>
+              </div>
+            </div>
+            <!-- /.iconbox -->
+          </div>
+          <!-- /.col-md-3 -->
+          <div class="col-md-3">
+            <div class="iconbox center circle large platform_card_main">
+              <div class="box-header">
                 <!-- <img src="~assets/images/icon/icon4.svg" alt="icon" /> -->
                 <div><i class="fa fa-users"></i></div>
                 <div class="box-title">
@@ -320,34 +347,6 @@
                 <div>
                   <NuxtLink
                     :to="localePath('manager')"
-                    class="flat-button border-radius-small"
-                  >
-                    {{ $t('links.learnMore') }}
-                  </NuxtLink>
-                </div>
-              </div>
-            </div>
-            <!-- /.iconbox -->
-          </div>
-          <!-- /.col-md-3 -->
-
-          <div class="col-md-3">
-            <div class="iconbox center circle large platform_card_main">
-              <div class="box-header">
-                <!-- <img src="~assets/images/icon/icon2.svg" alt="icon" /> -->
-                <div><i class="fa fa-home"></i></div>
-                <div class="box-title">
-                  <NuxtLink :to="localePath('landlord')">
-                    {{ $t('links.association_boards') }}
-                  </NuxtLink>
-                </div>
-              </div>
-              <div class="box-content">
-                {{ $t('platforms.association_boardsDesc') }}
-                <div class="empty-space height30"></div>
-                <div>
-                  <NuxtLink
-                    :to="localePath('landlord')"
                     class="flat-button border-radius-small"
                   >
                     {{ $t('links.learnMore') }}

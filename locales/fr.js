@@ -46,6 +46,8 @@ export default {
     BookaDemo: 'Book a Demo',
     register: "S'inscrire",
     portal: 'Connecter au portail',
+    privacy_policy: 'Privacy Policy',
+    terms_of_services: 'Terms of Services',
   },
   province: {
     default: '-- Sélectionnez votre province',
@@ -86,8 +88,11 @@ export default {
   about: {
     video: {
       title: 'Vous facilite la tâche',
-      desc:
-        "DocEM est un portail libre-service de gestion interne et externe conçu pour les agences et les courtiers immobiliers qui veulent optimiser leur productivité et améliorer leurs opérations quotidiennes à l'aide d'une solution de gestion de documents électroniques. Doté d'un tableau de bord intuitif et facile à maitriser, DocEM est un moyen efficace d'acquérir, de classer, de surveiller, de stocker et d'archiver les dizaines de documents requis pour chaque transaction immobilière.  Il permet aussi de gérer vos visites, factures, paiements et plus encore. C'est un logiciel sur le web, offrant un accès sécurisé via Internet, afin que les courtiers bénéficient de la facilité d'un bureau mobile.",
+      desc1:
+        'DocEM est une application front/back office libre-service conçue pour les maisons de courtage immobilier,',
+      desc2: 'les courtiers et agents indépendants',
+      desc3:
+        "et·les·courtiers·immobiliers·qui·veulent·optimiser·leur·productivité·et·améliorer·leurs·opérations·quotidiennes·à·l'aide·d'une·solution·de·gestion·de·documents·électroniques.·Doté·d'un·tableau·de·bord·intuitif·et·facile·à·maitriser,·DocEM·est·un·moyen·efficace·d'acquérir,·de·classer,·de·surveiller,·de·stocker·et·d'archiver·les·dizaines·de·documents·requis·pour·chaque·transaction·immobilière.··Il·permet·aussi·de·gérer·vos·visites,·factures,·paiements·et·plus·encore.·C'est·un·logiciel·sur·le·web,·offrant·un·accès·sécurisé·via·Internet,·afin·que·les·courtiers·bénéficient·de·la·facilité·d'un·bureau·mobile.",
     },
   },
   platforms: {

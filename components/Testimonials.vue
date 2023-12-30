@@ -1,6 +1,6 @@
 <template>
   <!-- Testimonials -->
-  <section class="flat-row parallax parallax5">
+  <section class="flat-row parallax parallax5 testimonials_main">
     <div class="overlay"></div>
     <div class="container">
       <div class="row">
