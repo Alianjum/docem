@@ -185,8 +185,8 @@ export default {
   // NUXT.JS DEV-MODULES
   // ------------------------------------
   buildModules: [
-    '@nuxtjs/eslint-module',
-    '@nuxtjs/stylelint-module',
+    // '@nuxtjs/eslint-module',
+    // '@nuxtjs/stylelint-module',
     '@nuxtjs/google-analytics',
   ],
   // ------------------------------------
