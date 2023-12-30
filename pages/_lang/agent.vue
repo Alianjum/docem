@@ -185,7 +185,7 @@
       </section>
     </div>
     <!-- Pricing -->
-    <div class="col-md-4">
+    <div class="col-md-4" style="margin-left: 35%">
       <div class="flat-price-table">
         <h4 class="price-title">
           {{ $t('pricing.agent.plan1.title') }}
@@ -209,7 +209,7 @@
         <div class="p-15 background-light">
           <label
             for="province-select"
-            style="text-align: left; margin: 0 0 10px; display: block;"
+            style="text-align: left; margin: 0 0 10px; display: block"
             >{{ $t('province.chooseAlt') }}:</label
           >
           <select
@@ -221,8 +221,9 @@
               v-for="option in options"
               :key="option.value"
               :value="option.id"
-              >{{ option.province }}</option
             >
+              {{ option.province }}
+            </option>
           </select>
         </div>
         <div class="background-light">

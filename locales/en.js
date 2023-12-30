@@ -1,8 +1,7 @@
 export default {
   meta: {
     desc: {
-      home:
-        'DocEM owned and powered by BACC. A leading edge real estate platform for brokers, agents, property managers, landlords and tenants. DocEM is more than a software but a growing community. We are continuing to innovate, reaching wider and further.',
+      home: 'DocEM owned and powered by BACC. A leading edge real estate platform for brokers, agents, property managers, landlords and tenants. DocEM is more than a software but a growing community. We are continuing to innovate, reaching wider and further.',
     },
     social: {
       general: 'docem-social-general',
@@ -106,8 +105,7 @@ export default {
   },
   benefits: {
     title: 'Benefits',
-    desc:
-      'Watch your office productivity soar. Agents are free to devote more time selling and less time chasing paper. DocEM monitors all contracts and documents for listing and purchase, all certificates and taxes, as well as key dates, such as financing dates, closing dates, inspection dates, expiry dates and next invoice dates. Reminder emails are automatically generated.',
+    desc: 'Watch your office productivity soar. Agents are free to devote more time selling and less time chasing paper. DocEM monitors all contracts and documents for listing and purchase, all certificates and taxes, as well as key dates, such as financing dates, closing dates, inspection dates, expiry dates and next invoice dates. Reminder emails are automatically generated.',
     listHead: 'increases the bottom line by:',
     list1: 'Reducing paper consumption',
     list2: 'Reducing travel time delivering documents',
@@ -118,8 +116,7 @@ export default {
   },
   rfp: {
     title: 'Request a Demo',
-    desc:
-      'Submit a request, one of our representatives will contact you to demonstrate how easy and user friendly it is to navigate within the application.',
+    desc: 'Submit a request, one of our representatives will contact you to demonstrate how easy and user friendly it is to navigate within the application.',
     starting: 'Starting from',
     footnote: 'Plus rent collected percentage',
     footnoteAlt: 'Plus fee per unit',
@@ -140,40 +137,47 @@ export default {
     viewAll: 'View All Features',
     viewLess: 'View Less Features',
     products: {
-        title: "Our Products",
-        subTitle: 'These solutions are available to independent brokers as well.',
-        description: "One single platform for a smarter way of doing real estate. DocEM saves you time, money and makes you handle your business like a real pro adhering to the highest standards in the industry.",
-        eform: {
-            title: 'eFORM/eSign/IDV',
-            description: 'Completely paperless, safe without compromising the identity of your clients. An easy way to access your forms, having them pre-populated and sign effortlessly. Verify the identity of your clients securely and remain compliant. Ensuring the security and integrity of real estate transactions by verifying the identity of individuals in a reliable and efficient manner.'
-        },
-        showingManagement: {
-            title: 'Showing Management',
-            description: 'Managing your showing without the need for additional tools. See your listings, showings, offers, and transactions from the same dashboard. Centralizing and automating the process of scheduling and managing property showings, enhancing efficiency, communication, and collaboration among stakeholders involved in the property transaction process.'
-        },
-        offerManagement: {
-            title: 'Offer Management',
-            description: 'Streamline and automate the process of creating, submitting, tracking, and managing offers. A seamless workflow between you and the other agent to collaborate. Completely eliminates the need for constant uploading, downloading, and emailing. Enhance efficiency, transparency, collaboration, and compliance throughout the offer negotiation and acceptance process.'
-        },
-        transactionManagement: {
-            title: 'Transaction Management',
-            description: 'Eliminate the duplication of entries. The initial offer between both agents automatically translates to a transaction specific to each brokerage. Offers secure storage, organization, and management of transaction documents, forms, contracts, and related paperwork. Integrates seamlessly with external systems and platforms to facilitate accounting, payment, and more.'
-        },
-        association: {
-            title: 'Association',
-            description: 'Standardize the practice across your members, providing them with the tools that allow them to be better agents without compromising client privacy. Enhance security, streamline operations, improve compliance, and deliver a superior client experience, ultimately contributing to greater efficiency, trust, and success in the real estate market.'
-        },
-        propertyManager: {
-            title: "Property Manager's Solution",
-            description: 'A safe way to manage the property records of your landlords, share occupancy terms with your tenants, keep track of service requests, and facilitate the collection of monthly rent.'
-        },
-        landlord: {
-            title: "Landlord's Solution",
-            description: 'An efficient approach to manage your property and keep track of the most important tasks.'
-        }
-    }
-},
-
+      title: 'Our Products',
+      subTitle: 'These are some of the solutions we have available.',
+      description:
+        'One single platform for a smarter way of doing real estate. DocEM saves you time, money and makes you handle your business like a real pro adhering to the highest standards in the industry.',
+      eform: {
+        title: 'eFORM/eSign/IDV',
+        description:
+          'Completely paperless, safe without compromising the identity of your clients. An easy way to access your forms, having them pre-populated and sign effortlessly. Verify the identity of your clients securely and remain compliant. Ensuring the security and integrity of real estate transactions by verifying the identity of individuals in a reliable and efficient manner.',
+      },
+      showingManagement: {
+        title: 'Showing Management',
+        description:
+          'Managing your showing without the need for additional tools. See your listings, showings, offers, and transactions from the same dashboard. Centralizing and automating the process of scheduling and managing property showings, enhancing efficiency, communication, and collaboration among stakeholders involved in the property transaction process.',
+      },
+      offerManagement: {
+        title: 'Offer Management',
+        description:
+          'Streamline and automate the process of creating, submitting, tracking, and managing offers. A seamless workflow between you and the other agent to collaborate. Completely eliminates the need for constant uploading, downloading, and emailing. Enhance efficiency, transparency, collaboration, and compliance throughout the offer negotiation and acceptance process.',
+      },
+      transactionManagement: {
+        title: 'Transaction Management',
+        description:
+          'Eliminate the duplication of entries. The initial offer between both agents automatically translates to a transaction specific to each brokerage. Offers secure storage, organization, and management of transaction documents, forms, contracts, and related paperwork. Integrates seamlessly with external systems and platforms to facilitate accounting, payment, and more.',
+      },
+      association: {
+        title: 'Association',
+        description:
+          'Standardize the practice across your members, providing them with the tools that allow them to be better agents without compromising client privacy. Enhance security, streamline operations, improve compliance, and deliver a superior client experience, ultimately contributing to greater efficiency, trust, and success in the real estate market.',
+      },
+      propertyManager: {
+        title: "Property Manager's Solution",
+        description:
+          'A safe way to manage the property records of your landlords, share occupancy terms with your tenants, keep track of service requests, and facilitate the collection of monthly rent.',
+      },
+      landlord: {
+        title: "Landlord's Solution",
+        description:
+          'An efficient approach to manage your property and keep track of the most important tasks.',
+      },
+    },
+  },
 
   features: {
     viewAll: 'View All Features',
@@ -593,12 +597,10 @@ export default {
   },
   promobox: {
     title: '100% Paperless system',
-    desc:
-      "DocEM's web-based application is customized specifically for real estate.",
+    desc: "DocEM's web-based application is customized specifically for real estate.",
   },
   footer: {
-    desc:
-      'DocEM owned and powered by BACC. A leading edge real estate platform for brokers, agents, property managers, landlords and tenants. DocEM is more than a software but a growing community. We are continuing to innovate, reaching wider and further.',
+    desc: 'DocEM owned and powered by BACC. A leading edge real estate platform for brokers, agents, property managers, landlords and tenants. DocEM is more than a software but a growing community. We are continuing to innovate, reaching wider and further.',
     followUs: 'Follow Us',
     contactUs: 'Get In Touch',
     quickLinks: 'Quick Links',

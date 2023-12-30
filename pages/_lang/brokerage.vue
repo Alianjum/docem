@@ -66,7 +66,9 @@
         </div>
 
         <div class="row">
-          <div class="col-lg-4 col-md-6 margin-30px-bottom products_row_1">
+          <div
+            class="col-lg-4 col-md-6 margin-30px-bottom products_row_1 display_feature"
+          >
             <div class="iconbox center circle large services-block-three">
               <a href="javascript:void(0)" class="service_block_a">
                 <div class="box-header custom_icons">
@@ -85,7 +87,9 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 margin-30px-bottom products_row_1">
+          <div
+            class="col-lg-4 col-md-6 margin-30px-bottom products_row_1 display_feature"
+          >
             <div class="iconbox center circle large services-block-three">
               <a href="javascript:void(0)" class="service_block_a">
                 <div class="box-header custom_icons">
@@ -103,7 +107,10 @@
               </a>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 margin-80px-bottom products_row_2" style="margin-bottom: 80px;">
+          <div
+            class="col-lg-4 col-md-6 margin-80px-bottom products_row_2 display_feature"
+            style="margin-bottom: 80px"
+          >
             <div class="iconbox center circle large services-block-three">
               <a href="javascript:void(0)" class="service_block_a">
                 <div class="box-header custom_icons">
@@ -130,7 +137,9 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 margin-30px-bottom products_row_2">
+          <div
+            class="col-lg-4 col-md-6 margin-30px-bottom products_row_2 display_feature"
+          >
             <div class="iconbox center circle large services-block-three">
               <a href="javascript:void(0)" class="service_block_a">
                 <div class="box-header custom_icons">
@@ -150,7 +159,9 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 margin-30px-bottom products_row_2">
+          <div
+            class="col-lg-4 col-md-6 margin-30px-bottom products_row_2 display_feature"
+          >
             <div class="iconbox center circle large services-block-three">
               <a href="javascript:void(0)" class="service_block_a">
                 <div class="box-header custom_icons">
@@ -171,7 +182,9 @@
               </a>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 margin-30px-bottom products_row_3">
+          <div
+            class="col-lg-4 col-md-6 margin-30px-bottom products_row_3 display_feature"
+          >
             <div class="iconbox center circle large services-block-three">
               <a href="javascript:void(0)" class="service_block_a">
                 <div class="box-header custom_icons">
@@ -191,7 +204,9 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 margin-30px-bottom products_row_3" style="margin-top: 80px;">
+          <div
+            class="col-lg-4 col-md-6 margin-30px-bottom products_row_3 display_feature"
+          >
             <div class="iconbox center circle large services-block-three">
               <a href="javascript:void(0)" class="service_block_a">
                 <div class="box-header custom_icons">
@@ -211,7 +226,9 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 margin-80px-bottom products_row_3" style="margin-top: -160px;">
+          <div
+            class="col-lg-4 col-md-6 margin-80px-bottom products_row_3 display_feature"
+          >
             <div class="iconbox center circle large services-block-three">
               <a href="javascript:void(0)" class="service_block_a">
                 <div class="box-header custom_icons">
@@ -234,7 +251,9 @@
               </a>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 margin-30px-bottom products_row_4" style="margin-top: -160px;">
+          <div
+            class="col-lg-4 col-md-6 margin-30px-bottom products_row_4 display_feature"
+          >
             <div class="iconbox center circle large services-block-three">
               <a href="javascript:void(0)" class="service_block_a">
                 <div class="box-header custom_icons">
@@ -283,7 +302,9 @@
               </a>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 margin-80px-bottom products_row_4" style="margin-top: 80px;">
+          <div
+            class="col-lg-4 col-md-6 margin-80px-bottom products_row_4 display_feature"
+          >
             <div class="iconbox center circle large services-block-three">
               <a href="javascript:void(0)" class="service_block_a">
                 <div class="box-header custom_icons">
@@ -328,7 +349,9 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 margin-30px-bottom offset-md-4" style="margin-top: -160px;">
+          <div
+            class="col-lg-4 col-md-6 margin-30px-bottom offset-md-4 display_feature"
+          >
             <div class="iconbox center circle large services-block-three">
               <a href="javascript:void(0)" class="service_block_a">
                 <div class="box-header custom_icons">
