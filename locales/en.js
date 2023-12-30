@@ -49,11 +49,11 @@ export default {
     terms_of_services: 'Terms of Services',
   },
   province: {
-    default: '-- Select your province',
-    choose: 'Select Your Province',
-    chooseAlt: 'Select your province to Register',
+    default: '-- Select your region',
+    choose: 'Select Your region',
+    chooseAlt: 'Select your region to Register',
     on: 'Ontario',
-    qc: 'Quebec',
+    qc: 'Canada - QC - (Quebec)',
     bc: 'British Columbia',
     ab: 'Alberta',
     sk: 'Saskatchewan',
@@ -65,6 +65,8 @@ export default {
     nt: 'Northwest Territories',
     nu: 'Nunavut',
     yt: 'Yukon',
+    ca: 'Canada',
+    us: 'United states',
   },
   hero: {
     slide2: {

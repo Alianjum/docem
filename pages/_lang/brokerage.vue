@@ -107,10 +107,7 @@
               </a>
             </div>
           </div>
-          <div
-            class="col-lg-4 col-md-6 margin-80px-bottom products_row_2 display_feature"
-            style="margin-bottom: 80px"
-          >
+          <div class="col-lg-4 col-md-6 margin-80px-bottom products_row_2 display_feature" >
             <div class="iconbox center circle large services-block-three">
               <a href="javascript:void(0)" class="service_block_a">
                 <div class="box-header custom_icons">
@@ -226,31 +223,7 @@
             </div>
           </div>
 
-          <div
-            class="col-lg-4 col-md-6 margin-80px-bottom products_row_3 display_feature"
-          >
-            <div class="iconbox center circle large services-block-three">
-              <a href="javascript:void(0)" class="service_block_a">
-                <div class="box-header custom_icons">
-                  <div><i class="fa fa-lock"></i></div>
-                  <div class="box-title">
-                    {{ $t('features.brokerage.box13.title') }}
-                  </div>
-                </div>
-                <div class="box-content">
-                  <ul>
-                    <li v-if="selected === 2">
-                      {{ $t('features.brokerage.box13.list.list1Qc') }}
-                    </li>
-                    <li v-else>
-                      {{ $t('features.brokerage.box13.list.list1') }}
-                    </li>
-                    <li>{{ $t('features.brokerage.box13.list.list2') }}</li>
-                  </ul>
-                </div>
-              </a>
-            </div>
-          </div>
+          
           <div
             class="col-lg-4 col-md-6 margin-30px-bottom products_row_4 display_feature"
           >
@@ -349,9 +322,7 @@
             </div>
           </div>
 
-          <div
-            class="col-lg-4 col-md-6 margin-30px-bottom offset-md-4 display_feature"
-          >
+          <div class="col-lg-4 col-md-6 margin-30px-bottom offset-md-4 display_feature" >
             <div class="iconbox center circle large services-block-three">
               <a href="javascript:void(0)" class="service_block_a">
                 <div class="box-header custom_icons">
@@ -373,6 +344,30 @@
                     </li>
                     <li>{{ $t('features.brokerage.box11.list.list5') }}</li>
                     <li>{{ $t('features.brokerage.box11.list.list6') }}</li>
+                  </ul>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 margin-80px-bottom products_row_3 display_feature" >
+            <div class="iconbox center circle large services-block-three">
+              <a href="javascript:void(0)" class="service_block_a">
+                <div class="box-header custom_icons">
+                  <div><i class="fa fa-lock"></i></div>
+                  <div class="box-title">
+                    {{ $t('features.brokerage.box13.title') }}
+                  </div>
+                </div>
+                <div class="box-content">
+                  <ul>
+                    <li v-if="selected === 2">
+                      {{ $t('features.brokerage.box13.list.list1Qc') }}
+                    </li>
+                    <li v-else>
+                      {{ $t('features.brokerage.box13.list.list1') }}
+                    </li>
+                    <li>{{ $t('features.brokerage.box13.list.list2') }}</li>
                   </ul>
                 </div>
               </a>

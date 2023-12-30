@@ -194,9 +194,7 @@
               </a>
             </div>
           </div>
-          <div
-            class="col-lg-4 col-md-6 margin-30px-bottom products_row_3 display_feature"
-          >
+          <div class="col-lg-4 col-md-6 margin-30px-bottom products_row_3 display_feature">
             <div class="iconbox center circle large services-block-three">
               <a href="javascript:void(0)" class="service_block_a">
                 <div class="box-header custom_icons">
@@ -236,9 +234,7 @@
               </a>
             </div>
           </div>
-          <div
-            class="col-lg-4 col-md-6 margin-30px-bottom products_row_3 display_feature"
-          >
+          <div class="col-lg-4 col-md-6 margin-30px-bottom products_row_3 display_feature" style="width: 96%; height: 12%;">
             <div class="iconbox center circle large services-block-three">
               <a href="javascript:void(0)" class="service_block_a">
                 <div class="box-header custom_icons">

@@ -29,25 +29,21 @@
           </div>
         </div>
         <div class="col-md-6">
-          <div v-if="$i18n.locale === 'en'" class="video">
-            <iframe
+          <div class="video-thumbnail">
+            <img
+              v-if="$i18n.locale === 'en'"
+              src="https://img.youtube.com/vi/WcUfcP1l0gg/maxresdefault.jpg"
+              alt="Video Thumbnail"
               width="100%"
               height="315"
-              src="https://www.youtube.com/embed/WcUfcP1l0gg"
-              frameborder="0"
-              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe>
-          </div>
-          <div v-else class="video">
-            <iframe
+            />
+            <img
+              v-else
+              src="https://img.youtube.com/vi/8ElBHdL5mhw/maxresdefault.jpg"
+              alt="Video Thumbnail"
               width="100%"
               height="315"
-              src="https://www.youtube.com/embed/8ElBHdL5mhw"
-              frameborder="0"
-              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe>
+            />
           </div>
         </div>
       </div>
@@ -65,11 +61,11 @@ export default {
     }
   },
   computed: {
-    isOnAbout() {
+    isOnAgentPage() {
       return (
-        this.$route.fullPath.startsWith('/about') ||
-        this.$route.fullPath.startsWith('/fr/about')
-      )
+        this.$route.fullPath.startsWith('/agent') ||
+        this.$route.fullPath.startsWith('/fr/agent')
+      );
     },
   },
 }

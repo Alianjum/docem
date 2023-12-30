@@ -103,7 +103,7 @@
             <!-- Features Icons -->
             <div class="col-md-12">
               <div class="row">
-                <div class="col-lg-4 col-md-6 products_row_1">
+                <div class="col-lg-4 col-md-6 products_row_1 home_feature">
                   <div class="iconbox center circle large services-block-three">
                     <a href="javascript:void(0)" class="service_block_a">
                       <div class="box-header custom_icons">
@@ -130,7 +130,7 @@
                     </a>
                   </div>
                 </div>
-                <div class="col-lg-4 col-md-6 products_row_1">
+                <div class="col-lg-4 col-md-6 products_row_1 home_feature">
                   <div class="iconbox center circle large services-block-three">
                     <a href="javascript:void(0)" class="service_block_a">
                       <div class="box-header custom_icons">
@@ -156,7 +156,30 @@
                     </a>
                   </div>
                 </div>
-                <div class="col-lg-4 col-md-6 products_row_1">
+                <div class="col-lg-4 col-md-6 products_row_1 home_feature">
+                  <div class="iconbox center circle large services-block-three">
+                    <a href="javascript:void(0)" class="service_block_a">
+                      <div class="box-header custom_icons">
+                        <div><i class="fa fa-check"></i></div>
+                        <div class="box-title">
+                          {{ $t('features.agent.box3.title') }}
+                        </div>
+                      </div>
+                      <div class="box-content">
+                        <ul>
+                          <li v-if="selected === 1">
+                            {{ $t('features.agent.box3.list.list1') }}
+                          </li>
+                          <!-- <li>{{ $t('features.agent.box3.list.list2') }}</li> -->
+                          <li>{{ $t('features.agent.box3.list.list3') }}</li>
+                          <li>{{ $t('features.agent.box3.list.list4') }}</li>
+                        </ul>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 products_row_1 home_feature">
                   <div class="iconbox center circle large services-block-three">
                     <a href="javascript:void(0)" class="service_block_a">
                       <div class="box-header custom_icons">
@@ -185,7 +208,7 @@
       </section>
     </div>
     <!-- Pricing -->
-    <div class="col-md-4" style="margin-left: 35%">
+    <div class="col-md-12 col-lg-12 col-xl-12" style="padding: 0; border-radius: 0; margin-bottom: 80px;">
       <div class="flat-price-table">
         <h4 class="price-title">
           {{ $t('pricing.agent.plan1.title') }}
@@ -193,12 +216,12 @@
         <div class="sub-title">
           {{ $t('pricing.agent.plan1.subTitle') }}
         </div>
-        <div v-if="$i18n.locale == 'fr'" class="price">
+        <div v-if="$i18n.locale == 'fr'" class="price ">
           <span class="money">29.99</span>
           <span class="currency-unit">$</span>
           <span class="time">{{ $t('pricing.agent.plan1.time') }}</span>
         </div>
-        <div v-else class="price">
+        <div v-else class="price ">
           <span class="currency-unit">$</span>
           <span class="money">29.99</span>
           <span class="time">{{ $t('pricing.agent.plan1.time') }}</span>
@@ -206,7 +229,7 @@
         <!-- <div class="sub-title pt-15">
           * {{ $t('pricing.agent.plan1.creditNote') }}
         </div> -->
-        <div class="p-15 background-light">
+        <div class="p-15 background-light ">
           <label
             for="province-select"
             style="text-align: left; margin: 0 0 10px; display: block"
@@ -322,7 +345,7 @@
       </div>
     </div>
     <!-- Request For Proposal -->
-    <Rfp pricing="150" footnote-alt2></Rfp>
+    <!-- <Rfp pricing="150" footnote-alt2></Rfp> -->
   </div>
 </template>
 
@@ -346,19 +369,9 @@ export default {
       selected: '0',
       options: [
         { id: 0, value: '', province: this.$t('province.default') },
-        { id: 1, value: 'on', province: this.$t('province.on') },
+        { id: 1, value: 'ca', province: this.$t('province.ca') },
         { id: 2, value: 'qc', province: this.$t('province.qc') },
-        { id: 3, value: 'bc', province: this.$t('province.bc') },
-        { id: 4, value: 'ab', province: this.$t('province.ab') },
-        { id: 5, value: 'sk', province: this.$t('province.sk') },
-        { id: 6, value: 'mb', province: this.$t('province.mb') },
-        { id: 7, value: 'ns', province: this.$t('province.ns') },
-        { id: 8, value: 'nb', province: this.$t('province.nb') },
-        { id: 9, value: 'pe', province: this.$t('province.pe') },
-        { id: 10, value: 'nl', province: this.$t('province.nl') },
-        { id: 11, value: 'nt', province: this.$t('province.nt') },
-        { id: 12, value: 'nu', province: this.$t('province.nu') },
-        { id: 13, value: 'yt', province: this.$t('province.yt') },
+        { id: 3, value: 'us', province: this.$t('province.us') },
       ],
       showMore: false,
     }

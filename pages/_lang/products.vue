@@ -39,7 +39,7 @@
           <div class="iconbox center circle large services-block-three">
             <a href="javascript:void(0)" class="service_block_a">
               <div class="box-header custom_icons">
-                <div><i class="fa fa-book"></i></div>
+                <div><i class="fa fa-file-text-o"></i></div>
                 <div class="box-title">
                   {{ $t('featuresProducts.products.eform.title') }}
                 </div>
@@ -60,7 +60,7 @@
           <div class="iconbox center circle large services-block-three">
             <a href="javascript:void(0)" class="service_block_a">
               <div class="box-header custom_icons">
-                <div><i class="fa fa-book"></i></div>
+                <div><i class="fa fa-tasks"></i></div>
                 <div class="box-title">
                   {{ $t('featuresProducts.products.showingManagement.title') }}
                 </div>
@@ -85,7 +85,7 @@
           <div class="iconbox center circle large services-block-three">
             <a href="javascript:void(0)" class="service_block_a">
               <div class="box-header custom_icons">
-                <div><i class="fa fa-book"></i></div>
+                <div><i class="fa fa-gift"></i></div>
                 <div class="box-title">
                   {{ $t('featuresProducts.products.offerManagement.title') }}
                 </div>
@@ -110,7 +110,7 @@
           <div class="iconbox center circle large services-block-three">
             <a href="javascript:void(0)" class="service_block_a">
               <div class="box-header custom_icons">
-                <div><i class="fa fa-book"></i></div>
+                <div><i class="fa fa-exchange"></i></div>
                 <div class="box-title">
                   {{
                     $t('featuresProducts.products.transactionManagement.title')
@@ -137,7 +137,7 @@
           <div class="iconbox center circle large services-block-three">
             <a href="javascript:void(0)" class="service_block_a">
               <div class="box-header custom_icons">
-                <div><i class="fa fa-book"></i></div>
+                <div><i class="fa fa-users"></i></div>
                 <div class="box-title">
                   {{ $t('featuresProducts.products.association.title') }}
                 </div>
@@ -160,7 +160,7 @@
           <div class="iconbox center circle large services-block-three">
             <a href="javascript:void(0)" class="service_block_a">
               <div class="box-header custom_icons">
-                <div><i class="fa fa-book"></i></div>
+                <div><i class="fa fa-home"></i></div>
                 <div class="box-title">
                   {{ $t('featuresProducts.products.propertyManager.title') }}
                 </div>
