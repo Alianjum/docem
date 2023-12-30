@@ -30,7 +30,45 @@
         </div>
       </div>
     </section>
-
+    <section class="contact-form py-5 bg-light-grey1">
+      <div class="container">
+        <div class="align-items-center all_map_max">
+          <div class="title-box">
+            <div class="title">{{ $t('contact.locations.title') }}</div>
+          </div>
+          <div class="all_div_map">
+            <div class="main_div_map">
+              <h2><strong>Toronto:</strong></h2>
+              <p class="mb-15">{{ $t('contact.locations.toronto') }}</p>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2887.2777858823947!2d-79.37645268450262!3d43.64238857912159!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4cb2bdf8071a5%3A0x47826b6b0bee317d!2s1%20Yonge%20St%20%231801%2C%20Toronto%2C%20ON%20M5E%201W7!5e0!3m2!1sen!2sca!4v1588787851646!5m2!1sen!2sca"
+                width="100%"
+                height="200"
+                frameborder="0"
+                style="border: 0;"
+                allowfullscreen=""
+                aria-hidden="false"
+                tabindex="0"
+              ></iframe>
+            </div>
+            <div class="main_div_map">
+              <h2><strong>Montreal:</strong></h2>
+              <p class="mb-15">{{ $t('contact.locations.montreal') }}</p>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2796.369966294342!2d-73.57575678444125!3d45.50263057910144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91a46bbdc2c3b%3A0xcba902843e2cf209!2s2000%20McGill%20College%20Ave%20%23600%2C%20Montreal%2C%20QC%20H3A%203H3!5e0!3m2!1sen!2sca!4v1588869412683!5m2!1sen!2sca"
+                width="100%"
+                height="200"
+                frameborder="0"
+                style="border: 0;"
+                allowfullscreen=""
+                aria-hidden="false"
+                tabindex="0"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- Contact Form -->
     <section class="flat-row">
       <div class="container">
@@ -133,45 +171,7 @@
         </div>
       </div>
     </section>
-    <section class="contact-form py-5 bg-light-grey1">
-      <div class="container">
-        <div class="align-items-center all_map_max">
-          <div class="title-box">
-            <div class="title">{{ $t('contact.locations.title') }}</div>
-          </div>
-          <div class="all_div_map">
-            <div class="main_div_map">
-              <h2><strong>Toronto:</strong></h2>
-              <p class="mb-15">{{ $t('contact.locations.toronto') }}</p>
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2887.2777858823947!2d-79.37645268450262!3d43.64238857912159!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4cb2bdf8071a5%3A0x47826b6b0bee317d!2s1%20Yonge%20St%20%231801%2C%20Toronto%2C%20ON%20M5E%201W7!5e0!3m2!1sen!2sca!4v1588787851646!5m2!1sen!2sca"
-                width="100%"
-                height="200"
-                frameborder="0"
-                style="border: 0;"
-                allowfullscreen=""
-                aria-hidden="false"
-                tabindex="0"
-              ></iframe>
-            </div>
-            <div class="main_div_map">
-              <h2><strong>Montreal:</strong></h2>
-              <p class="mb-15">{{ $t('contact.locations.montreal') }}</p>
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2796.369966294342!2d-73.57575678444125!3d45.50263057910144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91a46bbdc2c3b%3A0xcba902843e2cf209!2s2000%20McGill%20College%20Ave%20%23600%2C%20Montreal%2C%20QC%20H3A%203H3!5e0!3m2!1sen!2sca!4v1588869412683!5m2!1sen!2sca"
-                width="100%"
-                height="200"
-                frameborder="0"
-                style="border: 0;"
-                allowfullscreen=""
-                aria-hidden="false"
-                tabindex="0"
-              ></iframe>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+
   </div>
 </template>
 
