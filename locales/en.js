@@ -135,6 +135,356 @@ export default {
     thanks: 'Thank you for your submission.',
     error: 'There was an error. Please try again.',
   },
+
+  featuresProducts: {
+    viewAll: 'View All Features',
+    viewLess: 'View Less Features',
+    products: {
+      title: "Our Products",
+      subTitle: 'These solutions are available to independent brokers as well.',
+      box1: {
+        title: 'Integrated with MLS',
+        titleQc: 'Integrated with Centris',
+        list: {
+          list1: 'Listings automatically loaded from MLS',
+          list1Qc: 'Listings automatically loaded from Centris',
+        },
+      },
+      box2: {
+        title: 'Accounting',
+        list: {
+          list1: 'Integrated with Quickbooks online',
+          list2: 'Invoices, payments synced to QBO',
+        },
+      },
+      box3: {
+        title: 'Invoicing',
+        list: {
+          list1: 'Agents monthly invoice',
+          list2: 'Security deposit',
+          list3: 'Transaction invoices/statements',
+        },
+      },
+      box4: {
+        title: 'Online Payments',
+        list: {
+          list1: 'Pay invoices online',
+          list2: 'Pay by cheque/credit card',
+          list3: 'Collect agent fees',
+          list4: 'Pre Authorized payment',
+          list5: 'Integrated with Paysafe',
+        },
+      },
+      box5: {
+        title: 'Direct Deposit',
+        list: {
+          list1: 'Pay agents online',
+          list2: 'Pay brokerages online',
+          list3: 'Integrated with most banks',
+        },
+      },
+      box6: {
+        title: 'Ledgers',
+        titleQc: 'Registers',
+        list: {
+          list1: 'Agent ledger',
+          list1Qc: 'Agent register',
+          list2: 'Listing ledger',
+          list2Qc: 'Listing register',
+          list3: 'Deal ledger',
+          list3Qc: 'Transaction register',
+          list4: 'Trust ledger',
+          list4Qc: 'Trust register',
+          list5: 'Disclosure ledger',
+          list5Qc: 'Notice of disclosure register',
+        },
+      },
+      box7: {
+        title: 'Showings',
+        list: {
+          list1: 'A streamline and easy process',
+          list2: 'Online appointment',
+          list3: 'Agent/owner approval',
+          list3Qc: 'Broker/owner online approval',
+          list4: 'Notification to listing/buying agent',
+          list4Qc: 'Notification to listing/buying broker',
+          list5: 'Incoming/outgoing showing calendar request',
+          list6: 'Buying agent feedback',
+          list6Qc: 'Buying broker feedback',
+          list7: 'New offer notifications',
+        },
+      },
+      box8: {
+        title: 'Electronic Document Storage',
+        list: {
+          list1: 'Approved by OACIQ',
+          list2: 'Unlimited online storage',
+          list3: 'Servers located in Ontario',
+          list4: 'Servers located in Canada',
+        },
+      },
+      box9: {
+        title: 'eForm and eSignature',
+        list: {
+          list1: 'All OREA forms and clauses',
+          list2: 'Custom brokerage forms/clauses',
+          list2Qc: 'Custom agency forms/clauses',
+          list3: 'Custom agent clauses',
+          list3Qc: 'Custom brokers clauses',
+          list4: 'Unlimited eSignature',
+          list5: 'Signed documents automatically uploaded',
+        },
+      },
+      box10: {
+        title: 'Credit Report',
+        list: {
+          list1: 'Integrated with Equifax',
+          list2: 'Pull up to date  client credit report in real time',
+        },
+      },
+      box11: {
+        title: 'Monitoring',
+        list: {
+          list1: 'Listing expiry date',
+          list2: 'Inspection date',
+          list3: 'Financing date',
+          list4: 'Closing date',
+          list4Qc: 'Notarization date',
+          list5: 'Next invoice date',
+          list6: 'Missing mandatory document',
+        },
+      },
+      box12: {
+        title: 'Tax Report',
+        list: {
+          list1: 'T4A summary',
+          list2: 'T4A slip',
+        },
+      },
+      box13: {
+        title: 'Restricted Access',
+        list: {
+          list1: 'Lawyer',
+          list1Qc: 'Lawyer /Notary',
+          list2: 'Clients',
+        },
+      },
+      box14: {
+        title: 'Reporting',
+        list: {
+          list1: 'Performance report',
+          list2: 'Accounting report',
+          list3: 'Trend report',
+        },
+      },
+      box15: {
+        title: 'Rent',
+        list: {
+          list1: 'Tenant monthly invoice',
+          list2: 'Landlord monthly statement',
+        },
+      },
+      box16: {
+        title: 'Workflow',
+        list: {
+          list1: 'Service request',
+          list2: 'Service contract',
+          list3: 'Maintenance',
+        },
+      },
+    },
+    agent: {
+      title: "Agent's Solution",
+      titleBroker: "Independant Broker's Solution",
+      subTitle:
+        'For agents, DocEM’s platform allows for filing and e-signing all necessary forms to complete a real estate transaction from start to finish.',
+      subTitleQc:
+        'For brokers, DocEM’s platform allows for e-signing all necessary forms to complete a real estate transaction from start to finish.',
+      subTitleBroker:
+        "For Independant Broker's, DocEM’s platform allows for filing and e-signing all necessary forms to complete a real estate transaction from start to finish.",
+      subTitleBrokerQc:
+        "For Independent Broker's, DocEM’s platform allows for e-signing all necessary forms to complete a real estate transaction from start to finish.",
+      box1: {
+        title: 'Integrated with MLS',
+        titleQc: 'Integrated with Centris',
+        list: {
+          list1: 'Your listings automatically loaded from MLS',
+          list1Qc: 'Your listings automatically loaded from Centris',
+        },
+      },
+      box2: {
+        title: 'Electronic Document Management',
+        list: {
+          list1: 'Approved by OACIQ',
+          list2: 'Unlimited online storage',
+          list3: 'Server located in Ontario',
+          list4: 'Server located in Canada',
+        },
+      },
+      box3: {
+        title: 'eForm and eSignature',
+        list: {
+          list1: 'All OREA forms and clauses',
+          list2: 'Custom brokerage forms/clauses',
+          list2Qc: 'Custom agency forms/clauses',
+          list3: 'Custom agent clauses',
+          list3Qc: 'Custom brokers clauses',
+          list4: 'Unlimited eSignature',
+          list5: 'Signed documents automatically uploaded',
+        },
+      },
+      box4: {
+        title: 'Credit Report',
+        list: {
+          list1: 'Integrated with Equifax',
+          list2: 'Pull up to date client credit report in real time',
+        },
+      },
+    },
+    manager: {
+      title: `Property Manager's Solution`,
+      subTitle:
+        'A safe way to manage the property records of your landlords, share occupancy terms with your tenants, keep track of service requests and facilitate the collection of monthly rent.',
+      box1: {
+        title: 'Rent',
+        list: {
+          list1: 'Tenant monthly invoice',
+          list2: 'Landlord monthly statement',
+        },
+      },
+      box2: {
+        title: 'Online Payments',
+        list: {
+          list1: 'Collect rent through Pre Authorized payment',
+          list2: 'Manage NSF',
+          list3: 'Pay invoice online with credit card',
+          list4: 'Integrated with Paysafe',
+        },
+      },
+      box3: {
+        title: 'Electronic Document Management',
+        list: {
+          list1: 'A central repository to manage your property documents',
+          list2: 'Unlimited online storage',
+        },
+      },
+      box4: {
+        title: 'eForm and eSignature',
+        list: {
+          list1: 'Access lease online',
+          list1On: 'Access Residential Tenancy Agreement online',
+          list2: 'Access landlord/tenant forms and notices online',
+          list2On: 'Access landlord/tenant forms and notices online',
+          list3: 'Unlimited eSignature',
+          list4: 'Signed documents automatically uploaded',
+        },
+      },
+      box5: {
+        title: 'Credit Report',
+        list: {
+          list1: 'Integrated with Equifax',
+          list2: 'Pull up to date client credit report in real time',
+          list3: 'Integrated with most banks',
+        },
+      },
+      box6: {
+        title: 'Monitoring',
+        list: {
+          list1: 'Rent increase',
+          list2: 'End lease',
+          list3: 'Maintenance',
+          list4: 'Service contract',
+        },
+      },
+      box7: {
+        title: 'Workflow',
+        list: {
+          list1: 'Service request',
+          list2: 'Service contract',
+          list3: 'Maintenance',
+        },
+      },
+      box8: {
+        title: 'Reporting',
+        list: {
+          list1: 'Income',
+          list2: 'Expense',
+        },
+      },
+    },
+    landlord: {
+      title: `Landlord's Solution`,
+      subTitle:
+        'An efficient approach to manage your property and keeping track of the most important task.',
+      box1: {
+        title: 'Rent',
+        list: {
+          list1: 'Tenant monthly invoice',
+          list2: 'Landlord monthly statement',
+        },
+      },
+      box2: {
+        title: 'Online Payments',
+        list: {
+          list1: 'Collect rent through Pre Authorized payment',
+          list2: 'Manage NSF',
+          list3: 'Pay invoice online with credit card',
+          list4: 'Integrated with Paysafe',
+        },
+      },
+      box3: {
+        title: 'Electronic Document Management',
+        list: {
+          list1: 'A central repository to manage your property documents',
+          list2: 'Unlimited online storage',
+        },
+      },
+      box4: {
+        title: 'eForm and eSignature',
+        list: {
+          list1: 'Access lease online',
+          list1On: 'Access Residential Tenancy Agreement online',
+          list2: 'Access landlord/tenant forms and notices online',
+          list2On: 'Access landlord/tenant forms and notices online',
+          list3: 'Unlimited eSignature',
+          list4: 'Signed documents automatically uploaded',
+        },
+      },
+      box5: {
+        title: 'Credit Report',
+        list: {
+          list1: 'Integrated with Equifax',
+          list2: 'Pull up to date client credit report in real time',
+          list3: 'Integrated with most banks',
+        },
+      },
+      box6: {
+        title: 'Monitoring',
+        list: {
+          list1: 'Rent increase',
+          list2: 'End lease',
+          list3: 'Maintenance',
+          list4: 'Service contract',
+        },
+      },
+      box7: {
+        title: 'Workflow',
+        list: {
+          list1: 'Service request',
+          list2: 'Service contract',
+          list3: 'Maintenance',
+        },
+      },
+      box8: {
+        title: 'Reporting',
+        list: {
+          list1: 'Income',
+          list2: 'Expense',
+        },
+      },
+    },
+  },
+
   features: {
     viewAll: 'View All Features',
     viewLess: 'View Less Features',

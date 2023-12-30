@@ -21,10 +21,10 @@
           <div class="col-md-12">
             <div class="title-section">
               <h1 class="title">
-                {{ $t('features.brokerage.title') }}
+                {{ $t('featuresProducts.products.title') }}
               </h1>
               <div class="sub-title">
-                {{ $t('features.brokerage.subTitle') }}
+                {{ $t('featuresProducts.products.subTitle') }}
               </div>
             </div>
           </div>
