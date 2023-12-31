@@ -55,7 +55,7 @@
               data-masterspeed="1000"
               data-saveperformance="on"
             >
-              <img src="~assets/images/slides/slide2.jpg" alt="slider-image" />
+              <img src="https://st2.depositphotos.com/3591429/11266/i/600/depositphotos_112660602-stock-photo-business-people-meeting.jpg" alt="slider-image" />
               <div
                 class="tp-caption sfl title-slide color-white center"
                 data-x="15"
@@ -189,7 +189,7 @@
               data-masterspeed="1000"
               data-saveperformance="on"
             >
-              <img src="~assets/images/slides/slide6.jpg" alt="slider-image" />
+              <img src="https://vilmate.com/wp-content/uploads/2019/09/How-to-develop-a-real-estate-website-and-how-much-it-will-cost_1.jpg" alt="slider-image" />
               <div
                 class="tp-caption sfl title-slide color-white center"
                 data-x="15"
@@ -278,7 +278,7 @@
             <div class="iconbox center circle large platform_card_main">
               <div class="box-header">
                 <!-- <img src="~assets/images/icon/icon4.svg" alt="icon" /> -->
-                <div><i class="fa fa-usd"></i></div>
+                <div><i class="fa fa-file"></i></div>
                 <div class="box-title">
                   <NuxtLink :to="localePath('brokerage')">
                     {{ $t('links.brokerage') }}

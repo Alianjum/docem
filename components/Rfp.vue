@@ -20,7 +20,7 @@
                 <span v-else>${{ pricing }}</span>
               </span>
             </h2>
-            <h6>
+            <h6 v-if="!isBrokerage">
               * brokerage pricing starts at $250.
             </h6>
           </div>
@@ -80,7 +80,7 @@
                   required="required"
                 />
               </p>
-              <p class="independentCheck" style="width: 100%;">
+              <p v-if="!isBrokerage" class="independentCheck" style="width: 100%;">
                 <input
                   id="independentCheck"
                   name="independentCheck"
@@ -155,7 +155,13 @@ export default {
       type: Boolean,
     },
   },
+  data() {
+    return {
+      isBrokerage: false,
+    };
+  },
   mounted() {
+    this.isBrokerage = window.location.href.includes("brokerage");
     $('#getaudit').submit(function (e) {
       e.preventDefault()
       $('#formLoader').show()
@@ -166,6 +172,7 @@ export default {
         success() {
           $('#formThanks').show()
           $('#formLoader').hide()
+          
         },
         error(msg) {
           if (msg.Success) {

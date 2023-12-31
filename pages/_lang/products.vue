@@ -32,7 +32,7 @@
       </div>
 
       <!-- cards -->
-      <div class="row" style="margin-left: 40px">
+      <div class="row" style="margin-left: 70px">
         <div
           class="col-lg-4 col-md-6 margin-30px-bottom products_row_1 display_feature"
         >
@@ -139,14 +139,14 @@
               <div class="box-header custom_icons">
                 <div><i class="fa fa-users"></i></div>
                 <div class="box-title">
-                  {{ $t('featuresProducts.products.association.title') }}
+                  {{ $t('featuresProducts.products.rent.title') }}
                 </div>
               </div>
               <div class="box-content">
                 <ul>
                   <li>
                     {{
-                      $t('featuresProducts.products.association.description')
+                      $t('featuresProducts.products.rent.description')
                     }}
                   </li>
                 </ul>

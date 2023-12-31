@@ -97,7 +97,7 @@ export default {
     },
   },
   platforms: {
-    title: 'Our Platforms',
+    title: 'Our Platform',
     subTitle: 'Select a platform to learn more.',
     brokerageDesc: 'A paperless solution for day-to-day business operations.',
     agentDesc: 'Spend your time selling and chasing more leads, less paper.',
@@ -165,6 +165,11 @@ export default {
       },
       association: {
         title: 'Association',
+        description:
+          'Standardize the practice across your members, providing them with the tools that allow them to be better agents without compromising client privacy. Enhance security, streamline operations, improve compliance, and deliver a superior client experience, ultimately contributing to greater efficiency, trust, and success in the real estate market.',
+      },
+      rent: {
+        title: 'Rent Management',
         description:
           'Standardize the practice across your members, providing them with the tools that allow them to be better agents without compromising client privacy. Enhance security, streamline operations, improve compliance, and deliver a superior client experience, ultimately contributing to greater efficiency, trust, and success in the real estate market.',
       },

@@ -1,8 +1,7 @@
 export default {
   meta: {
     desc: {
-      home:
-        'DocEM est produit alimenté par BACC.  une solution innovatrice pour les agences, courtiers, gestionnaires de propriété et propriétaires.  DocEM est plus qu’un logiciel mais bien une communauté croissante.  On continue d’innover et pousser plus loin.',
+      home: 'DocEM est produit alimenté par BACC.  une solution innovatrice pour les agences, courtiers, gestionnaires de propriété et propriétaires.  DocEM est plus qu’un logiciel mais bien une communauté croissante.  On continue d’innover et pousser plus loin.',
     },
     social: {
       general: 'docem-social-general-fr',
@@ -107,8 +106,7 @@ export default {
   },
   benefits: {
     title: 'Avantages',
-    desc:
-      "Voyez la productivité de votre bureau décoller. Les couriter sont libres de consacrer plus de temps à la vente et moins de temps noyés dans la paperasse. DocEM contrôle tous les contrats et documents pour l’inscription et l'achat, tous les certificats et taxes, ainsi que les dates clés, telles que les dates de financement, les dates de clôture, d'inspection, d'expiration et les prochaines dates de facturation. Les courriels de rappel sont générés automatiquement.",
+    desc: "Voyez la productivité de votre bureau décoller. Les couriter sont libres de consacrer plus de temps à la vente et moins de temps noyés dans la paperasse. DocEM contrôle tous les contrats et documents pour l’inscription et l'achat, tous les certificats et taxes, ainsi que les dates clés, telles que les dates de financement, les dates de clôture, d'inspection, d'expiration et les prochaines dates de facturation. Les courriels de rappel sont générés automatiquement.",
     listHead: 'améliore les résultats grâce à la :',
     list1: 'Réduction de la consommation de papier',
     list2: 'Réduction du temps de déplacement pour la livraison de documents',
@@ -119,8 +117,7 @@ export default {
   },
   rfp: {
     title: 'Demandez une présentation',
-    desc:
-      "Soumettez une requête, un de nos représentants vous contactera pour faire une démonstration de la facilité de navigation dans l'application",
+    desc: "Soumettez une requête, un de nos représentants vous contactera pour faire une démonstration de la facilité de navigation dans l'application",
     starting: 'À partir de',
     footnote: 'Plus pourcentage de loyer perçu',
     footnoteAlt: 'Plus frais par unité',
@@ -136,6 +133,7 @@ export default {
     thanks: 'Merci pour votre soumission.',
     error: 'Il y avait une erreur. Veuillez réessayer.',
   },
+
   features: {
     viewAll: 'Voir toutes les fonctionnalités',
     viewLess: 'Afficher moins de fonctionnalités',
@@ -490,85 +488,134 @@ export default {
       },
     },
   },
-  pricing: {
-    agent: {
-      plan1: {
-        title: 'PLAN STANDARD',
-        subTitle: 'Rapide, sûr, sécurisé.',
-        time: 'SIGNATURE ILLIMITÉ',
-        creditNote: 'Frais additionnels pour les rapport de crédit',
+  featuresProducts: {
+    viewAll: 'Voir toutes les fonctionnalités',
+    viewLess: 'Voir moins de fonctionnalités',
+    products: {
+      title: 'Nos Produits',
+      subTitle: 'Voici quelques-unes des solutions que nous avons disponibles.',
+      description:
+        'Une plateforme unique pour une manière plus intelligente de faire de limmobilier. DocEM vous fait gagner du temps, de largent et vous permet de gérer votre entreprise comme un professionnel tout en respectant les normes les plus élevées de lindustrie.',
+      eform: {
+        title: 'eFORM/eSign/IDV',
+        description:
+          'Complètement sans papier, sécurisé sans compromettre lidentité de vos clients. Un moyen facile daccéder à vos formulaires, de les pré-remplir et de les signer sans effort. Vérifiez lidentité de vos clients de manière sécurisée et restez conforme. Assurez la sécurité et lintégrité des transactions immobilières en vérifiant lidentité des individus de manière fiable et efficace.',
       },
-      plan2: {
-        title: 'PLAN STANDARD',
-        subTitle: 'Rapide, sûr, sécurisé.',
-        time: 'SIGNATURE ILLIMITÉ',
-        creditNote: 'Frais additionnels pour les rapport de crédit',
+      showingManagement: {
+        title: 'Gestion des Visites',
+        description:
+          'Gérez vos visites sans avoir besoin doutils supplémentaires. Visualisez vos annonces, visites, offres et transactions à partir du même tableau de bord. Centralisez et automatisez le processus de planification et de gestion des visites de propriétés, améliorant lefficacité, la communication et la collaboration entre les parties prenantes impliquées dans le processus de transaction immobilière.',
+      },
+      offerManagement: {
+        title: 'Gestion des Offres',
+        description:
+          'Optimisez et automatisez le processus de création, de soumission, de suivi et de gestion des offres. Un flux de travail transparent entre vous et lautre agent pour collaborer. Élimine complètement le besoin de téléchargement, de téléchargement constant et denvoi par e-mail. Améliorez lefficacité, la transparence, la collaboration et la conformité tout au long du processus de négociation et dacceptation des offres.',
+      },
+      transactionManagement: {
+        title: 'Gestion des Transactions',
+        description:
+          'Éliminez la duplication des entrées. Loffre initiale entre les deux agents se traduit automatiquement par une transaction spécifique à chaque courtage. Offre un stockage sécurisé, une organisation et une gestion des documents de transaction, formulaires, contrats et documents connexes. Sintègre de manière transparente avec des systèmes et des plates-formes externes pour faciliter la comptabilité, le paiement, et plus encore.',
+      },
+      association: {
+        title: 'Association',
+        description:
+          'Normalisez la pratique au sein de vos membres en leur fournissant les outils qui leur permettent dêtre de meilleurs agents sans compromettre la confidentialité des clients. Améliorez la sécurité, rationalisez les opérations, améliorez la conformité et offrez une expérience client supérieure, contribuant finalement à une plus grande efficacité, confiance et succès sur le marché immobilier.',
+      },
+      rent: {
+        title: 'Gestion des Locations',
+        description:
+          'Normalisez la pratique au sein de vos membres en leur fournissant les outils qui leur permettent dêtre de meilleurs agents sans compromettre la confidentialité des clients. Améliorez la sécurité, rationalisez les opérations, améliorez la conformité et offrez une expérience client supérieure, contribuant finalement à une plus grande efficacité, confiance et succès sur le marché immobilier.',
+      },
+      propertyManager: {
+        title: 'Solution pour Gestionnaire de Propriété',
+        description:
+          'Une manière sûre de gérer les dossiers de propriété de vos propriétaires, de partager les modalités doccupation avec vos locataires, de suivre les demandes de service et de faciliter la collecte du loyer mensuel.',
+      },
+      landlord: {
+        title: 'Solution pour Propriétaire',
+        description:
+          'Une approche efficace pour gérer votre propriété et suivre les tâches les plus importantes.',
       },
     },
-  },
-  testimonials: {
-    title: 'Témoignages',
-    brokerage: {
-      testimonial1: {
-        comment:
-          "Ce fut un plaisir de travailler avec Docem au cours des 3 dernières années. La meilleure partie est l'attention personnelle que nous avons toujours eue chaque fois que nécessaire. Nous étions très nerveux au début de notre nouveau courtage, mais Docem nous a soutenus et guidés tout au long du processus. Nous remercions vraiment Docem pour son soutien continu et les améliorations qu'ils apportent au logiciel sur la base des commentaires de notre part et de RECO. Nous souhaitons à Docem une croissance continue et espérons que son équipe maintiendra les normes de service auxquelles nous sommes si habitués.",
-        name: 'Aitzaz Ahmad',
-        company: 'Broker - CITI BROKERS REALTY INC. BROKERAGE',
-      },
-      testimonial2: {
-        comment:
-          'C’est impressionnant de voir à quel que DocEM a évolué.  On était parmi les premier clients en 2013, avec beaucoup mois de courtiers.  Maintenant avec des centaines de courtiers et un plus gros volume de transactions, on ne pourrait pas gérer nos opérations sans cet outil.  On profite de tous les avantages offerts par la plateforme.  Définitivement, il améliore et simplifie nos processus.  Ils continuent d’innover rapidement et de rencontrer nos besoins spécifiques.  Ils sont toujours disponibles pour notre équipe.',
-        name: 'Andreas Patogiannis',
-        company: 'Dirigeant & Cofondateur – LES IMMEUBLES CHARISMA',
-      },
-      testimonial3: {
-        comment:
-          'On a commencé à utiliser DocEM en 2014 et on n’a jamais regarder en arrière.  On recherchait une plateforme facile à utiliser, fiable, pour gérer nos documents et nos courtiers.  DocEM est systématique, présente une interface conviviale, est aussi pratique non seulement pour les administrateurs mais aussi pour les courtiers.  Le service à la clientèle n’a pas d’équivalent.  Anderson et son équipe sont toujours disponible pour nous aider quand on en a de besoin, d’autant plus il travaille avec toi pour s’assure que leur plateforme adresse nos besoins uniques.  Ils sont très professionnels.  On est content de travailler avec une équipe aussi dédiée et compétente.  On planifie être avec eux pour les années à venir.',
-        name: 'Sid Levy',
-        company:
-          'Directeur exécutif et co-propriétaire de VANTAGE MORTGAGE & REALTY GROUP',
+    pricing: {
+      agent: {
+        plan1: {
+          title: 'PLAN STANDARD',
+          subTitle: 'Rapide, sûr, sécurisé.',
+          time: 'SIGNATURE ILLIMITÉ',
+          creditNote: 'Frais additionnels pour les rapport de crédit',
+        },
+        plan2: {
+          title: 'PLAN STANDARD',
+          subTitle: 'Rapide, sûr, sécurisé.',
+          time: 'SIGNATURE ILLIMITÉ',
+          creditNote: 'Frais additionnels pour les rapport de crédit',
+        },
       },
     },
-    agent: {
-      testimonial1: {
-        comment:
-          'Depuis que notre agence Himalaya utilise les services de ce système de gestion de documents et autres services, je peux vous dire qu’un coup qu’on le saisit bien qu’il est facile à utiliser et très ‘user friendly’.  Aussi le service à la clientèle, pour ma part, est excellent!',
-        name: 'Sylvie C.',
-        company: 'Agent - IMMOBILIER HIMALAYA REAL ESTATE CORP.',
+    testimonials: {
+      title: 'Témoignages',
+      brokerage: {
+        testimonial1: {
+          comment:
+            "Ce fut un plaisir de travailler avec Docem au cours des 3 dernières années. La meilleure partie est l'attention personnelle que nous avons toujours eue chaque fois que nécessaire. Nous étions très nerveux au début de notre nouveau courtage, mais Docem nous a soutenus et guidés tout au long du processus. Nous remercions vraiment Docem pour son soutien continu et les améliorations qu'ils apportent au logiciel sur la base des commentaires de notre part et de RECO. Nous souhaitons à Docem une croissance continue et espérons que son équipe maintiendra les normes de service auxquelles nous sommes si habitués.",
+          name: 'Aitzaz Ahmad',
+          company: 'Broker - CITI BROKERS REALTY INC. BROKERAGE',
+        },
+        testimonial2: {
+          comment:
+            'C’est impressionnant de voir à quel que DocEM a évolué.  On était parmi les premier clients en 2013, avec beaucoup mois de courtiers.  Maintenant avec des centaines de courtiers et un plus gros volume de transactions, on ne pourrait pas gérer nos opérations sans cet outil.  On profite de tous les avantages offerts par la plateforme.  Définitivement, il améliore et simplifie nos processus.  Ils continuent d’innover rapidement et de rencontrer nos besoins spécifiques.  Ils sont toujours disponibles pour notre équipe.',
+          name: 'Andreas Patogiannis',
+          company: 'Dirigeant & Cofondateur – LES IMMEUBLES CHARISMA',
+        },
+        testimonial3: {
+          comment:
+            'On a commencé à utiliser DocEM en 2014 et on n’a jamais regarder en arrière.  On recherchait une plateforme facile à utiliser, fiable, pour gérer nos documents et nos courtiers.  DocEM est systématique, présente une interface conviviale, est aussi pratique non seulement pour les administrateurs mais aussi pour les courtiers.  Le service à la clientèle n’a pas d’équivalent.  Anderson et son équipe sont toujours disponible pour nous aider quand on en a de besoin, d’autant plus il travaille avec toi pour s’assure que leur plateforme adresse nos besoins uniques.  Ils sont très professionnels.  On est content de travailler avec une équipe aussi dédiée et compétente.  On planifie être avec eux pour les années à venir.',
+          name: 'Sid Levy',
+          company:
+            'Directeur exécutif et co-propriétaire de VANTAGE MORTGAGE & REALTY GROUP',
+        },
+      },
+      agent: {
+        testimonial1: {
+          comment:
+            'Depuis que notre agence Himalaya utilise les services de ce système de gestion de documents et autres services, je peux vous dire qu’un coup qu’on le saisit bien qu’il est facile à utiliser et très ‘user friendly’.  Aussi le service à la clientèle, pour ma part, est excellent!',
+          name: 'Sylvie C.',
+          company: 'Agent - IMMOBILIER HIMALAYA REAL ESTATE CORP.',
+        },
       },
     },
-  },
-  contact: {
-    toll: 'Sans frais',
-    info: 'Info',
-    sales: 'Ventes',
-    support: 'Soutien',
-    locations: {
-      title: 'Nos installations',
-      toronto: '1801 - 1 Yonge St, Toronto, Ontario, M5E 1W7',
-      montreal: '600 - 2000 Montréal, Quebec, H3A 3H3 Canada',
+    contact: {
+      toll: 'Sans frais',
+      info: 'Info',
+      sales: 'Ventes',
+      support: 'Soutien',
+      locations: {
+        title: 'Nos installations',
+        toronto: '1801 - 1 Yonge St, Toronto, Ontario, M5E 1W7',
+        montreal: '600 - 2000 Montréal, Quebec, H3A 3H3 Canada',
+      },
+      form: {
+        title: 'Nous contacter',
+        formName: 'Prénom',
+        formLastname: 'Nom de famille',
+        formEmail: 'Adresse électronique',
+        formPhone: 'Numéro de téléphone',
+        formMessage: 'Votre message',
+        formSubmit: 'Soumettez votre message',
+      },
     },
-    form: {
-      title: 'Nous contacter',
-      formName: 'Prénom',
-      formLastname: 'Nom de famille',
-      formEmail: 'Adresse électronique',
-      formPhone: 'Numéro de téléphone',
-      formMessage: 'Votre message',
-      formSubmit: 'Soumettez votre message',
+    promobox: {
+      title: '100% sans papier',
+      desc: 'DocEM est spécialement conçu pour l’immobilier.',
     },
-  },
-  promobox: {
-    title: '100% sans papier',
-    desc: 'DocEM est spécialement conçu pour l’immobilier.',
-  },
-  footer: {
-    desc:
-      'DocEM est un produit alimenté par BACC. Une solution innovatrice pour les agences, courtiers, gestionnaires de propriété et propriétaires.  DocEM est plus qu’un logiciel mais bien une communauté croissante.  On continue d’innover et pousser plus loin.',
-    followUs: 'Suivez nous',
-    contactUs: 'Entrer en contact',
-    quickLinks: 'Liens rapides',
-    poweredBy: 'Alimeté par',
-    copyright: "© Droits d'auteur Docem 2020. Tous les droits sont réservés.",
+    footer: {
+      desc: 'DocEM est un produit alimenté par BACC. Une solution innovatrice pour les agences, courtiers, gestionnaires de propriété et propriétaires.  DocEM est plus qu’un logiciel mais bien une communauté croissante.  On continue d’innover et pousser plus loin.',
+      followUs: 'Suivez nous',
+      contactUs: 'Entrer en contact',
+      quickLinks: 'Liens rapides',
+      poweredBy: 'Alimeté par',
+      copyright: "© Droits d'auteur Docem 2020. Tous les droits sont réservés.",
+    },
   },
 }
