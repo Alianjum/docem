@@ -14,24 +14,7 @@
       </template>
     </PageTitle>
 
-    <!-- Contact Info -->
-    <section class="flat-row row-nopading contact_us_box_above">
-      <div class="container">
-        <div class="row">
-          <div class="flat-on-four">
-            <div class="flat-contact-info text-center">
-              <i class="icon-call-in icons"></i>
-              <h4 class="color-theme">{{ $t('contact.toll') }}</h4>
-              <h6 class="text-gray">
-                <a href="tel:1-888-896-4980">1.888.896.4980</a>
-              </h6>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact Form -->
+    
     <section class="flat-row">
       <div class="container">
         <div class="contact_form_main">
@@ -172,6 +155,24 @@
         </div>
       </div>
     </section>
+    <!-- Contact Info -->
+    <section class="flat-row row-nopading contact_us_box_above" style="margin-left: 45%;">
+      <div class="container">
+        <div class="row">
+          <div class="flat-on-four">
+            <div class="flat-contact-info text-center">
+              <i class="icon-call-in icons"></i>
+              <h4 class="color-theme">{{ $t('contact.toll') }}</h4>
+              <h6 class="text-gray">
+                <a href="tel:1-888-896-4980">1.888.896.4980</a>
+              </h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Form -->
   </div>
 </template>
 

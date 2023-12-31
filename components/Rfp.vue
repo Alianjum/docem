@@ -13,14 +13,14 @@
             <div class="sub-title mb-15">
               <p>{{ $t('rfp.desc') }}</p>
             </div>
-            <h2 class="mb-15">
+            <h2 class="mb-15" v-if="!isAssociationsBoardsPage">
               {{ $t('rfp.starting') }}
               <span class="label label-theme">
                 <span v-if="$i18n.locale == 'fr'">{{ pricing }} $</span>
                 <span v-else>${{ pricing }}</span>
               </span>
             </h2>
-            <h6>
+            <h6 v-if="!removeAstrik">
               * brokerage pricing starts at $250.
             </h6>
           </div>
@@ -80,7 +80,7 @@
                   required="required"
                 />
               </p>
-              <p class="independentCheck" style="width: 100%;">
+              <p v-if="!isBrokerage" class="independentCheck" style="width: 100%;">
                 <input
                   id="independentCheck"
                   name="independentCheck"
@@ -155,7 +155,17 @@ export default {
       type: Boolean,
     },
   },
+  data() {
+    return {
+      isBrokerage: false,
+      isAssociationsBoardsPage: false,
+      removeAstrik : false,
+    };
+  },
   mounted() {
+    this.isBrokerage = window.location.href.includes("brokerage") || window.location.href.includes("associations_boards");
+    this.isAssociationsBoardsPage = window.location.href.includes("associations_boards");
+    this.removeAstrik = window.location.href.includes("brokerage") || window.location.href.includes("associations_boards");
     $('#getaudit').submit(function (e) {
       e.preventDefault()
       $('#formLoader').show()
@@ -166,6 +176,7 @@ export default {
         success() {
           $('#formThanks').show()
           $('#formLoader').hide()
+          
         },
         error(msg) {
           if (msg.Success) {

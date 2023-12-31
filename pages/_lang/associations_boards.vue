@@ -13,6 +13,130 @@
         </li>
       </template>
     </PageTitle>
+
+    <!-- Video Section -->
+    <!-- <VideoSection></VideoSection> -->
+    <section class="flat-row background-color">
+    <div class="container">
+      <div class="row">
+       
+        <div class="col-md-6">
+          <div class="video-thumbnail">
+            <img
+              v-if="$i18n.locale === 'en'"
+              src="https://img.youtube.com/vi/WcUfcP1l0gg/maxresdefault.jpg"
+              alt="Video Thumbnail"
+              width="100%"
+              height="315"
+            />
+            <img
+              v-else
+              src="https://img.youtube.com/vi/8ElBHdL5mhw/maxresdefault.jpg"
+              alt="Video Thumbnail"
+              width="100%"
+              height="315"
+            />
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="inner-box-about">
+            <div class="title-box">
+              <div class="title">
+                <span>{{ siteName }}</span> {{ $t('featuresProducts.products.association.title') }}
+              </div>
+            </div>
+            <p>
+              {{ $t('featuresProducts.products.association.description') }}
+            </p>
+            <div class="empty-space height30"></div>
+            <div>
+              <NuxtLink
+                v-if="!isOnAbout"
+                :to="'#request_form_section'"
+                class="flat-button border-radius-small"
+              >
+                {{ $t('links.BookaDemo') }}
+              </NuxtLink>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+    <div class="row" style="margin-left: 40px; margin-bottom : 40px">
+        <div
+          class="col-lg-4 col-md-6 margin-30px-bottom products_row_1 display_feature"
+        >
+          <div class="iconbox center circle large services-block-three">
+            <a href="javascript:void(0)" class="service_block_a">
+              <div class="box-header custom_icons">
+                <div><i class="fa fa-file-text-o"></i></div>
+                <div class="box-title">
+                  {{ $t('featuresProducts.products.eform.title') }}
+                </div>
+              </div>
+              <div class="box-content">
+                <ul>
+                  <li>
+                    {{ $t('featuresProducts.products.eform.description') }}
+                  </li>
+                </ul>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div
+          class="col-lg-4 col-md-6 margin-30px-bottom products_row_1 display_feature"
+        >
+          <div class="iconbox center circle large services-block-three">
+            <a href="javascript:void(0)" class="service_block_a">
+              <div class="box-header custom_icons">
+                <div><i class="fa fa-calendar"></i></div>
+                <div class="box-title">
+                  {{ $t('featuresProducts.products.showingManagement.title') }}
+                </div>
+              </div>
+              <div class="box-content">
+                <ul>
+                  <li>
+                    {{
+                      $t(
+                        'featuresProducts.products.showingManagement.description'
+                      )
+                    }}
+                  </li>
+                </ul>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div
+          class="col-lg-4 col-md-6 margin-30px-bottom products_row_1 display_feature"
+        >
+          <div class="iconbox center circle large services-block-three">
+            <a href="javascript:void(0)" class="service_block_a">
+              <div class="box-header custom_icons">
+                <div><i class="fa fa-home fa-dollar-sign"></i></div>
+                <div class="box-title">
+                  {{ $t('featuresProducts.products.offerManagement.title') }}
+                </div>
+              </div>
+              <div class="box-content">
+                <ul>
+                  <li>
+                    {{
+                      $t(
+                        'featuresProducts.products.offerManagement.description'
+                      )
+                    }}
+                  </li>
+                </ul>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <Rfp pricing="150" footnote-alt2></Rfp>
   </div>
 </template>
 
@@ -20,10 +144,14 @@
 // import $ from 'jquery'
 import config from '~/data/siteConfig'
 import PageTitle from '~/components/PageTitle.vue'
+import VideoSection from '~/components/VideoSection.vue'
+import Rfp from '~/components/Rfp.vue'
 
 export default {
   components: {
     PageTitle,
+    VideoSection,
+    Rfp
   },
   data() {
     return {

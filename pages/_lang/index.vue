@@ -55,7 +55,7 @@
               data-masterspeed="1000"
               data-saveperformance="on"
             >
-              <img src="~assets/images/slides/slide2.jpg" alt="slider-image" />
+              <img src="https://st2.depositphotos.com/3591429/11266/i/600/depositphotos_112660602-stock-photo-business-people-meeting.jpg" alt="slider-image" />
               <div
                 class="tp-caption sfl title-slide color-white center"
                 data-x="15"
@@ -189,7 +189,7 @@
               data-masterspeed="1000"
               data-saveperformance="on"
             >
-              <img src="~assets/images/slides/slide6.jpg" alt="slider-image" />
+              <img src="https://vilmate.com/wp-content/uploads/2019/09/How-to-develop-a-real-estate-website-and-how-much-it-will-cost_1.jpg" alt="slider-image" />
               <div
                 class="tp-caption sfl title-slide color-white center"
                 data-x="15"
@@ -247,11 +247,11 @@
         </div>
 
         <div class="row">
-          <div class="col-md-3">
+          <div class="col-md-3 home_feature">
             <div class="iconbox center circle large platform_card_main">
               <div class="box-header">
                 <!-- <img src="~assets/images/icon/icon2.svg" alt="icon" /> -->
-                <div><i class="fa fa-home"></i></div>
+                <div><i class="fa fa-users"></i></div>
                 <div class="box-title">
                   <NuxtLink :to="localePath('associations_boards')">
                     {{ $t('links.association_boards') }}
@@ -261,7 +261,7 @@
               <div class="box-content">
                 {{ $t('platforms.association_boardsDesc') }}
                 <div class="empty-space height30"></div>
-                <div>
+                <div style="margin-top: 25px;">
                   <NuxtLink
                     :to="localePath('associations_boards')"
                     class="flat-button border-radius-small"
@@ -273,12 +273,12 @@
             </div>
             <!-- /.iconbox -->
           </div>
-          <!-- /.col-md-3 -->
-          <div class="col-md-3">
+          <!-- /.col-md-3 home_feature -->
+          <div class="col-md-3 home_feature">
             <div class="iconbox center circle large platform_card_main">
               <div class="box-header">
                 <!-- <img src="~assets/images/icon/icon4.svg" alt="icon" /> -->
-                <div><i class="fa fa-users"></i></div>
+                <div><i class="fa fa-file"></i></div>
                 <div class="box-title">
                   <NuxtLink :to="localePath('brokerage')">
                     {{ $t('links.brokerage') }}
@@ -288,7 +288,7 @@
               <div class="box-content">
                 {{ $t('platforms.brokerageDesc') }}
                 <div class="empty-space height30"></div>
-                <div>
+                <div style="margin-top: 25px;">
                   <NuxtLink
                     :to="localePath('brokerage')"
                     class="flat-button border-radius-small"
@@ -300,9 +300,9 @@
             </div>
             <!-- /.iconbox -->
           </div>
-          <!-- /.col-md-3 -->
+          <!-- /.col-md-3 home_feature -->
 
-          <div class="col-md-3">
+          <div class="col-md-3 home_feature">
             <div class="iconbox center circle large platform_card_main">
               <div class="box-header">
                 <!-- <img src="~assets/images/icon/icon7.svg" alt="icon" /> -->
@@ -316,7 +316,7 @@
               <div class="box-content">
                 {{ $t('platforms.agentDesc') }}
                 <div class="empty-space height30"></div>
-                <div>
+                <div style="margin-top: 25px;">
                   <NuxtLink
                     :to="localePath('agent')"
                     class="flat-button border-radius-small"
@@ -328,9 +328,9 @@
             </div>
             <!-- /.iconbox -->
           </div>
-          <!-- /.col-md-3 -->
+          <!-- /.col-md-3 home_feature -->
 
-          <div class="col-md-3">
+          <div class="col-md-3 home_feature">
             <div class="iconbox center circle large platform_card_main">
               <div class="box-header">
                 <!-- <img src="~assets/images/icon/icon8.svg" alt="icon" /> -->
@@ -356,7 +356,7 @@
             </div>
             <!-- /.iconbox -->
           </div>
-          <!-- /.col-md-3 -->
+          <!-- /.col-md-3 home_feature -->
         </div>
       </div>
       <!-- /.container -->

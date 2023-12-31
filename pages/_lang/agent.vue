@@ -103,34 +103,74 @@
             <!-- Features Icons -->
             <div class="col-md-12">
               <div class="row">
-                <div class="col-lg-4 col-md-6 products_row_1">
+                <div class="col-lg-4 col-md-6 products_row_1 home_feature">
                   <div class="iconbox center circle large services-block-three">
                     <a href="javascript:void(0)" class="service_block_a">
                       <div class="box-header custom_icons">
-                        <div><i class="fa fa-link"></i></div>
+                        <div><i class="fa fa-check"></i></div>
                         <div class="box-title">
-                          <div v-if="selected === 2" class="box-title">
-                            {{ $t('features.brokerage.box1.titleQc') }}
-                          </div>
-                          <div v-else class="box-title">
-                            {{ $t('features.brokerage.box1.title') }}
-                          </div>
+                          {{ $t('features.agent.box3.title') }}
                         </div>
                       </div>
                       <div class="box-content">
                         <ul>
-                          <li v-if="selected === 2">
-                            {{ $t('features.brokerage.box1.list.list1Qc') }}
+                          <li v-if="selected === 1">
+                            {{ $t('features.agent.box3.list.list1') }}
                           </li>
-                          <li v-else>
-                            {{ $t('features.brokerage.box1.list.list1') }}
+                          <!-- <li>{{ $t('features.agent.box3.list.list2') }}</li> -->
+                          <li>{{ $t('features.agent.box3.list.list3') }}</li>
+                          <li>{{ $t('features.agent.box3.list.list4') }}</li>
+                        </ul>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 margin-30px-bottom products_row_1 home_feature">
+                  <div class="iconbox center circle large services-block-three">
+                    <a href="javascript:void(0)" class="service_block_a">
+                      <div class="box-header custom_icons">
+                        <div><i class="fa fa-file-text-o"></i></div>
+                        <div class="box-title">
+                          {{ $t('featuresProducts.products.idv.title') }}
+                        </div>
+                      </div>
+                      <div class="box-content">
+                        <ul>
+                          <li>
+                            {{ $t('featuresProducts.products.idv.description') }}
                           </li>
                         </ul>
                       </div>
                     </a>
                   </div>
                 </div>
-                <div class="col-lg-4 col-md-6 products_row_1">
+                <div class="col-lg-4 col-md-6 products_row_1 home_feature">
+                  <div class="iconbox center circle large services-block-three">
+                    <a href="javascript:void(0)" class="service_block_a">
+                      <div class="box-header custom_icons">
+                        <div><i class="fa fa-usd"></i></div>
+                        <div class="box-title">
+                          {{ $t('featuresProducts.products.offerManagement.title') }}
+                        </div>
+                      </div>
+                      <div class="box-content">
+                        <ul>
+                          <li v-if="selected === 2">
+                            {{ $t('features.agent.box2.list.list1') }}
+                          </li>
+                          <li>{{ $t('features.agent.box2.list.list2') }}</li>
+                          <li v-if="selected === 1">
+                            {{ $t('features.agent.box2.list.list3') }}
+                          </li>
+                          <li v-if="selected === 2">
+                            {{ $t('features.agent.box2.list.list4') }}
+                          </li>
+                        </ul>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 products_row_1 home_feature">
                   <div class="iconbox center circle large services-block-three">
                     <a href="javascript:void(0)" class="service_block_a">
                       <div class="box-header custom_icons">
@@ -156,28 +196,7 @@
                     </a>
                   </div>
                 </div>
-                <div class="col-lg-4 col-md-6 products_row_1">
-                  <div class="iconbox center circle large services-block-three">
-                    <a href="javascript:void(0)" class="service_block_a">
-                      <div class="box-header custom_icons">
-                        <div><i class="fa fa-check"></i></div>
-                        <div class="box-title">
-                          {{ $t('features.agent.box3.title') }}
-                        </div>
-                      </div>
-                      <div class="box-content">
-                        <ul>
-                          <li v-if="selected === 1">
-                            {{ $t('features.agent.box3.list.list1') }}
-                          </li>
-                          <!-- <li>{{ $t('features.agent.box3.list.list2') }}</li> -->
-                          <li>{{ $t('features.agent.box3.list.list3') }}</li>
-                          <li>{{ $t('features.agent.box3.list.list4') }}</li>
-                        </ul>
-                      </div>
-                    </a>
-                  </div>
-                </div>
+                
               </div>
             </div>
           </div>
@@ -185,143 +204,148 @@
       </section>
     </div>
     <!-- Pricing -->
-    <div class="col-md-4">
-      <div class="flat-price-table">
-        <h4 class="price-title">
-          {{ $t('pricing.agent.plan1.title') }}
-        </h4>
-        <div class="sub-title">
-          {{ $t('pricing.agent.plan1.subTitle') }}
-        </div>
-        <div v-if="$i18n.locale == 'fr'" class="price">
-          <span class="money">29.99</span>
-          <span class="currency-unit">$</span>
-          <span class="time">{{ $t('pricing.agent.plan1.time') }}</span>
-        </div>
-        <div v-else class="price">
-          <span class="currency-unit">$</span>
-          <span class="money">29.99</span>
-          <span class="time">{{ $t('pricing.agent.plan1.time') }}</span>
-        </div>
-        <!-- <div class="sub-title pt-15">
-          * {{ $t('pricing.agent.plan1.creditNote') }}
-        </div> -->
-        <div class="p-15 background-light">
-          <label
-            for="province-select"
-            style="text-align: left; margin: 0 0 10px; display: block;"
-            >{{ $t('province.chooseAlt') }}:</label
-          >
-          <select
-            id="province-select"
-            v-model="selected"
-            class="form-control mb-0"
-          >
-            <option
-              v-for="option in options"
-              :key="option.value"
-              :value="option.id"
-              >{{ option.province }}</option
+    <div class="col-md-12 col-lg-12 col-xl-12" style="padding: 0; border-radius: 0; margin-bottom: 80px;">
+      <section id="subscription">
+        <div class="flat-price-table">
+          <h4 class="price-title">
+            {{ $t('pricing.agent.plan1.title') }}
+          </h4>
+          <div class="sub-title">
+            {{ $t('pricing.agent.plan1.subTitle') }}
+          </div>
+          <div v-if="$i18n.locale == 'fr'" class="price ">
+            <span class="money">29.99</span>
+            <span class="currency-unit">$</span>
+            <span class="time">{{ $t('pricing.agent.plan1.time') }}</span>
+          </div>
+          <div v-else class="price ">
+            <span class="currency-unit">$</span>
+            <span class="money">29.99</span>
+            <span class="time">{{ $t('pricing.agent.plan1.time') }}</span>
+          </div>
+          <!-- <div class="sub-title pt-15">
+            * {{ $t('pricing.agent.plan1.creditNote') }}
+          </div> -->
+          <div class="p-15 background-light ">
+            <label
+              for="province-select"
+              style="text-align: left; margin: 0 0 10px; display: block"
+              >{{ $t('province.chooseAlt') }}:</label
             >
-          </select>
+            <select
+              id="province-select"
+              v-model="selected"
+              class="form-control mb-0"
+            >
+              <option
+                v-for="option in options"
+                :key="option.value"
+                :value="option.id"
+              >
+                {{ option.province }}
+              </option>
+            </select>
+          </div>
+          <div class="background-light">
+            <a
+              v-if="selected === 2"
+              href="https://qc.docem.ca/Team/Agent/Register"
+              class="price-buynow"
+              target="_blank"
+              >{{ $t('links.register') }}</a
+            >
+            <a
+              v-else-if="selected != 0"
+              href="https://on.docem.ca/Team/Agent/Register"
+              class="price-buynow"
+              target="_blank"
+              >{{ $t('links.register') }}</a
+            >
+            <!-- <a
+              v-if="selected === 3"
+              href="https://bc.docem.ca/Team/Agent/Register"
+              class="price-buynow"
+              target="_blank"
+              >{{ $t('links.register') }}</a
+            >
+            <a
+              v-if="selected === 4"
+              href="https://ab.docem.ca/Team/Agent/Register"
+              class="price-buynow"
+              target="_blank"
+              >{{ $t('links.register') }}</a
+            >
+            <a
+              v-if="selected === 5"
+              href="https://sk.docem.ca/Team/Agent/Register"
+              class="price-buynow"
+              target="_blank"
+              >{{ $t('links.register') }}</a
+            >
+            <a
+              v-if="selected === 6"
+              href="https://mb.docem.ca/Team/Agent/Register"
+              class="price-buynow"
+              target="_blank"
+              >{{ $t('links.register') }}</a
+            >
+            <a
+              v-if="selected === 7"
+              href="https://ns.docem.ca/Team/Agent/Register"
+              class="price-buynow"
+              target="_blank"
+              >{{ $t('links.register') }}</a
+            >
+            <a
+              v-if="selected === 8"
+              href="https://nb.docem.ca/Team/Agent/Register"
+              class="price-buynow"
+              target="_blank"
+              >{{ $t('links.register') }}</a
+            >
+            <a
+              v-if="selected === 9"
+              href="https://pe.docem.ca/Team/Agent/Register"
+              class="price-buynow"
+              target="_blank"
+              >{{ $t('links.register') }}</a
+            >
+            <a
+              v-if="selected === 10"
+              href="https://nl.docem.ca/Team/Agent/Register"
+              class="price-buynow"
+              target="_blank"
+              >{{ $t('links.register') }}</a
+            >
+            <a
+              v-if="selected === 11"
+              href="https://nt.docem.ca/Team/Agent/Register"
+              class="price-buynow"
+              target="_blank"
+              >{{ $t('links.register') }}</a
+            >
+            <a
+              v-if="selected === 12"
+              href="https://nu.docem.ca/Team/Agent/Register"
+              class="price-buynow"
+              target="_blank"
+              >{{ $t('links.register') }}</a
+            >
+            <a
+              v-if="selected === 13"
+              href="https://yt.docem.ca/Team/Agent/Register"
+              class="price-buynow"
+              target="_blank"
+              >{{ $t('links.register') }}</a
+            > -->
+          </div>
         </div>
-        <div class="background-light">
-          <a
-            v-if="selected === 2"
-            href="https://qc.docem.ca/Team/Agent/Register"
-            class="price-buynow"
-            target="_blank"
-            >{{ $t('links.register') }}</a
-          >
-          <a
-            v-else-if="selected != 0"
-            href="https://on.docem.ca/Team/Agent/Register"
-            class="price-buynow"
-            target="_blank"
-            >{{ $t('links.register') }}</a
-          >
-          <!-- <a
-            v-if="selected === 3"
-            href="https://bc.docem.ca/Team/Agent/Register"
-            class="price-buynow"
-            target="_blank"
-            >{{ $t('links.register') }}</a
-          >
-          <a
-            v-if="selected === 4"
-            href="https://ab.docem.ca/Team/Agent/Register"
-            class="price-buynow"
-            target="_blank"
-            >{{ $t('links.register') }}</a
-          >
-          <a
-            v-if="selected === 5"
-            href="https://sk.docem.ca/Team/Agent/Register"
-            class="price-buynow"
-            target="_blank"
-            >{{ $t('links.register') }}</a
-          >
-          <a
-            v-if="selected === 6"
-            href="https://mb.docem.ca/Team/Agent/Register"
-            class="price-buynow"
-            target="_blank"
-            >{{ $t('links.register') }}</a
-          >
-          <a
-            v-if="selected === 7"
-            href="https://ns.docem.ca/Team/Agent/Register"
-            class="price-buynow"
-            target="_blank"
-            >{{ $t('links.register') }}</a
-          >
-          <a
-            v-if="selected === 8"
-            href="https://nb.docem.ca/Team/Agent/Register"
-            class="price-buynow"
-            target="_blank"
-            >{{ $t('links.register') }}</a
-          >
-          <a
-            v-if="selected === 9"
-            href="https://pe.docem.ca/Team/Agent/Register"
-            class="price-buynow"
-            target="_blank"
-            >{{ $t('links.register') }}</a
-          >
-          <a
-            v-if="selected === 10"
-            href="https://nl.docem.ca/Team/Agent/Register"
-            class="price-buynow"
-            target="_blank"
-            >{{ $t('links.register') }}</a
-          >
-          <a
-            v-if="selected === 11"
-            href="https://nt.docem.ca/Team/Agent/Register"
-            class="price-buynow"
-            target="_blank"
-            >{{ $t('links.register') }}</a
-          >
-          <a
-            v-if="selected === 12"
-            href="https://nu.docem.ca/Team/Agent/Register"
-            class="price-buynow"
-            target="_blank"
-            >{{ $t('links.register') }}</a
-          >
-          <a
-            v-if="selected === 13"
-            href="https://yt.docem.ca/Team/Agent/Register"
-            class="price-buynow"
-            target="_blank"
-            >{{ $t('links.register') }}</a
-          > -->
-        </div>
-      </div>
+      </section>
+
     </div>
+
     <!-- Request For Proposal -->
-    <Rfp pricing="150" footnote-alt2></Rfp>
+    <!-- <Rfp pricing="150" footnote-alt2></Rfp> -->
   </div>
 </template>
 
@@ -345,19 +369,9 @@ export default {
       selected: '0',
       options: [
         { id: 0, value: '', province: this.$t('province.default') },
-        { id: 1, value: 'on', province: this.$t('province.on') },
+        { id: 1, value: 'ca', province: this.$t('province.ca') },
         { id: 2, value: 'qc', province: this.$t('province.qc') },
-        { id: 3, value: 'bc', province: this.$t('province.bc') },
-        { id: 4, value: 'ab', province: this.$t('province.ab') },
-        { id: 5, value: 'sk', province: this.$t('province.sk') },
-        { id: 6, value: 'mb', province: this.$t('province.mb') },
-        { id: 7, value: 'ns', province: this.$t('province.ns') },
-        { id: 8, value: 'nb', province: this.$t('province.nb') },
-        { id: 9, value: 'pe', province: this.$t('province.pe') },
-        { id: 10, value: 'nl', province: this.$t('province.nl') },
-        { id: 11, value: 'nt', province: this.$t('province.nt') },
-        { id: 12, value: 'nu', province: this.$t('province.nu') },
-        { id: 13, value: 'yt', province: this.$t('province.yt') },
+        { id: 3, value: 'us', province: this.$t('province.us') },
       ],
       showMore: false,
     }

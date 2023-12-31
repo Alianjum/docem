@@ -21,406 +21,160 @@
           <div class="col-md-12">
             <div class="title-section">
               <h1 class="title">
-                {{ $t('features.brokerage.title') }}
+                {{ $t('featuresProducts.products.title') }}
               </h1>
               <div class="sub-title">
-                {{ $t('features.brokerage.subTitle') }}
+                {{ $t('featuresProducts.products.subTitle') }}
               </div>
             </div>
           </div>
         </div>
+      </div>
 
-        <div class="row">
-          <div class="col-lg-4 col-md-6 margin-30px-bottom products_row_1">
-            <div class="iconbox center circle large services-block-three">
-              <a href="javascript:void(0)" class="service_block_a">
-                <div class="box-header custom_icons">
-                  <div><i class="fa fa-link"></i></div>
-                  <div v-if="selected === 2" class="box-title">
-                    {{ $t('features.brokerage.box1.titleQc') }}
-                  </div>
-                  <div v-else class="box-title">
-                    {{ $t('features.brokerage.box1.title') }}
-                  </div>
+      <!-- cards -->
+      <div class="row" style="margin-left: 70px">
+        <div
+          class="col-lg-4 col-md-6 margin-30px-bottom products_row_1 display_feature"
+        >
+          <div class="iconbox center circle large services-block-three">
+            <a href="javascript:void(0)" class="service_block_a">
+              <div class="box-header custom_icons">
+                <div><i class="fa fa-file-text-o"></i></div>
+                <div class="box-title">
+                  {{ $t('featuresProducts.products.eform.title') }}
                 </div>
-                <div class="box-content">
-                  <ul>
-                    <li v-if="selected === 2">
-                      {{ $t('features.brokerage.box1.list.list1Qc') }}
-                    </li>
-                    <li v-else>
-                      {{ $t('features.brokerage.box1.list.list1') }}
-                    </li>
-                  </ul>
-                </div>
-              </a>
-            </div>
+              </div>
+              <div class="box-content">
+                <ul>
+                  <li>
+                    {{ $t('featuresProducts.products.eform.description') }}
+                  </li>
+                </ul>
+              </div>
+            </a>
           </div>
-
-          <div class="col-lg-4 col-md-6 margin-30px-bottom products_row_1">
-            <div class="iconbox center circle large services-block-three">
-              <a href="javascript:void(0)" class="service_block_a">
-                <div class="box-header custom_icons">
-                  <div><i class="fa fa-book"></i></div>
-                  <div class="box-title">
-                    {{ $t('features.brokerage.box2.title') }}
-                  </div>
+        </div>
+        <div
+          class="col-lg-4 col-md-6 margin-30px-bottom products_row_1 display_feature"
+        >
+          <div class="iconbox center circle large services-block-three">
+            <a href="javascript:void(0)" class="service_block_a">
+              <div class="box-header custom_icons">
+                <div><i class="fa fa-calendar"></i></div>
+                <div class="box-title">
+                  {{ $t('featuresProducts.products.showingManagement.title') }}
                 </div>
-                <div class="box-content">
-                  <ul>
-                    <li>{{ $t('features.brokerage.box2.list.list1') }}</li>
-                    <li>{{ $t('features.brokerage.box2.list.list2') }}</li>
-                  </ul>
-                </div>
-              </a>
-            </div>
+              </div>
+              <div class="box-content">
+                <ul>
+                  <li>
+                    {{
+                      $t(
+                        'featuresProducts.products.showingManagement.description'
+                      )
+                    }}
+                  </li>
+                </ul>
+              </div>
+            </a>
           </div>
-
-          <div class="col-lg-4 col-md-6 margin-30px-bottom products_row_1">
-            <div class="iconbox center circle large services-block-three">
-              <a href="javascript:void(0)" class="service_block_a">
-                <div class="box-header custom_icons">
-                  <div><i class="fa fa-list-ul"></i></div>
-                  <div class="box-title">
-                    {{ $t('features.brokerage.box12.title') }}
-                  </div>
+        </div>
+        <div
+          class="col-lg-4 col-md-6 margin-30px-bottom products_row_1 display_feature"
+        >
+          <div class="iconbox center circle large services-block-three">
+            <a href="javascript:void(0)" class="service_block_a">
+              <div class="box-header custom_icons">
+                <div><i class="fa fa-usd"></i></div>
+                <div class="box-title">
+                  {{ $t('featuresProducts.products.offerManagement.title') }}
                 </div>
-                <div class="box-content">
-                  <ul>
-                    <li>{{ $t('features.brokerage.box12.list.list1') }}</li>
-                    <li>{{ $t('features.brokerage.box12.list.list2') }}</li>
-                  </ul>
-                </div>
-              </a>
-            </div>
+              </div>
+              <div class="box-content">
+                <ul>
+                  <li>
+                    {{
+                      $t(
+                        'featuresProducts.products.offerManagement.description'
+                      )
+                    }}
+                  </li>
+                </ul>
+              </div>
+            </a>
           </div>
-          <div class="col-lg-4 col-md-6 margin-30px-bottom products_row_2">
-            <div class="iconbox center circle large services-block-three">
-              <a href="javascript:void(0)" class="service_block_a">
-                <div class="box-header custom_icons">
-                  <div><i class="fa fa-file"></i></div>
-                  <div class="box-title">
-                    {{ $t('features.brokerage.box8.title') }}
-                  </div>
+        </div>
+        <div class="col-lg-4 col-md-6 margin-30px-bottom products_row_1 display_feature" >
+          <div class="iconbox center circle large services-block-three">
+            <a href="javascript:void(0)" class="service_block_a">
+              <div class="box-header custom_icons">
+                <div><i class="fa fa-exchange"></i></div>
+                <div class="box-title">
+                  {{
+                    $t('featuresProducts.products.transactionManagement.title')
+                  }}
                 </div>
-                <div class="box-content">
-                  <ul>
-                    <li v-if="selected === 2">
-                      {{ $t('features.brokerage.box8.list.list1') }}
-                    </li>
-                    <li>{{ $t('features.brokerage.box8.list.list2') }}</li>
-                    <li v-if="selected === 1">
-                      {{ $t('features.brokerage.box8.list.list3') }}
-                    </li>
-                    <li v-if="selected === 2">
-                      {{ $t('features.brokerage.box8.list.list4') }}
-                    </li>
-                  </ul>
-                </div>
-              </a>
-            </div>
+              </div>
+              <div class="box-content">
+                <ul>
+                  <li>
+                    {{
+                      $t(
+                        'featuresProducts.products.transactionManagement.description'
+                      )
+                    }}
+                  </li>
+                </ul>
+              </div>
+            </a>
           </div>
-
-          <div class="col-lg-4 col-md-6 margin-30px-bottom products_row_2">
-            <div class="iconbox center circle large services-block-three">
-              <a href="javascript:void(0)" class="service_block_a">
-                <div class="box-header custom_icons">
-                  <div><i class="fa fa-file-text-o"></i></div>
-                  <div class="box-title">
-                    {{ $t('features.brokerage.box14.title') }}
-                  </div>
+        </div>
+        <div
+          class="col-lg-4 col-md-6 margin-30px-bottom products_row_1 display_feature"
+        >
+          <div class="iconbox center circle large services-block-three">
+            <a href="javascript:void(0)" class="service_block_a">
+              <div class="box-header custom_icons">
+                <div><i class="fa fa-users"></i></div>
+                <div class="box-title">
+                  {{ $t('featuresProducts.products.rent.title') }}
                 </div>
-                <div class="box-content">
-                  <ul>
-                    <li>{{ $t('features.brokerage.box14.list.list1') }}</li>
-                    <li>{{ $t('features.brokerage.box14.list.list2') }}</li>
-                    <li>{{ $t('features.brokerage.box14.list.list3') }}</li>
-                  </ul>
-                </div>
-              </a>
-            </div>
+              </div>
+              <div class="box-content">
+                <ul>
+                  <li>
+                    {{
+                      $t('featuresProducts.products.rent.description')
+                    }}
+                  </li>
+                </ul>
+              </div>
+            </a>
           </div>
-
-          <div class="col-lg-4 col-md-6 margin-30px-bottom products_row_2">
-            <div class="iconbox center circle large services-block-three">
-              <a href="javascript:void(0)" class="service_block_a">
-                <div class="box-header custom_icons">
-                  <div><i class="fa fa-usd"></i></div>
-                  <div class="box-title">
-                    {{ $t('features.brokerage.box4.title') }}
-                  </div>
+        </div>
+        <div
+          class="col-lg-4 col-md-6 margin-30px-bottom products_row_1 display_feature"
+        >
+          <div class="iconbox center circle large services-block-three">
+            <a href="javascript:void(0)" class="service_block_a">
+              <div class="box-header custom_icons">
+                <div><i class="fa fa-home"></i></div>
+                <div class="box-title">
+                  {{ $t('featuresProducts.products.propertyManager.title') }}
                 </div>
-                <div class="box-content">
-                  <ul>
-                    <li>{{ $t('features.brokerage.box4.list.list1') }}</li>
-                    <li>{{ $t('features.brokerage.box4.list.list2') }}</li>
-                    <li>{{ $t('features.brokerage.box4.list.list3') }}</li>
-                    <li>{{ $t('features.brokerage.box4.list.list4') }}</li>
-                    <li>{{ $t('features.brokerage.box4.list.list5') }}</li>
-                  </ul>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 margin-30px-bottom products_row_3">
-            <div class="iconbox center circle large services-block-three">
-              <a href="javascript:void(0)" class="service_block_a">
-                <div class="box-header custom_icons">
-                  <div><i class="fa fa-university"></i></div>
-                  <div class="box-title">
-                    {{ $t('features.brokerage.box5.title') }}
-                  </div>
-                </div>
-                <div class="box-content">
-                  <ul>
-                    <li>{{ $t('features.brokerage.box5.list.list1') }}</li>
-                    <li>{{ $t('features.brokerage.box5.list.list2') }}</li>
-                    <li>{{ $t('features.brokerage.box5.list.list3') }}</li>
-                  </ul>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 margin-30px-bottom products_row_3">
-            <div class="iconbox center circle large services-block-three">
-              <a href="javascript:void(0)" class="service_block_a">
-                <div class="box-header custom_icons">
-                  <div><i class="fa fa-envelope"></i></div>
-                  <div class="box-title">
-                    {{ $t('features.brokerage.box3.title') }}
-                  </div>
-                </div>
-                <div class="box-content">
-                  <ul>
-                    <li>{{ $t('features.brokerage.box3.list.list1') }}</li>
-                    <li>{{ $t('features.brokerage.box3.list.list2') }}</li>
-                    <li>{{ $t('features.brokerage.box3.list.list3') }}</li>
-                  </ul>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 margin-30px-bottom products_row_3">
-            <div class="iconbox center circle large services-block-three">
-              <a href="javascript:void(0)" class="service_block_a">
-                <div class="box-header custom_icons">
-                  <div><i class="fa fa-lock"></i></div>
-                  <div class="box-title">
-                    {{ $t('features.brokerage.box13.title') }}
-                  </div>
-                </div>
-                <div class="box-content">
-                  <ul>
-                    <li v-if="selected === 2">
-                      {{ $t('features.brokerage.box13.list.list1Qc') }}
-                    </li>
-                    <li v-else>
-                      {{ $t('features.brokerage.box13.list.list1') }}
-                    </li>
-                    <li>{{ $t('features.brokerage.box13.list.list2') }}</li>
-                  </ul>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 margin-30px-bottom products_row_4">
-            <div class="iconbox center circle large services-block-three">
-              <a href="javascript:void(0)" class="service_block_a">
-                <div class="box-header custom_icons">
-                  <div><i class="fa fa-paper-plane"></i></div>
-                  <div v-if="selected === 2" class="box-title">
-                    {{ $t('features.brokerage.box6.titleQc') }}
-                  </div>
-                  <div v-else class="box-title">
-                    {{ $t('features.brokerage.box6.title') }}
-                  </div>
-                </div>
-                <div class="box-content">
-                  <ul>
-                    <li v-if="selected === 2">
-                      {{ $t('features.brokerage.box6.list.list1Qc') }}
-                    </li>
-                    <li v-else>
-                      {{ $t('features.brokerage.box6.list.list1') }}
-                    </li>
-                    <li v-if="selected === 2">
-                      {{ $t('features.brokerage.box6.list.list2Qc') }}
-                    </li>
-                    <li>
-                      {{ $t('features.brokerage.box6.list.list2') }}
-                    </li>
-                    <li v-if="selected === 2">
-                      {{ $t('features.brokerage.box6.list.list3Qc') }}
-                    </li>
-                    <li v-else>
-                      {{ $t('features.brokerage.box6.list.list3') }}
-                    </li>
-                    <li v-if="selected === 2">
-                      {{ $t('features.brokerage.box6.list.list4Qc') }}
-                    </li>
-                    <li v-else>
-                      {{ $t('features.brokerage.box6.list.list4') }}
-                    </li>
-                    <li v-if="selected === 2">
-                      {{ $t('features.brokerage.box6.list.list5Qc') }}
-                    </li>
-                    <li v-else>
-                      {{ $t('features.brokerage.box6.list.list5') }}
-                    </li>
-                  </ul>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 margin-30px-bottom products_row_4">
-            <div class="iconbox center circle large services-block-three">
-              <a href="javascript:void(0)" class="service_block_a">
-                <div class="box-header custom_icons">
-                  <div><i class="fa fa-check"></i></div>
-                  <div class="box-title">
-                    {{ $t('features.brokerage.box9.title') }}
-                  </div>
-                </div>
-                <div class="box-content">
-                  <ul>
-                    <li v-if="selected === 1">
-                      {{ $t('features.brokerage.box9.list.list1') }}
-                    </li>
-                    <li v-if="selected === 2">
-                      {{ $t('features.brokerage.box9.list.list2Qc') }}
-                    </li>
-                    <li v-else>
-                      {{ $t('features.brokerage.box9.list.list2') }}
-                    </li>
-                    <li v-if="selected === 2">
-                      {{ $t('features.brokerage.box9.list.list3Qc') }}
-                    </li>
-                    <li v-else>
-                      {{ $t('features.brokerage.box9.list.list3') }}
-                    </li>
-                    <li>
-                      {{ $t('features.brokerage.box9.list.list4') }}
-                    </li>
-                    <li>
-                      {{ $t('features.brokerage.box9.list.list5') }}
-                    </li>
-                  </ul>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 margin-30px-bottom products_row_4">
-            <div class="iconbox center circle large services-block-three">
-              <a href="javascript:void(0)" class="service_block_a">
-                <div class="box-header custom_icons">
-                  <div><i class="fa fa-calendar"></i></div>
-                  <div class="box-title">
-                    {{ $t('features.brokerage.box7.title') }}
-                  </div>
-                </div>
-                <div class="box-content">
-                  <ul>
-                    <!-- <li>{{ $t('features.brokerage.box7.list.list1') }}</li> -->
-                    <li>
-                      {{ $t('features.brokerage.box7.list.list2') }}
-                    </li>
-                    <li v-if="selected === 2">
-                      {{ $t('features.brokerage.box7.list.list3Qc') }}
-                    </li>
-                    <li v-else>
-                      {{ $t('features.brokerage.box7.list.list3') }}
-                    </li>
-                    <li v-if="selected === 2">
-                      {{ $t('features.brokerage.box7.list.list4') }}
-                    </li>
-                    <li v-else>
-                      {{ $t('features.brokerage.box7.list.list4') }}
-                    </li>
-                    <li>
-                      {{ $t('features.brokerage.box7.list.list5') }}
-                    </li>
-                    <li v-if="selected === 2">
-                      {{ $t('features.brokerage.box7.list.list6') }}
-                    </li>
-                    <li v-else>
-                      {{ $t('features.brokerage.box7.list.list6') }}
-                    </li>
-                    <li>
-                      {{ $t('features.brokerage.box7.list.list7') }}
-                    </li>
-                  </ul>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 margin-30px-bottom products_row_4">
-            <div class="iconbox center circle large services-block-three">
-              <a href="javascript:void(0)" class="service_block_a">
-                <div class="box-header custom_icons">
-                  <div><i class="fa fa-comment"></i></div>
-                  <div class="box-title">
-                    {{ $t('features.brokerage.box11.title') }}
-                  </div>
-                </div>
-                <div class="box-content">
-                  <ul>
-                    <li>{{ $t('features.brokerage.box11.list.list1') }}</li>
-                    <li>{{ $t('features.brokerage.box11.list.list2') }}</li>
-                    <li>{{ $t('features.brokerage.box11.list.list3') }}</li>
-                    <li v-if="selected === 2">
-                      {{ $t('features.brokerage.box11.list.list4Qc') }}
-                    </li>
-                    <li v-else>
-                      {{ $t('features.brokerage.box11.list.list4') }}
-                    </li>
-                    <li>{{ $t('features.brokerage.box11.list.list5') }}</li>
-                    <li>{{ $t('features.brokerage.box11.list.list6') }}</li>
-                  </ul>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 margin-30px-bottom products_row_4">
-            <div class="iconbox center circle large services-block-three">
-              <a href="javascript:void(0)" class="service_block_a">
-                <div class="box-header custom_icons">
-                  <div><i class="fa fa-comment"></i></div>
-                  <div class="box-title">
-                    {{ $t('features.brokerage.box15.title') }}
-                  </div>
-                </div>
-                <div class="box-content">
-                  <ul>
-                    <li>{{ $t('features.brokerage.box15.list.list1') }}</li>
-                    <li>{{ $t('features.brokerage.box15.list.list2') }}</li>
-                  </ul>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 margin-30px-bottom products_row_4">
-            <div class="iconbox center circle large services-block-three">
-              <a href="javascript:void(0)" class="service_block_a">
-                <div class="box-header custom_icons">
-                  <div><i class="fa fa-comment"></i></div>
-                  <div class="box-title">
-                    {{ $t('features.brokerage.box16.title') }}
-                  </div>
-                </div>
-                <div class="box-content">
-                  <ul>
-                    <li>{{ $t('features.brokerage.box16.list.list1') }}</li>
-                    <li>{{ $t('features.brokerage.box16.list.list2') }}</li>
-                    <li>{{ $t('features.brokerage.box16.list.list3') }}</li>
-                  </ul>
-                </div>
-              </a>
-            </div>
+              </div>
+              <div class="box-content">
+                <ul>
+                  <li>
+                    {{
+                      $t(
+                        'featuresProducts.products.propertyManager.description'
+                      )
+                    }}
+                  </li>
+                </ul>
+              </div>
+            </a>
           </div>
         </div>
       </div>
