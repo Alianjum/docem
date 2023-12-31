@@ -261,7 +261,7 @@
               <div class="box-content">
                 {{ $t('platforms.association_boardsDesc') }}
                 <div class="empty-space height30"></div>
-                <div>
+                <div style="margin-top: 25px;">
                   <NuxtLink
                     :to="localePath('associations_boards')"
                     class="flat-button border-radius-small"
@@ -288,7 +288,7 @@
               <div class="box-content">
                 {{ $t('platforms.brokerageDesc') }}
                 <div class="empty-space height30"></div>
-                <div>
+                <div style="margin-top: 25px;">
                   <NuxtLink
                     :to="localePath('brokerage')"
                     class="flat-button border-radius-small"
@@ -316,7 +316,7 @@
               <div class="box-content">
                 {{ $t('platforms.agentDesc') }}
                 <div class="empty-space height30"></div>
-                <div>
+                <div style="margin-top: 25px;">
                   <NuxtLink
                     :to="localePath('agent')"
                     class="flat-button border-radius-small"

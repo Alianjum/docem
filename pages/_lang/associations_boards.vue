@@ -91,7 +91,7 @@
           <div class="iconbox center circle large services-block-three">
             <a href="javascript:void(0)" class="service_block_a">
               <div class="box-header custom_icons">
-                <div><i class="fa fa-tasks"></i></div>
+                <div><i class="fa fa-calendar"></i></div>
                 <div class="box-title">
                   {{ $t('featuresProducts.products.showingManagement.title') }}
                 </div>

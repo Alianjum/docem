@@ -20,7 +20,7 @@
             <div>
               <NuxtLink
                 v-if="!isOnAbout"
-                :to="'#request_form_section'"
+                :to="isOnBrokerage ? '#subscription' : '#request_form_section'"
                 class="flat-button border-radius-small"
               >
                 {{ $t('links.BookaDemo') }}
@@ -61,11 +61,13 @@ export default {
     }
   },
   computed: {
-    isOnAgentPage() {
-      return (
-        this.$route.fullPath.startsWith('/agent') ||
-        this.$route.fullPath.startsWith('/fr/agent')
-      );
+    isOnAbout() {
+      return this.$route.fullPath.startsWith('/about') ||
+        this.$route.fullPath.startsWith('/fr/about');
+    },
+    isOnBrokerage() {
+      return this.$route.fullPath.startsWith('/agent') ||
+        this.$route.fullPath.startsWith('/fr/agent');
     },
   },
 }
