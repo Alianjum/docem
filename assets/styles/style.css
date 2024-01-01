@@ -130,11 +130,11 @@ html {
 }
 
 .parallax5 {
-  background-image: url("~assets/images/slides/slide5.jpg");
+  background-image: url("https://www.dataservicesinc.com/wp-content/uploads/2015/08/testimonials-background-1.jpg");
 }
 
 .parallax6 {
-  background-image: url("~assets/images/parallax/slide6.jpg");
+  background-image: url("https://vilmate.com/wp-content/uploads/2019/09/How-to-develop-a-real-estate-website-and-how-much-it-will-cost_1.jpg");
 }
 
 .parallax7 {
@@ -176,21 +176,6 @@ html {
   text-align: left;
 }
 
-.custom_icons i {
-  color: white !important;
-  background-color: hsl(45, 8%, 79%) !important;
-  border-radius: 100% !important;
-  font-size: 19px !important;
-  align-items: center;
-  display: flex !important;
-  justify-content: center;
-  width: 40px !important;
-  height: 40px !important;
-  margin: 0 auto;
-  margin-bottom: 15px !important;
-  margin-top: 5px;
-}
-
 .iconbox.circle .box-header i {
   font-size: 30px;
   width: 60px;
@@ -203,7 +188,7 @@ html {
 }
 
 .flat-on-four-last .flat-contact-info {
-  border-right: 0;
+  /* border-right: 0; */
 }
 
 .footer-widgets .widget-brand {
@@ -473,4 +458,25 @@ html {
   position: relative;
   padding-bottom: 15px;
   letter-spacing: 1px;
+}
+
+.display_feature {
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  padding: 14px;
+  border-radius: 4px;
+  width: 30%;
+  height: 20vw;
+  margin-right: 2%;
+  margin-bottom: 1.5%;
+  background-color: #fff;
+}
+
+.home_feature {
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  padding: 14px;
+  border-radius: 4px;
+  width: 22%;
+  height: 20vw;
+  margin-right: 3%;
+  margin-bottom: 1%;
 }/*# sourceMappingURL=style.css.map */

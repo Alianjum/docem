@@ -32,7 +32,7 @@
       </div>
 
       <!-- cards -->
-      <div class="row" style="margin-left: 40px">
+      <div class="row" style="margin-left: 70px">
         <div
           class="col-lg-4 col-md-6 margin-30px-bottom products_row_1 display_feature"
         >
@@ -60,7 +60,7 @@
           <div class="iconbox center circle large services-block-three">
             <a href="javascript:void(0)" class="service_block_a">
               <div class="box-header custom_icons">
-                <div><i class="fa fa-tasks"></i></div>
+                <div><i class="fa fa-calendar"></i></div>
                 <div class="box-title">
                   {{ $t('featuresProducts.products.showingManagement.title') }}
                 </div>
@@ -85,7 +85,7 @@
           <div class="iconbox center circle large services-block-three">
             <a href="javascript:void(0)" class="service_block_a">
               <div class="box-header custom_icons">
-                <div><i class="fa fa-gift"></i></div>
+                <div><i class="fa fa-usd"></i></div>
                 <div class="box-title">
                   {{ $t('featuresProducts.products.offerManagement.title') }}
                 </div>
@@ -104,9 +104,7 @@
             </a>
           </div>
         </div>
-        <div
-          class="col-lg-4 col-md-6 margin-30px-bottom products_row_1 display_feature"
-        >
+        <div class="col-lg-4 col-md-6 margin-30px-bottom products_row_1 display_feature" >
           <div class="iconbox center circle large services-block-three">
             <a href="javascript:void(0)" class="service_block_a">
               <div class="box-header custom_icons">
@@ -139,14 +137,14 @@
               <div class="box-header custom_icons">
                 <div><i class="fa fa-users"></i></div>
                 <div class="box-title">
-                  {{ $t('featuresProducts.products.association.title') }}
+                  {{ $t('featuresProducts.products.rent.title') }}
                 </div>
               </div>
               <div class="box-content">
                 <ul>
                   <li>
                     {{
-                      $t('featuresProducts.products.association.description')
+                      $t('featuresProducts.products.rent.description')
                     }}
                   </li>
                 </ul>

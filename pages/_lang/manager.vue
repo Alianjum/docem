@@ -78,6 +78,8 @@
       </div>
     </section> -->
 
+    <VideoSection></VideoSection>
+
     <!-- Features -->
     <section class="flat-row background-color">
       <div class="container">
@@ -96,71 +98,8 @@
         </div>
 
         <div class="row">
-          <div
-            class="col-lg-4 col-md-6 margin-30px-bottom products_row_3 display_feature"
-          >
-            <div class="iconbox center circle large services-block-three">
-              <a href="javascript:void(0)" class="service_block_a">
-                <div class="box-header custom_icons">
-                  <div><i class="fa fa-envelope"></i></div>
-                  <div class="box-title">
-                    {{ $t('features.manager.box1.title') }}
-                  </div>
-                </div>
-                <div class="box-content">
-                  <ul>
-                    <li>{{ $t('features.manager.box1.list.list1') }}</li>
-                    <li>{{ $t('features.manager.box1.list.list2') }}</li>
-                  </ul>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div
-            class="col-lg-4 col-md-6 margin-30px-bottom products_row_3 display_feature"
-          >
-            <div class="iconbox center circle large services-block-three">
-              <a href="javascript:void(0)" class="service_block_a">
-                <div class="box-header custom_icons">
-                  <div><i class="fa fa-usd"></i></div>
-                  <div class="box-title">
-                    {{ $t('features.manager.box2.title') }}
-                  </div>
-                </div>
-                <div class="box-content">
-                  <ul>
-                    <li>{{ $t('features.manager.box2.list.list1') }}</li>
-                    <li>{{ $t('features.manager.box2.list.list2') }}</li>
-                    <li>{{ $t('features.manager.box2.list.list3') }}</li>
-                    <li>{{ $t('features.manager.box2.list.list4') }}</li>
-                  </ul>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div
-            class="col-lg-4 col-md-6 margin-30px-bottom products_row_3 display_feature"
-          >
-            <div class="iconbox center circle large services-block-three">
-              <a href="javascript:void(0)" class="service_block_a">
-                <div class="box-header custom_icons">
-                  <div><i class="fa fa-file"></i></div>
-                  <div class="box-title">
-                    {{ $t('features.manager.box3.title') }}
-                  </div>
-                </div>
-                <div class="box-content">
-                  <ul>
-                    <li>{{ $t('features.manager.box3.list.list1') }}</li>
-                    <li>{{ $t('features.manager.box3.list.list2') }}</li>
-                  </ul>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div
-            class="col-lg-4 col-md-6 margin-30px-bottom products_row_3 display_feature"
-          >
+
+          <div class="col-lg-4 col-md-6 margin-30px-bottom products_row_3 display_feature">
             <div class="iconbox center circle large services-block-three">
               <a href="javascript:void(0)" class="service_block_a">
                 <div class="box-header custom_icons">
@@ -194,60 +133,41 @@
               </a>
             </div>
           </div>
+
           <div class="col-lg-4 col-md-6 margin-30px-bottom products_row_3 display_feature">
             <div class="iconbox center circle large services-block-three">
               <a href="javascript:void(0)" class="service_block_a">
                 <div class="box-header custom_icons">
-                  <div><i class="fa fa-comment"></i></div>
+                  <div><i class="fa fa-file"></i></div>
                   <div class="box-title">
-                    {{ $t('features.manager.box6.title') }}
+                    {{ $t('features.manager.box3.title') }}
                   </div>
                 </div>
                 <div class="box-content">
                   <ul>
-                    <li>{{ $t('features.manager.box6.list.list1') }}</li>
-                    <li>{{ $t('features.manager.box6.list.list2') }}</li>
-                    <li>{{ $t('features.manager.box6.list.list3') }}</li>
-                    <li>{{ $t('features.manager.box6.list.list4') }}</li>
+                    <li>{{ $t('features.manager.box3.list.list1') }}</li>
+                    <li>{{ $t('features.manager.box3.list.list2') }}</li>
                   </ul>
                 </div>
               </a>
             </div>
           </div>
+
           <div
             class="col-lg-4 col-md-6 margin-30px-bottom products_row_3 display_feature"
           >
             <div class="iconbox center circle large services-block-three">
               <a href="javascript:void(0)" class="service_block_a">
                 <div class="box-header custom_icons">
-                  <div><i class="fa fa-file-text-o"></i></div>
+                  <div><i class="fa fa-envelope"></i></div>
                   <div class="box-title">
-                    {{ $t('features.manager.box8.title') }}
+                    {{ $t('features.manager.box1.title') }}
                   </div>
                 </div>
                 <div class="box-content">
                   <ul>
-                    <li>{{ $t('features.manager.box8.list.list1') }}</li>
-                    <li>{{ $t('features.manager.box8.list.list2') }}</li>
-                  </ul>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 margin-30px-bottom products_row_3 display_feature" style="width: 96%; height: 12%;">
-            <div class="iconbox center circle large services-block-three">
-              <a href="javascript:void(0)" class="service_block_a">
-                <div class="box-header custom_icons">
-                  <div><i class="fa fa-retweet"></i></div>
-                  <div class="box-title">
-                    {{ $t('features.manager.box7.title') }}
-                  </div>
-                </div>
-                <div class="box-content">
-                  <ul>
-                    <li>{{ $t('features.manager.box7.list.list1') }}</li>
-                    <li>{{ $t('features.manager.box7.list.list2') }}</li>
-                    <li>{{ $t('features.manager.box7.list.list3') }}</li>
+                    <li>{{ $t('features.manager.box1.list.list1') }}</li>
+                    <li>{{ $t('features.manager.box1.list.list2') }}</li>
                   </ul>
                 </div>
               </a>
@@ -263,10 +183,12 @@
 // import $ from 'jquery'
 import config from '~/data/siteConfig'
 import PageTitle from '~/components/PageTitle.vue'
+import VideoSection from '~/components/VideoSection.vue'
 
 export default {
   components: {
     PageTitle,
+    VideoSection,
   },
   data() {
     return {

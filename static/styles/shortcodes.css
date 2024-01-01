@@ -188,8 +188,8 @@
 /* Flat-on-four
 -------------------------------------------------------------- */
 .flat-on-four {
-  width: 25%;
-  float: left;
+  width: 100%;
+  display: flex;
 }
 
 /* Row
@@ -2777,9 +2777,9 @@ ul.flat-list.use-icon li:after {
 /* Flat-contact-info
 -------------------------------------------------*/
 .flat-contact-info {
-  padding: 60px 0 60px;
+  padding: 30px 0 30px;
   background: #fafafa;
-  border-right: 1px solid #dcdcdc;
+  /* border-right: 1px solid #dcdcdc; */
 }
 
 .flat-contact-info i {

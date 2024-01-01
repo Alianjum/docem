@@ -97,7 +97,7 @@ export default {
     },
   },
   platforms: {
-    title: 'Our Platforms',
+    title: 'Our Platform',
     subTitle: 'Select a platform to learn more.',
     brokerageDesc: 'A paperless solution for day-to-day business operations.',
     agentDesc: 'Spend your time selling and chasing more leads, less paper.',
@@ -144,9 +144,17 @@ export default {
       description:
         'One single platform for a smarter way of doing real estate. DocEM saves you time, money and makes you handle your business like a real pro adhering to the highest standards in the industry.',
       eform: {
-        title: 'eFORM/eSign/IDV',
+        title: 'eform, esignature and IDV',
         description:
           'Completely paperless, safe without compromising the identity of your clients. An easy way to access your forms, having them pre-populated and sign effortlessly. Verify the identity of your clients securely and remain compliant. Ensuring the security and integrity of real estate transactions by verifying the identity of individuals in a reliable and efficient manner.',
+      },
+      idv: {
+        title: 'eform, esignature and IDV',
+        description: 'Client remote verification.',
+      },
+      document: {
+        title: 'Document Storage',
+        description: 'Storage of documents.',
       },
       showingManagement: {
         title: 'Showing Management',
@@ -155,6 +163,7 @@ export default {
       },
       offerManagement: {
         title: 'Offer Management',
+        subtitle: 'Unlimited',
         description:
           'Streamline and automate the process of creating, submitting, tracking, and managing offers. A seamless workflow between you and the other agent to collaborate. Completely eliminates the need for constant uploading, downloading, and emailing. Enhance efficiency, transparency, collaboration, and compliance throughout the offer negotiation and acceptance process.',
       },
@@ -162,9 +171,15 @@ export default {
         title: 'Transaction Management',
         description:
           'Eliminate the duplication of entries. The initial offer between both agents automatically translates to a transaction specific to each brokerage. Offers secure storage, organization, and management of transaction documents, forms, contracts, and related paperwork. Integrates seamlessly with external systems and platforms to facilitate accounting, payment, and more.',
+        description2: 'Eliminate the duplication of entries.',
       },
       association: {
         title: 'Association',
+        description:
+          'Standardize the practice across your members, providing them with the tools that allow them to be better agents without compromising client privacy. Enhance security, streamline operations, improve compliance, and deliver a superior client experience, ultimately contributing to greater efficiency, trust, and success in the real estate market.',
+      },
+      rent: {
+        title: 'Rent Management',
         description:
           'Standardize the practice across your members, providing them with the tools that allow them to be better agents without compromising client privacy. Enhance security, streamline operations, improve compliance, and deliver a superior client experience, ultimately contributing to greater efficiency, trust, and success in the real estate market.',
       },
@@ -269,7 +284,7 @@ export default {
         },
       },
       box9: {
-        title: 'eForm and eSignature',
+        title: 'eform, esignature and IDV',
         list: {
           list1: 'All OREA forms and clauses',
           list2: 'Custom brokerage forms/clauses',
@@ -367,7 +382,7 @@ export default {
         },
       },
       box3: {
-        title: 'eForm and eSignature',
+        title: 'eform, esignature and IDV',
         list: {
           list1: 'All OREA forms and clauses',
           list2: 'Custom brokerage forms/clauses',
@@ -387,7 +402,7 @@ export default {
       },
     },
     manager: {
-      title: `Property Manager's Solution`,
+      title: `Property Manager & Landlord Solutions`,
       subTitle:
         'A safe way to manage the property records of your landlords, share occupancy terms with your tenants, keep track of service requests and facilitate the collection of monthly rent.',
       box1: {

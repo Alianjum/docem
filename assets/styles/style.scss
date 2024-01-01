@@ -160,11 +160,14 @@ html {
 
 .parallax5 {
   // background-image: url('~assets/images/slides/slide5.jpg');
-  background-image: url('https://www.dataservicesinc.com/wp-content/uploads/2015/08/testimonials-background-1.jpg');
+  background-image: url('https://josephliu.co/wp-content/uploads/2019/02/client_testimonial_banner.jpg');
 }
 
 .parallax6 {
-  background-image: url('~assets/images/parallax/slide6.jpg');
+  // background-image: url('~assets/images/parallax/contact2.jpg');
+  // background-repeat: no-repeat;
+  // width: 100%;
+  background-image: url('https://img.freepik.com/premium-photo/contact-us-hand-man-holding-mobile-smartphone-with-mail-phone-email-chat-icon-cutomer-support-concept-blue-wide-banner_256259-3866.jpg');
 }
 
 .parallax7 {
@@ -568,7 +571,8 @@ html {
   width: 30%;
   height: 20vw;
   margin-right: 3%;
-  margin-bottom: 1%;
+  margin-bottom: 1.5%;
+  background-color: #fff;
 }
 
 .home_feature{

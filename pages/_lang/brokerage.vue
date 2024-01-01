@@ -52,6 +52,7 @@
     <!-- Features -->
     <section class="flat-row brokerage-sol">
       <div class="container">
+        
         <div class="row">
           <div class="col-md-12">
             <div class="title-section">
@@ -66,6 +67,58 @@
         </div>
 
         <div class="row">
+          
+          <div class="col-lg-4 col-md-6 products_row_3 display_feature">
+            <div class="iconbox center circle large services-block-three">
+              <a href="javascript:void(0)" class="service_block_a">
+                <div class="box-header custom_icons">
+                  <div><i class="fa fa-check"></i></div>
+                  <div class="box-title">
+                    {{ $t('features.agent.box3.title') }}
+                  </div>
+                </div>
+                <div class="box-content">
+                  <ul>
+                    <li v-if="selected === 1">
+                      {{ $t('features.agent.box3.list.list1') }}
+                    </li>
+                    <!-- <li>{{ $t('features.agent.box3.list.list2') }}</li> -->
+                    <li>{{ $t('features.agent.box3.list.list3') }}</li>
+                    <li>{{ $t('features.agent.box3.list.list4') }}</li>
+                  </ul>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 products_row_1 display_feature">
+            <div class="iconbox center circle large services-block-three">
+              <a href="javascript:void(0)" class="service_block_a">
+                <div class="box-header custom_icons">
+                  <div><i class="fa fa-link"></i></div>
+                  <div class="box-title">
+                    <div v-if="selected === 2" class="box-title">
+                      {{ $t('features.brokerage.box1.titleQc') }}
+                    </div>
+                    <div v-else class="box-title">
+                      {{ $t('features.brokerage.box1.title') }}
+                    </div>
+                  </div>
+                </div>
+                <div class="box-content">
+                  <ul>
+                    <li v-if="selected === 2">
+                      {{ $t('features.brokerage.box1.list.list1Qc') }}
+                    </li>
+                    <li v-else>
+                      {{ $t('features.brokerage.box1.list.list1') }}
+                    </li>
+                  </ul>
+                </div>
+              </a>
+            </div>
+          </div>
+
           <div
             class="col-lg-4 col-md-6 margin-30px-bottom products_row_1 display_feature"
           >
@@ -350,6 +403,32 @@
             </div>
           </div>
 
+          <div class="col-lg-4 col-md-6 margin-30px-bottom products_row_1 display_feature" >
+            <div class="iconbox center circle large services-block-three">
+              <a href="javascript:void(0)" class="service_block_a">
+                <div class="box-header custom_icons">
+                  <div><i class="fa fa-exchange"></i></div>
+                  <div class="box-title">
+                    {{
+                      $t('featuresProducts.products.transactionManagement.title')
+                    }}
+                  </div>
+                </div>
+                <div class="box-content">
+                  <ul>
+                    <li>
+                      {{
+                        $t(
+                          'featuresProducts.products.transactionManagement.description2'
+                        )
+                      }}
+                    </li>
+                  </ul>
+                </div>
+              </a>
+            </div>
+          </div>
+
           <div class="col-lg-4 col-md-6 margin-80px-bottom products_row_3 display_feature" >
             <div class="iconbox center circle large services-block-three">
               <a href="javascript:void(0)" class="service_block_a">
@@ -373,6 +452,8 @@
               </a>
             </div>
           </div>
+
+         
         </div>
       </div>
     </section>
@@ -395,6 +476,7 @@ export default {
     Rfp,
     VideoSection,
   },
+  
   data() {
     return {
       metaTitle: this.$t('links.brokerage'),
@@ -419,7 +501,9 @@ export default {
       ],
     }
   },
+  
   head() {
+    
     return {
       title: this.metaTitle,
       meta: [
