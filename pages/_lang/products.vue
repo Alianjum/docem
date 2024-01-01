@@ -31,151 +31,26 @@
         </div>
       </div>
 
-      <!-- cards -->
-      <div class="row" style="margin-left: 70px">
-        <div
-          class="col-lg-4 col-md-6 margin-30px-bottom products_row_1 display_feature"
-        >
-          <div class="iconbox center circle large services-block-three">
-            <a href="javascript:void(0)" class="service_block_a">
-              <div class="box-header custom_icons">
-                <div><i class="fa fa-file-text-o"></i></div>
-                <div class="box-title">
-                  {{ $t('featuresProducts.products.eform.title') }}
-                </div>
-              </div>
-              <div class="box-content">
-                <ul>
-                  <li>
-                    {{ $t('featuresProducts.products.eform.description') }}
-                  </li>
-                </ul>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div
-          class="col-lg-4 col-md-6 margin-30px-bottom products_row_1 display_feature"
-        >
-          <div class="iconbox center circle large services-block-three">
-            <a href="javascript:void(0)" class="service_block_a">
-              <div class="box-header custom_icons">
-                <div><i class="fa fa-calendar"></i></div>
-                <div class="box-title">
-                  {{ $t('featuresProducts.products.showingManagement.title') }}
-                </div>
-              </div>
-              <div class="box-content">
-                <ul>
-                  <li>
-                    {{
-                      $t(
-                        'featuresProducts.products.showingManagement.description'
-                      )
-                    }}
-                  </li>
-                </ul>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div
-          class="col-lg-4 col-md-6 margin-30px-bottom products_row_1 display_feature"
-        >
-          <div class="iconbox center circle large services-block-three">
-            <a href="javascript:void(0)" class="service_block_a">
-              <div class="box-header custom_icons">
-                <div><i class="fa fa-usd"></i></div>
-                <div class="box-title">
-                  {{ $t('featuresProducts.products.offerManagement.title') }}
-                </div>
-              </div>
-              <div class="box-content">
-                <ul>
-                  <li>
-                    {{
-                      $t(
-                        'featuresProducts.products.offerManagement.description'
-                      )
-                    }}
-                  </li>
-                </ul>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 margin-30px-bottom products_row_1 display_feature" >
-          <div class="iconbox center circle large services-block-three">
-            <a href="javascript:void(0)" class="service_block_a">
-              <div class="box-header custom_icons">
-                <div><i class="fa fa-exchange"></i></div>
-                <div class="box-title">
-                  {{
-                    $t('featuresProducts.products.transactionManagement.title')
-                  }}
-                </div>
-              </div>
-              <div class="box-content">
-                <ul>
-                  <li>
-                    {{
-                      $t(
-                        'featuresProducts.products.transactionManagement.description'
-                      )
-                    }}
-                  </li>
-                </ul>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div
-          class="col-lg-4 col-md-6 margin-30px-bottom products_row_1 display_feature"
-        >
-          <div class="iconbox center circle large services-block-three">
-            <a href="javascript:void(0)" class="service_block_a">
-              <div class="box-header custom_icons">
-                <div><i class="fa fa-users"></i></div>
-                <div class="box-title">
-                  {{ $t('featuresProducts.products.rent.title') }}
-                </div>
-              </div>
-              <div class="box-content">
-                <ul>
-                  <li>
-                    {{
-                      $t('featuresProducts.products.rent.description')
-                    }}
-                  </li>
-                </ul>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div
-          class="col-lg-4 col-md-6 margin-30px-bottom products_row_1 display_feature"
-        >
-          <div class="iconbox center circle large services-block-three">
-            <a href="javascript:void(0)" class="service_block_a">
-              <div class="box-header custom_icons">
-                <div><i class="fa fa-home"></i></div>
-                <div class="box-title">
-                  {{ $t('featuresProducts.products.propertyManager.title') }}
-                </div>
-              </div>
-              <div class="box-content">
-                <ul>
-                  <li>
-                    {{
-                      $t(
-                        'featuresProducts.products.propertyManager.description'
-                      )
-                    }}
-                  </li>
-                </ul>
-              </div>
-            </a>
-          </div>
+      <!-- Cards using ImageLeftTextRight and ImageRightTextLeft components -->
+      <div class="container">
+        <div class="row" style="margin-left: 70px">
+          <template v-for="(product, index) in products">
+           <div :key="product.id">
+            <!-- Use ImageLeftTextRight for even indices and ImageRightTextLeft for odd indices -->
+            <ImageLeftTextRight
+              v-if="index % 2 === 0"
+              :title="product.title"
+              :description="product.description"
+              :image="product.image"
+            />
+            <ImageRightTextLeft
+              v-else
+              :title="product.title"
+              :description="product.description"
+              :image="product.image"
+            />
+            </div>
+          </template>
         </div>
       </div>
     </section>
@@ -186,10 +61,14 @@
 // import $ from 'jquery'
 import config from '~/data/siteConfig'
 import PageTitle from '~/components/PageTitle.vue'
+import ImageLeftTextRight from '~/components/ImageLeftTextRight.vue'
+import ImageRightTextLeft from '~/components/ImageRightTextLeft.vue'
 
 export default {
   components: {
     PageTitle,
+    ImageLeftTextRight,
+    ImageRightTextLeft
   },
   data() {
     return {
@@ -203,16 +82,45 @@ export default {
         { id: 2, value: 'qc', province: this.$t('province.qc') },
         { id: 3, value: 'bc', province: this.$t('province.bc') },
         { id: 4, value: 'ab', province: this.$t('province.ab') },
-        { id: 5, value: 'sk', province: this.$t('province.sk') },
-        { id: 6, value: 'mb', province: this.$t('province.mb') },
-        { id: 7, value: 'ns', province: this.$t('province.ns') },
-        { id: 8, value: 'nb', province: this.$t('province.nb') },
-        { id: 9, value: 'pe', province: this.$t('province.pe') },
-        { id: 10, value: 'nl', province: this.$t('province.nl') },
-        { id: 11, value: 'nt', province: this.$t('province.nt') },
-        { id: 12, value: 'nu', province: this.$t('province.nu') },
-        { id: 13, value: 'yt', province: this.$t('province.yt') },
       ],
+      products: [
+        {
+          id: 1,
+          title: this.$t('featuresProducts.products.eform.title'),
+          description: this.$t('featuresProducts.products.eform.description'),
+          image: 'path/to/eform-image.jpg'
+        },
+        {
+          id: 2,
+          title: this.$t('featuresProducts.products.showingManagement.title'),
+          description: this.$t('featuresProducts.products.showingManagement.description'),
+          image: 'path/to/showing-management-image.jpg'
+        },
+        {
+          id: 3,
+          title: this.$t('featuresProducts.products.offerManagement.title'),
+          description: this.$t('featuresProducts.products.offerManagement.description'),
+          image: 'path/to/offer-management-image.jpg'
+        },
+        {
+          id: 4,
+          title: this.$t('featuresProducts.products.transactionManagement.title'),
+          description: this.$t('featuresProducts.products.transactionManagement.description'),
+          image: 'path/to/transaction-management-image.jpg'
+        },
+        {
+          id: 5,
+          title: this.$t('featuresProducts.products.rent.title'),
+          description: this.$t('featuresProducts.products.rent.description'),
+          image: 'path/to/rent-image.jpg'
+        },
+        {
+          id: 6,
+          title: this.$t('featuresProducts.products.propertyManager.title'),
+          description: this.$t('featuresProducts.products.propertyManager.description'),
+          image: 'path/to/property-manager-image.jpg'
+        },
+      ]
     }
   },
   head() {
