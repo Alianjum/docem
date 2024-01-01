@@ -140,7 +140,7 @@ export default {
     viewLess: 'View Less Features',
     products: {
       title: 'Our Products',
-      subTitle: 'These are some of the solutions we have available.',
+      subTitle: 'One single platform for a smarter way of doing real estate.  DocEM saves you time, money and makes you handle your business like a real pro adhering to the highest standards in the industry.',
       description:
         'One single platform for a smarter way of doing real estate. DocEM saves you time, money and makes you handle your business like a real pro adhering to the highest standards in the industry.',
       eform: {
