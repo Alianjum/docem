@@ -55,7 +55,7 @@
                 :to="'#request_form_section'"
                 class="flat-button border-radius-small"
               >
-                {{ $t('links.BookaDemo') }}
+                {{ $t('links.Register') }}
               </NuxtLink>
             </div>
           </div>

@@ -43,6 +43,7 @@ export default {
     contact: 'Contact',
     learnMore: 'Learn More',
     BookaDemo: 'Request a Demo',
+    Register: 'Register',
     register: 'Register Now',
     portal: 'Login to Portal',
     privacy_policy: 'Privacy Policy',
