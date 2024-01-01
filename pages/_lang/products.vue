@@ -33,7 +33,7 @@
 
       <!-- Cards using ImageLeftTextRight and ImageRightTextLeft components -->
       <div class="container">
-        <div class="row" style="margin-left: 70px">
+        <div class="row">
           <template v-for="(product, index) in products">
            <div :key="product.id">
             <!-- Use ImageLeftTextRight for even indices and ImageRightTextLeft for odd indices -->
@@ -88,13 +88,13 @@ export default {
           id: 1,
           title: this.$t('featuresProducts.products.eform.title'),
           description: this.$t('featuresProducts.products.eform.description'),
-          image: 'path/to/eform-image.jpg'
+          image: "https://coreriskservices.com/wp-content/uploads/people.jpg",
         },
         {
           id: 2,
           title: this.$t('featuresProducts.products.showingManagement.title'),
           description: this.$t('featuresProducts.products.showingManagement.description'),
-          image: 'path/to/showing-management-image.jpg'
+          image: 'https://coreriskservices.com/wp-content/uploads/people.jpg'
         },
         {
           id: 3,

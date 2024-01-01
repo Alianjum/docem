@@ -3,9 +3,9 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6">      
-        <div class="video-thumbnail">
+          <div class="video-thumbnail">
             <img
-              :src="videoThumbnail"
+              :src="image"
               alt="Video Thumbnail"
               width="100%"
               height="315"
@@ -13,7 +13,7 @@
           </div>
         </div>
         <div class="col-md-6">
-   <div class="inner-box-about">
+          <div class="inner-box-about">
             <div class="title-box">
               <div class="title">
                 <span>{{ title }}</span> 
@@ -33,11 +33,9 @@ export default {
   props: {
     title: String,
     description: String,
-  },
-  data() {
-    return {
-      videoThumbnail: 'https://img.youtube.com/vi/WcUfcP1l0gg/maxresdefault.jpg',
-    };
+    image: {
+      type: String,
+    },
   },
 };
 </script>
