@@ -94,31 +94,31 @@ export default {
           id: 2,
           title: this.$t('featuresProducts.products.showingManagement.title'),
           description: this.$t('featuresProducts.products.showingManagement.description'),
-          image: 'https://coreriskservices.com/wp-content/uploads/people.jpg'
+          image: 'https://pilbox.themuse.com/image.jpg?filter=antialias&h=343&opt=1&pos=top-left&prog=1&q=keep&url=https%3A%2F%2Fcms-assets.themuse.com%2Fmedia%2Flead%2F9264.jpg&w=700'
         },
         {
           id: 3,
           title: this.$t('featuresProducts.products.offerManagement.title'),
           description: this.$t('featuresProducts.products.offerManagement.description'),
-          image: 'path/to/offer-management-image.jpg'
+          image: 'https://images.spiceworks.com/wp-content/uploads/2021/12/14153401/offer_management_5a2944bc1ea3a.jpg',
         },
         {
           id: 4,
           title: this.$t('featuresProducts.products.transactionManagement.title'),
           description: this.$t('featuresProducts.products.transactionManagement.description'),
-          image: 'path/to/transaction-management-image.jpg'
+          image: 'https://imgcdn.agendadigitale.eu/wp-content/uploads/2019/05/15100405/Digital-Transaction-Management.jpg'
         },
         {
           id: 5,
           title: this.$t('featuresProducts.products.rent.title'),
           description: this.$t('featuresProducts.products.rent.description'),
-          image: 'path/to/rent-image.jpg'
+          image: 'https://www.investopedia.com/thmb/DB67n15J_x4wUNqCWachp6ylHa0=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/_PropertyManagement_anyaberkut-81d439d832e745229cad8de3835a5869.jpg'
         },
         {
           id: 6,
           title: this.$t('featuresProducts.products.propertyManager.title'),
           description: this.$t('featuresProducts.products.propertyManager.description'),
-          image: 'path/to/property-manager-image.jpg'
+          image: 'https://4495544.fs1.hubspotusercontent-na1.net/hub/4495544/hubfs/property%20management%20software%20documents.jpeg?width=810&name=property%20management%20software%20documents.jpeg',
         },
       ]
     }
