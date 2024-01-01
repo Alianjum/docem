@@ -176,6 +176,8 @@
         </div>
       </div>
     </section>
+        <!-- Request For Proposal -->
+    <Rfp pricing="150" footnote-alt2></Rfp> 
   </div>
 </template>
 
@@ -184,11 +186,13 @@
 import config from '~/data/siteConfig'
 import PageTitle from '~/components/PageTitle.vue'
 import VideoSection from '~/components/VideoSection.vue'
+import Rfp from '~/components/Rfp.vue'
 
 export default {
   components: {
     PageTitle,
     VideoSection,
+    Rfp
   },
   data() {
     return {

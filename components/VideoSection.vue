@@ -23,7 +23,7 @@
                 :to="isOnBrokerage ? '#subscription' : '#request_form_section'"
                 class="flat-button border-radius-small"
               >
-                {{ $t('links.BookaDemo') }}
+                {{ buttonText }}
               </NuxtLink>
             </div>
           </div>
@@ -55,6 +55,12 @@
 import config from '~/data/siteConfig'
 
 export default {
+  props: {
+    buttonText: {
+      type: String,
+      default: 'Book a Demo', // Default value if not provided
+    },
+  },
   data() {
     return {
       siteName: config.siteTitle,
