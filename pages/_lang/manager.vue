@@ -183,7 +183,7 @@
     <Promobox></Promobox>
   </div>
 </template>
-
+ 
 <script>
 // import $ from 'jquery'
 import config from '~/data/siteConfig'
