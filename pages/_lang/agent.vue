@@ -103,7 +103,7 @@
             <!-- Features Icons -->
             <div class="col-md-12">
               <div class="row">
-                <div class="col-lg-4 col-md-6 products_row_1 home_feature">
+                <div class="col-lg-4 col-md-6 products_row_1 display_feature">
                   <div class="iconbox center circle large services-block-three">
                     <a href="javascript:void(0)" class="service_block_a">
                       <div class="box-header custom_icons">
@@ -122,11 +122,11 @@
                     </a> 
                   </div>
                 </div>
-                                <div class="col-lg-4 col-md-6 products_row_1 home_feature">
+                <div class="col-lg-4 col-md-6 products_row_1 display_feature">
                   <div class="iconbox center circle large services-block-three">
                     <a href="javascript:void(0)" class="service_block_a">
                       <div class="box-header custom_icons">
-                        <div><i class="fa fa-check"></i></div>
+                        <div><i class="fa fa-file"></i></div>
                         <div class="box-title">
                           {{ $t('features.agent.box2.title') }}
                         </div>
@@ -141,7 +141,7 @@
                     </a> 
                   </div>
                 </div>
-                <div class="col-lg-4 col-md-6 products_row_1 home_feature">
+                <div class="col-lg-4 col-md-6 products_row_1 display_feature">
                   <div class="iconbox center circle large services-block-three">
                     <a href="javascript:void(0)" class="service_block_a">
                       <div class="box-header custom_icons">
@@ -159,7 +159,7 @@
                     </a>
                   </div>
                 </div>
-                <div class="col-lg-4 col-md-6 products_row_1 home_feature">
+                <div class="col-lg-4 col-md-6 products_row_1 display_feature">
                   <div class="iconbox center circle large services-block-three">
                     <a href="javascript:void(0)" class="service_block_a">
                       <div class="box-header custom_icons">
@@ -181,7 +181,7 @@
                     </a>
                   </div>
                 </div>
-                <div class="col-lg-4 col-md-6 products_row_1 home_feature">
+                <div class="col-lg-4 col-md-6 products_row_1 display_feature">
                   <div class="iconbox center circle large services-block-three">
                     <a href="javascript:void(0)" class="service_block_a">
                       <div class="box-header custom_icons">
@@ -203,7 +203,7 @@
                     </a>
                   </div>
                 </div>
-                <div class="col-lg-4 col-md-6 products_row_1 home_feature">
+                <div class="col-lg-4 col-md-6 products_row_1 display_feature">
                   <div class="iconbox center circle large services-block-three">
                     <a href="javascript:void(0)" class="service_block_a">
                       <div class="box-header custom_icons">
