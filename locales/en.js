@@ -145,12 +145,12 @@ export default {
       description:
         'One single platform for a smarter way of doing real estate. DocEM saves you time, money and makes you handle your business like a real pro adhering to the highest standards in the industry.',
       eform: {
-        title: 'eform, esignature and IDV',
+        title: 'eForm, eSignature and IDV',
         description:
           'Completely paperless, safe without compromising the identity of your clients. An easy way to access your forms, having them pre-populated and sign effortlessly. Verify the identity of your clients securely and remain compliant. Ensuring the security and integrity of real estate transactions by verifying the identity of individuals in a reliable and efficient manner.',
       },
       idv: {
-        title: 'eform, esignature and IDV',
+        title: 'eForm, eSignature and IDV',
         description: 'Client remote verification.',
       },
       document: {

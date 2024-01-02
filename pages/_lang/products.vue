@@ -88,7 +88,7 @@ export default {
           id: 1,
           title: this.$t('featuresProducts.products.eform.title'),
           description: this.$t('featuresProducts.products.eform.description'),
-          image: "https://coreriskservices.com/wp-content/uploads/people.jpg",
+          image: "https://www.globalsign.com/application/files/9615/9111/8053/advanced_vs_qualified_electronic_signatures.jpg",
         },
         {
           id: 2,
@@ -113,12 +113,6 @@ export default {
           title: this.$t('featuresProducts.products.rent.title'),
           description: this.$t('featuresProducts.products.rent.description'),
           image: 'https://www.investopedia.com/thmb/DB67n15J_x4wUNqCWachp6ylHa0=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/_PropertyManagement_anyaberkut-81d439d832e745229cad8de3835a5869.jpg'
-        },
-        {
-          id: 6,
-          title: this.$t('featuresProducts.products.propertyManager.title'),
-          description: this.$t('featuresProducts.products.propertyManager.description'),
-          image: 'https://4495544.fs1.hubspotusercontent-na1.net/hub/4495544/hubfs/property%20management%20software%20documents.jpeg?width=810&name=property%20management%20software%20documents.jpeg',
         },
       ]
     }

@@ -14,6 +14,9 @@
       </template>
     </PageTitle>
 
+        <!-- Video Section -->
+   <VideoSection :buttonText="customButtonText" />
+
     <!-- Province Select 
     <section class="flat-row background-theme row-promobox">
       <div class="container">
@@ -77,8 +80,6 @@
         </div>
       </div>
     </section> -->
-
-    <VideoSection></VideoSection>
 
     <!-- Features -->
     <section class="flat-row background-color">
@@ -159,7 +160,7 @@
             <div class="iconbox center circle large services-block-three">
               <a href="javascript:void(0)" class="service_block_a">
                 <div class="box-header custom_icons">
-                  <div><i class="fa fa-envelope"></i></div>
+                  <div><i class="fa fa-building"></i></div>
                   <div class="box-title">
                     {{ $t('features.manager.box1.title') }}
                   </div>
@@ -178,6 +179,8 @@
     </section>
         <!-- Request For Proposal -->
     <Rfp pricing="150" footnote-alt2></Rfp> 
+        <!-- Promobox -->
+    <Promobox></Promobox>
   </div>
 </template>
 
@@ -187,12 +190,14 @@ import config from '~/data/siteConfig'
 import PageTitle from '~/components/PageTitle.vue'
 import VideoSection from '~/components/VideoSection.vue'
 import Rfp from '~/components/Rfp.vue'
+import Promobox from '~/components/Promobox.vue'
 
 export default {
   components: {
     PageTitle,
     VideoSection,
-    Rfp
+    Rfp,
+   Promobox,
   },
   data() {
     return {
@@ -200,6 +205,7 @@ export default {
       metaDesc: this.$t('meta.desc.home'),
       siteName: config.siteTitle,
       selected: '0',
+      customButtonText: 'Request a Demo',
       options: [
         { id: 0, value: '', province: this.$t('province.default') },
         { id: 1, value: 'on', province: this.$t('province.on') },
