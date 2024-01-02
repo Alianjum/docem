@@ -92,7 +92,18 @@ html {
     font-weight: 700;
   }
 }
-
+@media only screen and (max-width:768px){
+  .home_main{
+    flex-direction: column;
+    gap:25px;
+  }
+  .home_feature_index,.display_feature{
+    height: 100% !important;
+  }
+  .display_feature{
+    width: 100% !important;
+  }
+}
 @media only screen and (max-width: 991px) {
   .topinfo {
     flex-direction: row;
@@ -571,7 +582,16 @@ html {
   margin-bottom: 1.5%;
   background-color: #fff;
 }
-
+.home_main{
+  display: flex;
+  column-gap: 20px;
+}
+.home_feature_index{
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  padding: 14px;
+  border-radius: 4px;  
+  height: 20vw;
+}
 .home_feature{
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
   padding: 14px;

@@ -246,8 +246,8 @@
           </div>
         </div>
 
-        <div class="row">
-          <div class="col-md-3 home_feature">
+        <div class="home_main">
+          <div class="col-md-3 home_feature_index">
             <div class="iconbox center circle large platform_card_main">
               <div class="box-header">
                 <!-- <img src="~assets/images/icon/icon2.svg" alt="icon" /> -->
@@ -273,8 +273,8 @@
             </div>
             <!-- /.iconbox -->
           </div>
-          <!-- /.col-md-3 home_feature -->
-          <div class="col-md-3 home_feature">
+          <!-- /.col-md-3 home_feature_index -->
+          <div class="col-md-3 home_feature_index">
             <div class="iconbox center circle large platform_card_main">
               <div class="box-header">
                 <!-- <img src="~assets/images/icon/icon4.svg" alt="icon" /> -->
@@ -300,9 +300,9 @@
             </div>
             <!-- /.iconbox -->
           </div>
-          <!-- /.col-md-3 home_feature -->
+          <!-- /.col-md-3 home_feature_index -->
 
-          <div class="col-md-3 home_feature">
+          <div class="col-md-3 home_feature_index">
             <div class="iconbox center circle large platform_card_main">
               <div class="box-header">
                 <!-- <img src="~assets/images/icon/icon7.svg" alt="icon" /> -->
@@ -328,9 +328,9 @@
             </div>
             <!-- /.iconbox -->
           </div>
-          <!-- /.col-md-3 home_feature -->
+          <!-- /.col-md-3 home_feature_index -->
 
-          <div class="col-md-3 home_feature">
+          <div class="col-md-3 home_feature_index">
             <div class="iconbox center circle large platform_card_main">
               <div class="box-header">
                 <!-- <img src="~assets/images/icon/icon8.svg" alt="icon" /> -->
@@ -356,7 +356,7 @@
             </div>
             <!-- /.iconbox -->
           </div>
-          <!-- /.col-md-3 home_feature -->
+          <!-- /.col-md-3 home_feature_index -->
         </div>
       </div>
       <!-- /.container -->
