@@ -122,6 +122,25 @@
                     </a> 
                   </div>
                 </div>
+                                <div class="col-lg-4 col-md-6 products_row_1 home_feature">
+                  <div class="iconbox center circle large services-block-three">
+                    <a href="javascript:void(0)" class="service_block_a">
+                      <div class="box-header custom_icons">
+                        <div><i class="fa fa-check"></i></div>
+                        <div class="box-title">
+                          {{ $t('features.agent.box2.title') }}
+                        </div>
+                      </div>
+                      <div class="box-content">
+                        <ul>
+                          <li>{{ $t('features.agent.box2.list.list1') }}</li> 
+                          <!-- <li>{{ $t('features.agent.box2.list.list2') }}</li> -->
+                          <li>{{ $t('Unlimited eSignature') }}</li>
+                        </ul>
+                      </div>
+                    </a> 
+                  </div>
+                </div>
                 <div class="col-lg-4 col-md-6 products_row_1 home_feature">
                   <div class="iconbox center circle large services-block-three">
                     <a href="javascript:void(0)" class="service_block_a">
@@ -195,7 +214,7 @@
                       </div>
                       <div class="box-content">
                         <ul>
-                          <li v-if="selected === 2">
+                          <li>
                             {{ $t('features.agent.box6.list.list1') }}
                           </li>
                           <li>
