@@ -98,6 +98,10 @@ export default {
       desc3:
         'and agents who want to optimize their workflow with a paperless solution for day-to-day business operations. An intuitive dashboard that’s easy to master, DocEM is an efficient way to acquire, file, track, store and archive the dozens of documents required for each real estate transaction; It also allows you to manage your showings, invoices, payments and much more. It’s web based, with secure access via the internet, so agents benefit from the convenience of a mobile office.',
     },
+    agent:{
+      title: 'give you time and money',
+      desc: 'DocEM is a self-serve application designed for agents who want to optimize their workflow with a paperless solution for day-to-day business operations. An intuitive dashboard that’s easy to master, DocEM is an efficient way to collaborate with other agents on offers; It also allows you to manage your showings, offers, and much more. It’s web based, with secure access via the internet, so agents benefit from the convenience of a mobile office.',
+    },
     member: {
       desc: 'DocEM a comprehensive solution that combines digital lease management, online rent collection, landlords and property managers can efficiently manage their properties, reduce administrative overhead, and provide a better experience for their tenants',
     },
@@ -112,7 +116,7 @@ export default {
     agentDesc: 'Spend your time selling and chasing more leads, less paper.',
     managerDesc: 'A simple way to manage and collect faster.',
     landlordDesc: 'Better screening, chase less and collect smarter.',
-    association_boardsDesc: 'Better screening, chase less and collect smarter.',
+    association_boardsDesc: 'Standardize the practice.',
   },
   benefits: {
     title: 'Benefits',
@@ -186,12 +190,12 @@ export default {
       association: {
         title: 'Association',
         description:
-          'Standardize the practice across your members, providing them with the tools that allow them to be better agents without compromising client privacy. Enhance security, streamline operations, improve compliance, and deliver a superior client experience, ultimately contributing to greater efficiency, trust, and success in the real estate market.',
+          'DocEM standardizes the practice across your members providing them with the tool that allows them to be better agents, not compromising client privacy. enhance security, streamline operations, improve compliance, and deliver superior client experience, ultimately contributing to greater efficiency, trust, and success in the real estate market.',
       },
       rent: {
         title: 'Rent Management',
         description:
-          'Standardize the practice across your members, providing them with the tools that allow them to be better agents without compromising client privacy. Enhance security, streamline operations, improve compliance, and deliver a superior client experience, ultimately contributing to greater efficiency, trust, and success in the real estate market.',
+          'An easy way to sign your leases and verify the identity of your tenants.  Manage your rent and collect payments more efficiently.',
       },
       propertyManager: {
         title: "Property Manager's Solution",

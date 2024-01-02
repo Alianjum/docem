@@ -342,7 +342,7 @@
                 </div>
               </div>
               <div class="box-content">
-                {{ $t('platforms.managerDesc') }}
+                {{ $t('platforms.landlordDesc') }}
                 <div class="empty-space height30"></div>
                 <div>
                   <NuxtLink

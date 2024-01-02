@@ -94,6 +94,10 @@ export default {
       desc3:
         "et·les·courtiers·immobiliers·qui·veulent·optimiser·leur·productivité·et·améliorer·leurs·opérations·quotidiennes·à·l'aide·d'une·solution·de·gestion·de·documents·électroniques.·Doté·d'un·tableau·de·bord·intuitif·et·facile·à·maitriser, ·DocEM·est·un·moyen·efficace·d'acquérir, ·de·classer, ·de·surveiller,·de·stocker·et·d'archiver·les·dizaines·de·documents·requis·pour·chaque·transaction·immobilière.··Il·permet·aussi·de·gérer·vos·visites, ·factures, ·paiements·et·plus·encore.·C'est·un·logiciel·sur·le·web, ·offrant·un·accès·sécurisé·via·Internet, ·afin·que·les·courtiers·bénéficient·de·la·facilité·d'un·bureau·mobile.",
     },
+    agent:{
+      title: 'Vous redonne temps en argent',
+      desc: 'DocEM est un portail libre-service de gestion interne et externe conçu pour les courtiers immobiliers qui veulent optimiser leur productivité et améliorer leurs opérations quotidiennes à l\'aide d\'une solution de gestion d’offres. Doté d\'un tableau de bord intuitif et facile à maitriser, DocEM est un moyen efficace de gérer vos offres et de collaborer avec les courtiers. Il permet aussi de gérer vos visites et plus encore. C\'est un logiciel sur le web, offrant un accès sécurisé via Internet, afin que les courtiers bénéficient de la facilité d\'un bureau mobile.'
+    },
     member: {
       desc: 'DocEM est un portail libre-service de gestion interne et externe conçu pour les courtiers immobiliers qui veulent optimiser leur productivité et améliorer leurs opérations quotidiennes à l\'aide d\'une solution de gestion d’offres. Doté d\'un tableau de bord intuitif et facile à maitriser, DocEM est un moyen efficace de gérer vos offres et de collaborer avec les courtiers. Il permet aussi de gérer vos visites et plus encore. C\'est un logiciel sur le web, offrant un accès sécurisé via Internet, afin que les courtiers bénéficient de la facilité d\'un bureau mobile.',
     },
@@ -109,7 +113,7 @@ export default {
       'Consacrez plus de temps à vendre et moins de temps aux paperasses',
     managerDesc: 'Pour une gestion et collecte rapide',
     landlordDesc: 'Meilleur dépistage et collecter intelligemment',
-    association_boardsDesc: 'Better screening, chase less and collect smarter.',
+    association_boardsDesc: 'Normaliser la pratique',
   },
   benefits: {
     title: 'Avantages',
@@ -491,14 +495,14 @@ export default {
           'Éliminez la duplication des entrées. Loffre initiale entre les deux agents se traduit automatiquement par une transaction spécifique à chaque courtage. Offre un stockage sécurisé, une organisation et une gestion des documents de transaction, formulaires, contrats et documents connexes. Sintègre de manière transparente avec des systèmes et des plates-formes externes pour faciliter la comptabilité, le paiement, et plus encore.',
       },
       association: {
-        title: 'Association',
+        title: 'Vous conformise',
         description:
-          'Normalisez la pratique au sein de vos membres en leur fournissant les outils qui leur permettent dêtre de meilleurs agents sans compromettre la confidentialité des clients. Améliorez la sécurité, rationalisez les opérations, améliorez la conformité et offrez une expérience client supérieure, contribuant finalement à une plus grande efficacité, confiance et succès sur le marché immobilier.',
+          'DocEM normalise la pratique entre vos membres en leur fournissant l\'outil qui leur permet d\'être de meilleurs courtiers, sans compromettre la confidentialité des clients.   Augment la sécurité, rationalise les opérations, améliore la conformité et offre une expérience client supérieure, contribuant ainsi à une plus grande efficacité, confiance et succès sur le marché immobilier.',
       },
       rent: {
-        title: 'Gestion des Locations',
+        title: 'Gestion de loyer',
         description:
-          'Normalisez la pratique au sein de vos membres en leur fournissant les outils qui leur permettent dêtre de meilleurs agents sans compromettre la confidentialité des clients. Améliorez la sécurité, rationalisez les opérations, améliorez la conformité et offrez une expérience client supérieure, contribuant finalement à une plus grande efficacité, confiance et succès sur le marché immobilier.',
+          'Une facon simple et pour signer vos baux et vérifier l\'identité de vos locataires.  Gérez votre loyer et encaissez les paiements plus efficacement.',
       },
       propertyManager: {
         title: 'Solution pour Gestionnaire de Propriété',
@@ -559,38 +563,38 @@ export default {
         },
       },
     },
-    contact: {
-      toll: 'Sans frais',
-      info: 'Info',
-      sales: 'Ventes',
-      support: 'Soutien',
-      locations: {
-        title: 'Nos installations',
-        toronto: '1400-18 King St East Toronto, Ontario, M5C 1C4, Canada',
-        montreal: '600 - 2000 Montréal, Quebec, H3A 3H3 Canada',
-      },
-      form: {
-        title: 'Nous contacter',
-        formName: 'Prénom',
-        formLastname: 'Nom de famille',
-        formEmail: 'Adresse électronique',
-        formPhone: 'Numéro de téléphone',
-        formMessage: 'Votre message',
-        formSubmit: 'Soumettez votre message',
-      },
+  },
+  contact: {
+    toll: 'Sans frais',
+    info: 'Info',
+    sales: 'Ventes',
+    support: 'Soutien',
+    locations: {
+      title: 'Nos installations',
+      toronto: '1400-18 King St East Toronto, Ontario, M5C 1C4, Canada',
+      montreal: '600 - 2000 Montréal, Quebec, H3A 3H3 Canada',
     },
-    promobox: {
-      title: '100% sans papier',
-      desc: 'DocEM est spécialement conçu pour l’immobilier.',
+    form: {
+      title: 'Nous contacter',
+      formName: 'Prénom',
+      formLastname: 'Nom de famille',
+      formEmail: 'Adresse électronique',
+      formPhone: 'Numéro de téléphone',
+      formMessage: 'Votre message',
+      formSubmit: 'Soumettez votre message',
     },
-    footer: {
-      desc: 'DocEM est un produit alimenté par BACC. Une solution innovatrice pour les agences, courtiers, gestionnaires de propriété et propriétaires.  DocEM est plus qu’un logiciel mais bien une communauté croissante.  On continue d’innover et pousser plus loin.',
-      followUs: 'Suivez nous',
-      contactUs: 'Entrer en contact',
-      quickLinks: 'Liens rapides',
-      poweredBy: 'Alimeté par',
-      copyright: "© Droits d'auteur Docem 2020. Tous les droits sont réservés.",
-    },
+  },
+  promobox: {
+    title: '100% sans papier',
+    desc: 'DocEM est spécialement conçu pour l’immobilier.',
+  },
+  footer: {
+    desc: 'DocEM est un produit alimenté par BACC. Une solution innovatrice pour les agences, courtiers, gestionnaires de propriété et propriétaires.  DocEM est plus qu’un logiciel mais bien une communauté croissante.  On continue d’innover et pousser plus loin.',
+    followUs: 'Suivez nous',
+    contactUs: 'Entrer en contact',
+    quickLinks: 'Liens rapides',
+    poweredBy: 'Alimeté par',
+    copyright: "© Droits d'auteur Docem 2020. Tous les droits sont réservés.",
   },
   privacy_policy: {
     heading: 'Politique de confidentialité de docem.ca',

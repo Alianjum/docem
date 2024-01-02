@@ -86,16 +86,12 @@
         <div class="col-md-6">
           <div class="inner-box-about">
             <div class="title-box">
-              <div class="title">
-                <span>{{ siteName }}</span> {{ $t('about.video.title') }}
+              <div class="title"> 
+                <span>{{ siteName }}</span> {{ $t('about.agent.title') }}
               </div>
             </div>
             <p>
-              DocEM is a self-serve application designed for agents who want to optimize their workflow with a paperless solution for day-to-day business operations.
-              <p>
-                An intuitive dashboard that’s easy to master, DocEM is an efficient way to collaborate with other agents on offers; It also allows you to manage your showings, offers, and much more. 
-              </p>
-              It’s web based, with secure access via the internet, so agents benefit from the convenience of a mobile office.
+             {{ $t('about.agent.desc') }}
             </p>
             <div class="empty-space height30"></div>
             <div>
@@ -446,6 +442,7 @@ export default {
     return {
       metaTitle: this.$t('links.agent'),
       metaDesc: this.$t('meta.desc.home'),
+      siteName: config.siteTitle,
       selected: '0',
       options: [
         { id: 0, value: '', province: this.$t('province.default') },
