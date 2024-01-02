@@ -38,14 +38,14 @@
           <div class="video-thumbnail">
             <img
               v-if="$i18n.locale === 'en'"
-              src="https://img.youtube.com/vi/WcUfcP1l0gg/maxresdefault.jpg"
+              src="~assets/images/borkers-bg.jpg"
               alt="Video Thumbnail"
               width="100%"
               height="315"
             />
             <img
               v-else
-              src="https://img.youtube.com/vi/8ElBHdL5mhw/maxresdefault.jpg"
+              src="~assets/images/borkers-bg.jpg"
               alt="Video Thumbnail"
               width="100%"
               height="315"
@@ -55,7 +55,8 @@
       </div>
     </div>
   </section>
-    <div class="row" style="margin-left: 20%; margin-bottom : 40px">
+  <div class="container">
+    <div class="row">
         <div class="col-lg-4 col-md-6 products_row_1 home_feature">
           <div class="iconbox center circle large services-block-three">
             <a href="javascript:void(0)" class="service_block_a">
@@ -68,8 +69,11 @@
               <div class="box-content">
                 <ul>
                   <li>
-                    {{ $t('features.association.box1.subtitle') }}
-                  </li>
+                    <!-- {{ $t('features.association.box1.subtitle') }} -->
+                    Online form access  </li>
+                  <li>Unlimited eSignature </li>
+                  <li>Remote client identity verification</li>
+                  <li>Compliance and privacy</li>              
                 </ul>
               </div>
             </a>
@@ -120,6 +124,7 @@
           </div>
         </div>
       </div>
+    </div>
       <Rfp pricing="150" footnote-alt2></Rfp>
       <!-- Promobox -->
       <Promobox></Promobox>
