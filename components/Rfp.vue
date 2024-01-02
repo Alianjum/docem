@@ -20,9 +20,6 @@
                 <span v-else>${{ pricing }}</span>
               </span>
             </h2>
-            <h6 v-if="!removeAstrik">
-              * brokerage pricing starts at $250.
-            </h6>
           </div>
         </div>
         <div class="col-md-6 col-md-push-3">

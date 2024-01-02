@@ -32,14 +32,14 @@
           <div class="video-thumbnail">
             <img
               v-if="$i18n.locale === 'en'"
-              src="https://img.youtube.com/vi/WcUfcP1l0gg/maxresdefault.jpg"
+              src="~assets/images/borkers-bg.jpg"
               alt="Video Thumbnail"
               width="100%"
               height="315"
             />
             <img
               v-else
-              src="https://img.youtube.com/vi/8ElBHdL5mhw/maxresdefault.jpg"
+              src="~assets/images/borkers-bg.jpg""
               alt="Video Thumbnail"
               width="100%"
               height="315"

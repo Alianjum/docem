@@ -127,7 +127,7 @@
               <h2><strong>Toronto:</strong></h2>
               <p class="mb-15">{{ $t('contact.locations.toronto') }}</p>
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2887.2777858823947!2d-79.37645268450262!3d43.64238857912159!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4cb2bdf8071a5%3A0x47826b6b0bee317d!2s1%20Yonge%20St%20%231801%2C%20Toronto%2C%20ON%20M5E%201W7!5e0!3m2!1sen!2sca!4v1588787851646!5m2!1sen!2sca"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2886.928671005082!2d-79.37966452434303!3d43.64965235266104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4cb3266bfffff%3A0xa463a1856af9fce!2s18%20King%20St%20E%20Suite%20%231400%2C%20Toronto%2C%20ON%20M5C%201C4%2C%20Canada!5e0!3m2!1sen!2s!4v1704156282833!5m2!1sen!2s"
                 width="100%"
                 height="200"
                 frameborder="0"
