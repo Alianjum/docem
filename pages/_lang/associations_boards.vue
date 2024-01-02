@@ -62,7 +62,7 @@
       </div>
     </div>
   </section>
-    <div class="row" style="margin-left: 40px; margin-bottom : 40px">
+    <div class="row" style="margin-left: 20%; margin-bottom : 40px">
         <div class="col-lg-4 col-md-6 products_row_1 home_feature">
           <div class="iconbox center circle large services-block-three">
             <a href="javascript:void(0)" class="service_block_a">
