@@ -20,10 +20,10 @@
             <div>
               <NuxtLink
                 v-if="!isOnAbout"
-                :to="isOnBrokerage ? '#subscription' : '#request_form_section'"
+                :to="isOnAgent ? '#subscription' : '#request_form_section'"
                 class="flat-button border-radius-small"
               >
-                {{ buttonText }}
+                {{ dynamicButtonText }}
               </NuxtLink>
             </div>
           </div>
@@ -64,17 +64,22 @@ export default {
   data() {
     return {
       siteName: config.siteTitle,
-    }
+    };
   },
   computed: {
     isOnAbout() {
       return this.$route.fullPath.startsWith('/about') ||
         this.$route.fullPath.startsWith('/fr/about');
     },
-    isOnBrokerage() {
+    isOnAgent() {
       return this.$route.fullPath.startsWith('/agent') ||
         this.$route.fullPath.startsWith('/fr/agent');
     },
+    dynamicButtonText() {
+      // Return 'Register' if on an agent page, otherwise use the prop value
+      return this.isOnAgent ? 'Register' : this.buttonText;
+    },
   },
 }
+
 </script>

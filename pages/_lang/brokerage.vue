@@ -460,6 +460,8 @@
 
     <!-- Request For Proposal -->
     <Rfp pricing="150" footnote-alt2></Rfp>
+    <!-- Promobox -->
+    <Promobox></Promobox>
   </div>
 </template>
 
@@ -469,11 +471,13 @@ import config from '~/data/siteConfig'
 import PageTitle from '~/components/PageTitle.vue'
 import Rfp from '~/components/Rfp.vue'
 import VideoSection from '~/components/VideoSection.vue'
+import Promobox from '~/components/Promobox.vue'
 
 export default {
   components: {
     PageTitle,
     Rfp,
+    Promobox,
     VideoSection,
   },
   

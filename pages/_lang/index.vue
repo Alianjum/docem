@@ -55,7 +55,7 @@
               data-masterspeed="1000"
               data-saveperformance="on"
             >
-              <img src="https://st2.depositphotos.com/3591429/11266/i/600/depositphotos_112660602-stock-photo-business-people-meeting.jpg" alt="slider-image" />
+              <img src="~assets/images/slides/bunch-of-brokers-bg.jpg" alt="slider-image" />
               <div
                 class="tp-caption sfl title-slide color-white center"
                 data-x="15"
@@ -127,7 +127,7 @@
                 class="tp-caption sfl flat-button-slider bg-button-slider-32bfc0"
                 data-x="15"
                 data-y="360"
-                data-speed="1000"
+                data-speed="1000" 
                 data-start="2500"
                 data-easing="Power3.easeInOut"
               >
@@ -189,7 +189,7 @@
               data-masterspeed="1000"
               data-saveperformance="on"
             >
-              <img src="https://vilmate.com/wp-content/uploads/2019/09/How-to-develop-a-real-estate-website-and-how-much-it-will-cost_1.jpg" alt="slider-image" />
+              <img src="~assets/images/slides/property-manager-bg.jpg" alt="slider-image" />
               <div
                 class="tp-caption sfl title-slide color-white center"
                 data-x="15"

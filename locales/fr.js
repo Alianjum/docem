@@ -291,6 +291,31 @@ export default {
         },
       },
     },
+    association: {
+      box1:{
+        title: 'Formulaire/signature electronique/VID',
+        list:{
+          list1: 'Online form access',
+          list2: 'Unlimited eSignature',
+          list3: 'Remote client identity verification',
+          list2: 'Compliance and privacy',
+        },
+      },
+      box2:{
+        title: 'Gestion de visites',
+        list:{
+          list1: 'Online showing appointments',
+          list2: 'Owner access',
+        },
+      },
+      box3:{
+        title: 'Gestion d’offres ',
+        list:{
+          list1: 'Submit/Receive offer online',
+          list2: 'Full collaboration',
+        },
+      },
+    },
     agent: {
       title: "Solution de l'agent",
       titleBroker: 'Solution pour les courtiers indépendants',
@@ -310,32 +335,46 @@ export default {
           list1Qc: 'Inscriptions automatiquement chargés de Centris',
         },
       },
-      box2: {
-        title: 'Gestion electronique de documents',
+      box1: {
+        title: 'Formulaire/signature electronique',
         list: {
-          list1: 'Approuvé par l’OACIQ',
-          list2: 'Espace de stockage en ligne illimité',
-          list3: 'Serveurs localisés en Ontario',
-          list4: 'Serveur localisé au Canada',
+          list1: 'Formulaires en ligne',
+          list1Qc: 'Signatures illimitées',
+        },
+      },
+      box2: {
+        title: 'VID',
+        list: {
+          list1: 'Vérification de l’identité des clients à distance',
+          list2: 'Comforme et privé',
         },
       },
       box3: {
-        title: 'Formulaires et signature électroniques',
+        title: 'Gestion de visites',
         list: {
-          list1: 'Formulaires et clauses d’OREA',
-          list2: 'Formulaires et clauses personnalisées d’agence',
-          list2Qc: 'Formulaires et clauses personnalisées d’agence',
-          list3: 'Clauses personnalisées courtier',
-          list3Qc: 'Clauses personnalisées courtier',
-          list4: 'Signatures électroniques illimitées',
-          list5: 'Documents finalisés chargés',
+          list1: 'Rendez-vous en ligne',
+          list2: 'Tableau de bord intégré',
         },
       },
       box4: {
-        title: 'Rapport de crédit',
+        title: 'Gestion d’offres',
         list: {
-          list1: 'Integré avec Equifax',
-          list2: 'Rapport de crédit du consommateur en temps réel',
+          list1: 'Déposer/Recevoir des offres en ligne',
+          list2: 'Collaboration complète',
+        },
+      },
+      box5: {
+        title: 'Rapport',
+        list: {
+          list1: 'De performance',
+          list2: 'Financier',
+        },
+      },
+      box6: {
+        title: 'Accès client',
+        list: {
+          list1: 'Accès en ligne vendeur/acheteur',
+          list2: 'Accès restreint',
         },
       },
     },
