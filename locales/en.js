@@ -354,6 +354,31 @@ export default {
         },
       },
     },
+    association: {
+      box1:{
+        title: 'eForm/eSign/IDV',
+        list:{
+          list1: 'Online form access',
+          list2: 'Unlimited eSignature',
+          list3: 'Remote client identity verification',
+          list2: 'Compliance and privacy',
+        },
+      },
+      box2:{
+        title: 'Showing',
+        list:{
+          list1: 'Online showing appointments',
+          list2: 'Owner access',
+        },
+      },
+      box3:{
+        title: 'Offer management',
+        list:{
+          list1: 'Submit/Receive offer online',
+          list2: 'Full collaboration',
+        },
+      },
+    },
     agent: {
       title: "Agent's Solution",
       titleBroker: "Independant Broker's Solution",
@@ -366,39 +391,45 @@ export default {
       subTitleBrokerQc:
         "For Independent Broker's, DocEM’s platform allows for e-signing all necessary forms to complete a real estate transaction from start to finish.",
       box1: {
-        title: 'Integrated with MLS',
-        titleQc: 'Integrated with Centris',
+        title: 'eForm/eSign',
         list: {
-          list1: 'Your listings automatically loaded from MLS',
-          list1Qc: 'Your listings automatically loaded from Centris',
+          list1: 'Online form access',
+          list1Qc: 'Unlimited eSignature',
         },
       },
       box2: {
-        title: 'Electronic Document Management',
+        title: 'IDV',
         list: {
-          list1: 'Approved by OACIQ',
-          list2: 'Unlimited online storage',
-          list3: 'Server located in Ontario',
-          list4: 'Server located in Canada',
+          list1: 'Verify your client identity remotely',
+          list2: 'Compliance and privacy',
         },
       },
       box3: {
-        title: 'eform, esignature and IDV',
+        title: 'Showing',
         list: {
-          list1: 'All OREA forms and clauses',
-          list2: 'Custom brokerage forms/clauses',
-          list2Qc: 'Custom agency forms/clauses',
-          list3: 'Custom agent clauses',
-          list3Qc: 'Custom brokers clauses',
-          list4: 'Unlimited eSignature',
-          list5: 'Signed documents automatically uploaded',
+          list1: 'Online showing appointments',
+          list2: 'Owner access',
         },
       },
       box4: {
-        title: 'Credit Report',
+        title: 'Offer management',
         list: {
-          list1: 'Integrated with Equifax',
-          list2: 'Pull up to date client credit report in real time',
+          list1: 'Submit/Receive offer online',
+          list2: 'Full collaboration',
+        },
+      },
+      box5: {
+        title: 'Reporting ',
+        list: {
+          list1: 'KPI',
+          list2: 'Financials',
+        },
+      },
+      box6: {
+        title: 'Client access',
+        list: {
+          list1: 'Seller/buyer online access',
+          list2: 'Limited access',
         },
       },
     },

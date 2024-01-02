@@ -109,36 +109,13 @@
                       <div class="box-header custom_icons">
                         <div><i class="fa fa-check"></i></div>
                         <div class="box-title">
-                          {{ $t('features.agent.box3.title') }}
+                          {{ $t('features.agent.box1.title') }}
                         </div>
                       </div>
                       <div class="box-content">
                         <ul>
-                          <li v-if="selected === 1">
-                            {{ $t('features.agent.box3.list.list1') }}
-                          </li>
-                          <!-- <li>{{ $t('features.agent.box3.list.list2') }}</li> -->
-                          <li>{{ $t('features.agent.box3.list.list3') }}</li>
-                          <li>{{ $t('features.agent.box3.list.list4') }}</li>
-                        </ul>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-                <div class="col-lg-4 col-md-6 margin-30px-bottom products_row_1 home_feature">
-                  <div class="iconbox center circle large services-block-three">
-                    <a href="javascript:void(0)" class="service_block_a">
-                      <div class="box-header custom_icons">
-                        <div><i class="fa fa-file-text-o"></i></div>
-                        <div class="box-title">
-                          {{ $t('featuresProducts.products.idv.title') }}
-                        </div>
-                      </div>
-                      <div class="box-content">
-                        <ul>
-                          <li>
-                            {{ $t('featuresProducts.products.idv.description') }}
-                          </li>
+                          <li>{{ $t('features.agent.box1.list.list1') }}</li>
+                          <li>{{ $t('features.agent.box1.list.list2') }}</li>
                         </ul>
                       </div>
                     </a>
@@ -148,22 +125,54 @@
                   <div class="iconbox center circle large services-block-three">
                     <a href="javascript:void(0)" class="service_block_a">
                       <div class="box-header custom_icons">
-                        <div><i class="fa fa-usd"></i></div>
+                        <div><i class="fa fa-check"></i></div>
                         <div class="box-title">
-                          {{ $t('featuresProducts.products.offerManagement.title') }}
+                          {{ $t('features.agent.box3.title') }}
                         </div>
                       </div>
                       <div class="box-content">
                         <ul>
-                          <li v-if="selected === 2">
-                            {{ $t('features.agent.box2.list.list1') }}
-                          </li>
+                          <li>{{ $t('features.agent.box2.list.list1') }}</li>
                           <li>{{ $t('features.agent.box2.list.list2') }}</li>
-                          <li v-if="selected === 1">
-                            {{ $t('features.agent.box2.list.list3') }}
+                        </ul>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 products_row_1 home_feature">
+                  <div class="iconbox center circle large services-block-three">
+                    <a href="javascript:void(0)" class="service_block_a">
+                      <div class="box-header custom_icons">
+                        <div><i class="fa fa-check"></i></div>
+                        <div class="box-title">
+                          {{ $t('features.agent.box3.title') }}
+                        </div>
+                      </div>
+                      <div class="box-content">
+                        <ul>
+                          <li>{{ $t('features.agent.box3.list.list1') }}</li>
+                          <li>{{ $t('features.agent.box3.list.list2') }}</li>
+                        </ul>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 products_row_1 home_feature">
+                  <div class="iconbox center circle large services-block-three">
+                    <a href="javascript:void(0)" class="service_block_a">
+                      <div class="box-header custom_icons">
+                        <div><i class="fa fa-file"></i></div>
+                        <div class="box-title">
+                          {{ $t('features.agent.box4.title') }}
+                        </div>
+                      </div>
+                      <div class="box-content">
+                        <ul>
+                          <li>
+                            {{ $t('features.agent.box4.list.list1') }}
                           </li>
-                          <li v-if="selected === 2">
-                            {{ $t('features.agent.box2.list.list4') }}
+                          <li>
+                            {{ $t('features.agent.box4.list.list2') }}
                           </li>
                         </ul>
                       </div>
@@ -176,27 +185,44 @@
                       <div class="box-header custom_icons">
                         <div><i class="fa fa-file"></i></div>
                         <div class="box-title">
-                          {{ $t('features.agent.box2.title') }}
+                          {{ $t('features.agent.box5.title') }}
                         </div>
                       </div>
                       <div class="box-content">
                         <ul>
-                          <li v-if="selected === 2">
-                            {{ $t('features.agent.box2.list.list1') }}
+                          <li>
+                            {{ $t('features.agent.box5.list.list1') }}
                           </li>
-                          <li>{{ $t('features.agent.box2.list.list2') }}</li>
-                          <li v-if="selected === 1">
-                            {{ $t('features.agent.box2.list.list3') }}
-                          </li>
-                          <li v-if="selected === 2">
-                            {{ $t('features.agent.box2.list.list4') }}
+                          <li>
+                            {{ $t('features.agent.box5.list.list2') }}
                           </li>
                         </ul>
                       </div>
                     </a>
                   </div>
                 </div>
-                
+                <div class="col-lg-4 col-md-6 products_row_1 home_feature">
+                  <div class="iconbox center circle large services-block-three">
+                    <a href="javascript:void(0)" class="service_block_a">
+                      <div class="box-header custom_icons">
+                        <div><i class="fa fa-file"></i></div>
+                        <div class="box-title">
+                          {{ $t('features.agent.box6.title') }}
+                        </div>
+                      </div>
+                      <div class="box-content">
+                        <ul>
+                          <li v-if="selected === 2">
+                            {{ $t('features.agent.box6.list.list1') }}
+                          </li>
+                          <li>
+                            {{ $t('features.agent.box6.list.list2') }}
+                            </li>
+                        </ul>
+                      </div>
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
