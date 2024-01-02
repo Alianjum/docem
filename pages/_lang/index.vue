@@ -269,7 +269,7 @@
                     {{ $t('links.learnMore') }}
                   </NuxtLink>
                 </div>
-              </div>
+              </div> 
             </div>
             <!-- /.iconbox -->
           </div>

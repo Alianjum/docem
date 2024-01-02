@@ -64,8 +64,8 @@ export default {
   data() {
     return {
       siteName: config.siteTitle,
-    };
-  },
+    }; 
+  }, 
   computed: {
     isOnAbout() {
       return this.$route.fullPath.startsWith('/about') ||
