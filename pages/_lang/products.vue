@@ -100,7 +100,7 @@ export default {
           id: 3,
           title: this.$t('featuresProducts.products.offerManagement.title'),
           description: this.$t('featuresProducts.products.offerManagement.description'),
-          image: 'https://images.spiceworks.com/wp-content/uploads/2021/12/14153401/offer_management_5a2944bc1ea3a.jpg',
+          image: 'https://rciars.com/hubfs/Untitled%20design%20%281%29-1.png',
         },
         {
           id: 4,

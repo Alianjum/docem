@@ -61,7 +61,7 @@
           <div class="iconbox center circle large services-block-three">
             <a href="javascript:void(0)" class="service_block_a">
               <div class="box-header custom_icons">
-                <div><i class="fa fa-check"></i></div>
+                <div><i class="fa fa-pencil-square-o"></i></div>
                 <div class="box-title">
                   {{ $t('features.association.box1.title') }}
                 </div>

@@ -3,17 +3,17 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6">      
-          <div class="video-thumbnail">
+          <div class="video-thumbnail" >
             <img
               :src="image"
               alt="Video Thumbnail"
-              width="90%"
+              width="100%"
               height="45vh"
             />
           </div>
         </div>
         <div class="col-md-6">
-          <div class="inner-box-about">
+          <div class="inner-box-about" style="margin-top: 40px;">
             <div class="title-box">
               <div class="title">
                 <span>{{ title }}</span> 
