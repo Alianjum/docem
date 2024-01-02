@@ -71,7 +71,7 @@
             <div class="iconbox center circle large services-block-three">
               <a href="javascript:void(0)" class="service_block_a">
                 <div class="box-header custom_icons">
-                  <div><i class="fa fa-check"></i></div>
+                  <div><i class="fa fa-envelope"></i></div>
                   <div class="box-title">
                     {{ $t('features.brokerage.box1.title') }}
                   </div>
@@ -89,7 +89,7 @@
             <div class="iconbox center circle large services-block-three">
               <a href="javascript:void(0)" class="service_block_a">
                 <div class="box-header custom_icons">
-                  <div><i class="fa fa-check"></i></div>
+                  <div><i class="fa fa-file"></i></div>
                   <div class="box-title">
                     {{ $t('features.brokerage.box2.title') }}
                   </div>
@@ -107,7 +107,8 @@
             <div class="iconbox center circle large services-block-three">
               <a href="javascript:void(0)" class="service_block_a">
                 <div class="box-header custom_icons">
-                  <div><i class="fa fa-check"></i></div>
+                  <div><i class="fa fa-user"></i>
+</div>
                   <div class="box-title">
                     {{ $t('features.brokerage.box3.title') }}
                   </div>
@@ -125,7 +126,8 @@
             <div class="iconbox center circle large services-block-three">
               <a href="javascript:void(0)" class="service_block_a">
                 <div class="box-header custom_icons">
-                  <div><i class="fa fa-check"></i></div>
+                  <div><i class="fa fa-usd"></i>
+</div>
                   <div class="box-title">
                     {{ $t('features.brokerage.box4.title') }}
                   </div>
@@ -143,7 +145,7 @@
             <div class="iconbox center circle large services-block-three">
               <a href="javascript:void(0)" class="service_block_a">
                 <div class="box-header custom_icons">
-                  <div><i class="fa fa-check"></i></div>
+                  <div><i class="fa fa-exchange"></i></div>
                   <div class="box-title">
                     {{ $t('features.brokerage.box5.title') }}
                   </div>
