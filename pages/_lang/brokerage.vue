@@ -15,7 +15,7 @@
     </PageTitle>
 
     <!-- Video Section -->
-    <VideoSection></VideoSection>
+    <VideoSection :buttonText="customButtonText"/>
 
     <!-- Benefits Section -->
     <!-- <section class="flat-row flat-row-alt">
@@ -289,7 +289,7 @@
             <div class="iconbox center circle large services-block-three">
               <a href="javascript:void(0)" class="service_block_a">
                 <div class="box-header custom_icons">
-                  <div><i class="fa fa-file"></i></div>
+                  <div><i class="fa fa-list-ul"></i></div>
                   <div class="box-title">
                     {{ $t('features.brokerage.box13.title') }}
                   </div>
@@ -373,6 +373,7 @@ export default {
       metaDesc: this.$t('meta.desc.home'),
       siteName: config.siteTitle,
       selected: '0',
+      customButtonText: 'Request a Demo',
       options: [
         { id: 0, value: '', province: this.$t('province.default') },
         { id: 1, value: 'on', province: this.$t('province.on') },

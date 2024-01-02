@@ -351,6 +351,7 @@ export default {
         title: 'eForm/eSign',
         list: {
           list1: 'Online form access',
+          list2: 'Unlimited eSignature',
           list1Qc: 'Unlimited eSignature',
         },
       },

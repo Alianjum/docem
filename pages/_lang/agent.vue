@@ -114,36 +114,19 @@
                       </div>
                       <div class="box-content">
                         <ul>
-                          <li>{{ $t('features.agent.box1.list.list1') }}</li>
-                          <li>{{ $t('features.agent.box1.list.list2') }}</li>
+                          <li>{{ $t('features.agent.box1.list.list1') }}</li> 
+                          <!-- <li>{{ $t('features.agent.box1.list.list2') }}</li> -->
+                          <li>{{ $t('Unlimited eSignature') }}</li>
                         </ul>
                       </div>
-                    </a>
+                    </a> 
                   </div>
                 </div>
                 <div class="col-lg-4 col-md-6 products_row_1 home_feature">
                   <div class="iconbox center circle large services-block-three">
                     <a href="javascript:void(0)" class="service_block_a">
                       <div class="box-header custom_icons">
-                        <div><i class="fa fa-check"></i></div>
-                        <div class="box-title">
-                          {{ $t('features.agent.box3.title') }}
-                        </div>
-                      </div>
-                      <div class="box-content">
-                        <ul>
-                          <li>{{ $t('features.agent.box2.list.list1') }}</li>
-                          <li>{{ $t('features.agent.box2.list.list2') }}</li>
-                        </ul>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-                <div class="col-lg-4 col-md-6 products_row_1 home_feature">
-                  <div class="iconbox center circle large services-block-three">
-                    <a href="javascript:void(0)" class="service_block_a">
-                      <div class="box-header custom_icons">
-                        <div><i class="fa fa-check"></i></div>
+                        <div><i class="fa fa-user"></i></div>
                         <div class="box-title">
                           {{ $t('features.agent.box3.title') }}
                         </div>
@@ -161,7 +144,7 @@
                   <div class="iconbox center circle large services-block-three">
                     <a href="javascript:void(0)" class="service_block_a">
                       <div class="box-header custom_icons">
-                        <div><i class="fa fa-file"></i></div>
+                        <div><i class="fa fa-usd"></i></div>
                         <div class="box-title">
                           {{ $t('features.agent.box4.title') }}
                         </div>
@@ -183,7 +166,7 @@
                   <div class="iconbox center circle large services-block-three">
                     <a href="javascript:void(0)" class="service_block_a">
                       <div class="box-header custom_icons">
-                        <div><i class="fa fa-file"></i></div>
+                        <div><i class="fa fa-file-text-o"></i></div>
                         <div class="box-title">
                           {{ $t('features.agent.box5.title') }}
                         </div>
@@ -205,7 +188,7 @@
                   <div class="iconbox center circle large services-block-three">
                     <a href="javascript:void(0)" class="service_block_a">
                       <div class="box-header custom_icons">
-                        <div><i class="fa fa-file"></i></div>
+                        <div><i class="fa fa-key"></i></div>
                         <div class="box-title">
                           {{ $t('features.agent.box6.title') }}
                         </div>

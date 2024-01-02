@@ -7,8 +7,8 @@
             <img
               :src="image"
               alt="Video Thumbnail"
-              width="100%"
-              height="315"
+              width="90%"
+              height="auto"
             />
           </div>
         </div>
