@@ -51,7 +51,7 @@
               />
               <img
                 v-else
-                src="~assets/images/borkers-bg.jpg""
+                src="~assets/images/borkers-bg.jpg"
                 alt="Video Thumbnail"
                 width="100%"
                 height="315"
