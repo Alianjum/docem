@@ -48,7 +48,8 @@ export default {
     portal: 'Login to Portal',
     privacy_policy: 'Privacy Policy',
     terms_of_services: 'Terms of Services',
-    request:"Request a Demo"
+    request:"Request a Demo",
+    BookaDemo1: 'Book a Demo',
   },
   province: {
     default: '-- Select your region',
@@ -96,6 +97,12 @@ export default {
       desc2: 'independent brokers',
       desc3:
         'and agents who want to optimize their workflow with a paperless solution for day-to-day business operations. An intuitive dashboard that’s easy to master, DocEM is an efficient way to acquire, file, track, store and archive the dozens of documents required for each real estate transaction; It also allows you to manage your showings, invoices, payments and much more. It’s web based, with secure access via the internet, so agents benefit from the convenience of a mobile office.',
+    },
+    member: {
+      desc: 'DocEM a comprehensive solution that combines digital lease management, online rent collection, landlords and property managers can efficiently manage their properties, reduce administrative overhead, and provide a better experience for their tenants',
+    },
+    brokerage: {
+      desc: 'DocEM is a self-serve front/back office application designed for real estate brokerages who want to optimize their workflow with a paperless solution for day-to-day business operations. An intuitive dashboard that’s easy to master, DocEM is an efficient way to acquire, file, track, store and archive the dozens of documents required for each real estate transaction; It also allows you to manage your showings, invoices, payments and much more. ',
     },
   },
   platforms: {
@@ -396,69 +403,45 @@ export default {
       subTitle:
         'A safe way to manage the property records of your landlords, share occupancy terms with your tenants, keep track of service requests and facilitate the collection of monthly rent.',
       box1: {
-        title: 'Rent',
+        title: 'eForm/eSign',
         list: {
-          list1: 'Tenant monthly invoice',
-          list2: 'Landlord monthly statement',
+          list1: 'Online form access',
+          list2: 'Unlimited eSignature',
         },
       },
       box2: {
-        title: 'Online Payments',
+        title: 'IDV',
         list: {
-          list1: 'Collect rent through Pre Authorized payment',
-          list2: 'Manage NSF',
-          list3: 'Pay invoice online with credit card',
-          list4: 'Integrated with Paysafe',
+          list1: 'Verify your client identity remotely',
+          list2: 'Compliance and privacy',
         },
       },
       box3: {
-        title: 'Electronic Document Management',
+        title: 'Offer management',
         list: {
-          list1: 'A central repository to manage your property documents',
-          list2: 'Unlimited online storage',
+          list1: 'Submit/Receive offer online',
+          list2: 'Full collaboration',
         },
       },
       box4: {
-        title: 'eForm and eSignature',
+        title: 'Rent management',
         list: {
-          list1: 'Access lease online',
-          list1On: 'Access Residential Tenancy Agreement online',
-          list2: 'Access landlord/tenant forms and notices online',
-          list2On: 'Access landlord/tenant forms and notices online',
-          list3: 'Unlimited eSignature',
-          list4: 'Signed documents automatically uploaded',
+          list1: 'Collect online',
+          list2: 'Multiple payment options',
         },
       },
       box5: {
-        title: 'Credit Report',
+        title: 'Document storage ',
         list: {
-          list1: 'Integrated with Equifax',
-          list2: 'Pull up to date client credit report in real time',
-          list3: 'Integrated with most banks',
+          list1: 'Unlimited online storage',
+          list2: 'Document history',
         },
       },
       box6: {
-        title: 'Monitoring',
+        title: 'Tenant access',
         list: {
-          list1: 'Rent increase',
-          list2: 'End lease',
-          list3: 'Maintenance',
-          list4: 'Service contract',
-        },
-      },
-      box7: {
-        title: 'Workflow',
-        list: {
-          list1: 'Service request',
-          list2: 'Service contract',
-          list3: 'Maintenance',
-        },
-      },
-      box8: {
-        title: 'Reporting',
-        list: {
-          list1: 'Income',
-          list2: 'Expense',
+          list1: 'Rent receipt',
+          list2: 'Maintenance request portal',
         },
       },
     },

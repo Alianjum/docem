@@ -15,7 +15,52 @@
     </PageTitle>
 
     <!-- Video Section -->
-    <VideoSection :buttonText="customButtonText"/>
+    <section class="flat-row background-color">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="inner-box-about">
+              <div class="title-box">
+                <div class="title">
+                  <span>{{ siteName }}</span> {{ $t('about.video.title') }}
+                </div>
+              </div>
+              <p>
+                {{ $t('about.brokerage.desc') }}
+              </p>
+              <div class="empty-space height30"></div>
+              <div>
+                <NuxtLink
+                  v-if="!isOnAbout"
+                  :to="isOnAgent ? '#subscription' : '#request_form_section'"
+                  class="flat-button border-radius-small"
+                >
+                  {{ $t('links.BookaDemo1') }}
+                </NuxtLink>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="video-thumbnail">
+              <img
+                v-if="$i18n.locale === 'en'"
+                src="~assets/images/borkers-bg.jpg"
+                alt="Video Thumbnail"
+                width="100%"
+                height="315"
+              />
+              <img
+                v-else
+                src="~assets/images/borkers-bg.jpg""
+                alt="Video Thumbnail"
+                width="100%"
+                height="315"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Benefits Section -->
     <!-- <section class="flat-row flat-row-alt">
@@ -199,7 +244,7 @@
             <div class="iconbox center circle large services-block-three">
               <a href="javascript:void(0)" class="service_block_a">
                 <div class="box-header custom_icons">
-                  <div><i class="fa fa-file"></i></div>
+                  <div><i class="fa fa-pencil-square-o" aria-hidden="true"></i></div>
                   <div class="box-title">
                     {{ $t('features.brokerage.box8.title') }}
                   </div>
@@ -253,7 +298,7 @@
             <div class="iconbox center circle large services-block-three">
               <a href="javascript:void(0)" class="service_block_a">
                 <div class="box-header custom_icons">
-                  <div><i class="fa fa-file"></i></div>
+                  <div><i class="fa fa-desktop" aria-hidden="true"></i></div>
                   <div class="box-title">
                     {{ $t('features.brokerage.box11.title') }}
                   </div>
@@ -373,7 +418,7 @@ export default {
       metaDesc: this.$t('meta.desc.home'),
       siteName: config.siteTitle,
       selected: '0',
-      customButtonText: 'Request a Demo',
+      customButtonText: 'Book a Demo',
       options: [
         { id: 0, value: '', province: this.$t('province.default') },
         { id: 1, value: 'on', province: this.$t('province.on') },

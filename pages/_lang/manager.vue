@@ -14,9 +14,52 @@
       </template>
     </PageTitle>
 
-        <!-- Video Section -->
-   <VideoSection :buttonText="customButtonText" />
-
+    <!-- Video Section -->
+    <section class="flat-row background-color">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="inner-box-about">
+              <div class="title-box">
+                <div class="title">
+                  <span>{{ siteName }}</span> {{ $t('about.video.title') }}
+                </div>
+              </div>
+              <p>
+                {{ $t('about.member.desc') }}
+              <div class="empty-space height30"></div>
+              <div>
+                <NuxtLink
+                  v-if="!isOnAbout"
+                  :to="isOnAgent ? '#subscription' : '#request_form_section'"
+                  class="flat-button border-radius-small"
+                >
+                  {{ $t('links.request') }}
+                </NuxtLink>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="video-thumbnail">
+              <img
+                v-if="$i18n.locale === 'en'"
+                src="~assets/images/borkers-bg.jpg"
+                alt="Video Thumbnail"
+                width="100%"
+                height="315"
+              />
+              <img
+                v-else
+                src="~assets/images/borkers-bg.jpg"
+                alt="Video Thumbnail"
+                width="100%"
+                height="315"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- Province Select 
     <section class="flat-row background-theme row-promobox">
       <div class="container">
@@ -99,47 +142,47 @@
         </div>
 
         <div class="row">
-
-          <div class="col-lg-4 col-md-6 margin-30px-bottom products_row_3 display_feature">
+          <div class="col-lg-4 col-md-6 products_row_1 home_feature display_feature">
             <div class="iconbox center circle large services-block-three">
               <a href="javascript:void(0)" class="service_block_a">
                 <div class="box-header custom_icons">
                   <div><i class="fa fa-check"></i></div>
                   <div class="box-title">
-                    {{ $t('features.manager.box4.title') }}
+                    {{ $t('features.manager.box1.title') }}
                   </div>
                 </div>
                 <div class="box-content">
                   <ul>
-                    <li v-if="selected != 1">
-                      {{ $t('features.manager.box4.list.list1') }}
-                    </li>
-                    <li v-else>
-                      {{ $t('features.manager.box4.list.list1On') }}
-                    </li>
-                    <li v-if="selected != 1">
-                      {{ $t('features.manager.box4.list.list2') }}
-                    </li>
-                    <li v-else>
-                      {{ $t('features.manager.box4.list.list2On') }}
-                    </li>
-                    <li>
-                      {{ $t('features.manager.box4.list.list3') }}
-                    </li>
-                    <li>
-                      {{ $t('features.manager.box4.list.list4') }}
-                    </li>
+                    <li>{{ $t('features.manager.box1.list.list1') }}</li> 
+                    <li>{{ $t('features.manager.box1.list.list2') }}</li>
                   </ul>
                 </div>
-              </a>
+              </a> 
             </div>
           </div>
-
-          <div class="col-lg-4 col-md-6 margin-30px-bottom products_row_3 display_feature">
+          <div class="col-lg-4 col-md-6 products_row_1 home_feature display_feature">
             <div class="iconbox center circle large services-block-three">
               <a href="javascript:void(0)" class="service_block_a">
                 <div class="box-header custom_icons">
                   <div><i class="fa fa-file"></i></div>
+                  <div class="box-title">
+                    {{ $t('features.manager.box2.title') }}
+                  </div>
+                </div>
+                <div class="box-content">
+                  <ul>
+                    <li>{{ $t('features.manager.box2.list.list1') }}</li> 
+                    <li>{{ $t('features.manager.box2.list.list2') }}</li>
+                  </ul>
+                </div>
+              </a> 
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 products_row_1 home_feature display_feature">
+            <div class="iconbox center circle large services-block-three">
+              <a href="javascript:void(0)" class="service_block_a">
+                <div class="box-header custom_icons">
+                  <div><i class="fa fa-usd"></i></div>
                   <div class="box-title">
                     {{ $t('features.manager.box3.title') }}
                   </div>
@@ -153,22 +196,67 @@
               </a>
             </div>
           </div>
-
-          <div
-            class="col-lg-4 col-md-6 margin-30px-bottom products_row_3 display_feature"
-          >
+          <div class="col-lg-4 col-md-6 products_row_1 home_feature display_feature">
             <div class="iconbox center circle large services-block-three">
               <a href="javascript:void(0)" class="service_block_a">
                 <div class="box-header custom_icons">
-                  <div><i class="fa fa-building"></i></div>
+                  <div><i class="fa fa-money" aria-hidden="true"></i></div>
                   <div class="box-title">
-                    {{ $t('features.manager.box1.title') }}
+                    {{ $t('features.manager.box4.title') }}
                   </div>
                 </div>
                 <div class="box-content">
                   <ul>
-                    <li>{{ $t('features.manager.box1.list.list1') }}</li>
-                    <li>{{ $t('features.manager.box1.list.list2') }}</li>
+                    <li>
+                      {{ $t('features.manager.box4.list.list1') }}
+                    </li>
+                    <li>
+                      {{ $t('features.manager.box4.list.list2') }}
+                    </li>
+                  </ul>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 products_row_1 home_feature display_feature">
+            <div class="iconbox center circle large services-block-three">
+              <a href="javascript:void(0)" class="service_block_a">
+                <div class="box-header custom_icons">
+                  <div><i class="fa fa-database"></i></div>
+                  <div class="box-title">
+                    {{ $t('features.manager.box5.title') }}
+                  </div>
+                </div>
+                <div class="box-content">
+                  <ul>
+                    <li>
+                      {{ $t('features.manager.box5.list.list1') }}
+                    </li>
+                    <li>
+                      {{ $t('features.manager.box5.list.list2') }}
+                    </li>
+                  </ul>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 products_row_1 home_feature display_feature">
+            <div class="iconbox center circle large services-block-three">
+              <a href="javascript:void(0)" class="service_block_a">
+                <div class="box-header custom_icons">
+                  <div><i class="fa fa-unlock-alt" aria-hidden="true"></i></div>
+                  <div class="box-title">
+                    {{ $t('features.manager.box6.title') }}
+                  </div>
+                </div>
+                <div class="box-content">
+                  <ul>
+                    <li>
+                      {{ $t('features.manager.box6.list.list1') }}
+                    </li>
+                    <li>
+                      {{ $t('features.manager.box6.list.list2') }}
+                      </li>
                   </ul>
                 </div>
               </a>

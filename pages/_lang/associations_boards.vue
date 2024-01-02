@@ -31,13 +31,6 @@
             </p>
             <div class="empty-space height30"></div>
             <div>
-              <NuxtLink
-                v-if="!isOnAbout"
-                :to="'#request_form_section'"
-                class="flat-button border-radius-small"
-              >
-                {{ $t('links.request') }}
-              </NuxtLink>
             </div>
           </div>
         </div>
