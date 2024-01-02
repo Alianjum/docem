@@ -48,6 +48,7 @@ export default {
     portal: 'Login to Portal',
     privacy_policy: 'Privacy Policy',
     terms_of_services: 'Terms of Services',
+    request:"Request a Demo"
   },
   province: {
     default: '-- Select your region',
@@ -312,6 +313,7 @@ export default {
     association: {
       box1:{
         title: 'eForm/eSign/IDV',
+        subtitle: "Completely paperless, safe without compromising the identity of your clients.",
         list:{
           list1: 'Online form access',
           list2: 'Unlimited eSignature',

@@ -36,7 +36,7 @@
                 :to="'#request_form_section'"
                 class="flat-button border-radius-small"
               >
-                {{ $t('links.Register') }}
+                {{ $t('links.request') }}
               </NuxtLink>
             </div>
           </div>
@@ -67,7 +67,7 @@
           <div class="iconbox center circle large services-block-three">
             <a href="javascript:void(0)" class="service_block_a">
               <div class="box-header custom_icons">
-                <div><i class="fa fa-file"></i></div>
+                <div><i class="fa fa-check"></i></div>
                 <div class="box-title">
                   {{ $t('features.association.box1.title') }}
                 </div>
@@ -75,16 +75,7 @@
               <div class="box-content">
                 <ul>
                   <li>
-                    {{ $t('features.association.box1.list.list1') }}
-                  </li>
-                  <li>
-                    {{ $t('features.association.box1.list.list2') }}
-                  </li>
-                  <li>
-                    {{ $t('features.association.box1.list.list3') }}
-                  </li>
-                  <li>
-                    {{ $t('features.association.box1.list.list4') }}
+                    {{ $t('features.association.box1.subtitle') }}
                   </li>
                 </ul>
               </div>
@@ -95,7 +86,7 @@
           <div class="iconbox center circle large services-block-three">
             <a href="javascript:void(0)" class="service_block_a">
               <div class="box-header custom_icons">
-                <div><i class="fa fa-file"></i></div>
+                <div><i class="fa fa-calendar"></i></div>
                 <div class="box-title">
                   {{ $t('features.association.box2.title') }}
                 </div>
@@ -117,7 +108,7 @@
           <div class="iconbox center circle large services-block-three">
             <a href="javascript:void(0)" class="service_block_a">
               <div class="box-header custom_icons">
-                <div><i class="fa fa-file"></i></div>
+                <div><i class="fa fa-usd"></i></div>
                 <div class="box-title">
                   {{ $t('features.association.box3.title') }}
                 </div>
