@@ -19,7 +19,7 @@
               :src="image"
               alt="Video Thumbnail"
               width="90%"
-              height="auto"
+              height="45vh"
             />
           </div>
         </div>
