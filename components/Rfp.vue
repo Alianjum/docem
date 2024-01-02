@@ -97,9 +97,10 @@
                 <label for="comment">{{ $t('rfp.formcomment') }}</label>
                 <input id="comment" name="comment" type="text" />
               </p>
-
-              <p class="form-submit" style="width: 100%;">
-                <button name="submit" type="submit" class="pull-right">
+              <!-- reCAPTCHA widget -->
+              <div class="g-recaptcha" data-sitekey="6LcD6e0bAAAAAPU6CXbnX2U58lMdSBg0bxyXyVyq"></div>
+              <p class="form-submit btn_rpf_sbmt_main" style="width: 100%;">
+                <button name="submit" type="submit" class="btn_rpf_sbmt">
                   <i
                     id="formLoader"
                     class="fa fa-spin fa-spinner mr-10"
@@ -134,8 +135,6 @@
 </template>
 
 <script>
-import $ from 'jquery'
-
 export default {
   props: {
     pricing: {
@@ -156,36 +155,75 @@ export default {
     return {
       isBrokerage: false,
       isAssociationsBoardsPage: false,
-      removeAstrik : false,
+      removeAstrik: false,
     };
   },
   mounted() {
-    this.isBrokerage = window.location.href.includes("brokerage") || window.location.href.includes("associations_boards");
-    this.isAssociationsBoardsPage = window.location.href.includes("associations_boards");
-    this.removeAstrik = window.location.href.includes("brokerage") || window.location.href.includes("associations_boards");
-    $('#getaudit').submit(function (e) {
-      e.preventDefault()
-      $('#formLoader').show()
+    this.isBrokerage = window.location.href.includes('brokerage') || window.location.href.includes('associations_boards');
+    this.isAssociationsBoardsPage = window.location.href.includes('associations_boards');
+    this.removeAstrik = window.location.href.includes('brokerage') || window.location.href.includes('associations_boards');
+
+    // Dynamically load the reCAPTCHA script
+    const script = document.createElement('script');
+    script.src = 'https://www.google.com/recaptcha/api.js';
+    script.async = true;
+    script.defer = true;
+    document.head.appendChild(script);
+
+    script.onload = () => {
+      // Initialize reCAPTCHA once the script has loaded
+      grecaptcha.render('recaptcha-container', {
+        sitekey: 'YOUR_RECAPTCHA_SITE_KEY',
+        callback: this.onRecaptchaVerified,
+        'expired-callback': this.onRecaptchaExpired,
+      });
+    };
+
+    // Add your existing form submission logic
+    $('#getaudit').submit((e) => {
+      e.preventDefault();
+
+      // Check if reCAPTCHA is completed
+      const recaptchaResponse = grecaptcha.getResponse();
+      if (!recaptchaResponse) {
+        alert('Please check the reCAPTCHA to prove you are not a robot.');
+        return; // Stop the form submission
+      }
+
+      $('#formLoader').show();
+
       $.ajax({
         url: 'https://preprod.docem.ca/faq/RequestPresentation',
         type: 'post',
-        data: $('#getaudit').serialize(),
+        data: {
+          ...$('#getaudit').serialize(),
+          recaptchaResponse,
+        },
         success() {
-          $('#formThanks').show()
-          $('#formLoader').hide()
-          
+          $('#formThanks').show();
+          $('#formLoader').hide();
         },
         error(msg) {
           if (msg.Success) {
-            $('#formThanks').show()
-            $('#formLoader').hide()
+            $('#formThanks').show();
+            $('#formLoader').hide();
           } else {
-            $('#formError').show()
-            $('#formLoader').hide()
+            $('#formError').show();
+            $('#formLoader').hide();
           }
         },
-      })
-    })
+      });
+    });
   },
-}
+  methods: {
+    onRecaptchaVerified(response) {
+      // Handle reCAPTCHA verification
+      console.log('Recaptcha verified:', response);
+    },
+    onRecaptchaExpired() {
+      // Handle reCAPTCHA expiration
+      console.log('Recaptcha expired');
+    },
+  },
+};
 </script>

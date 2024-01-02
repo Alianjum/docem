@@ -5,7 +5,7 @@
         <div class="col-md-6">
           <div class="inner-box-about">
             <div class="title-box">
-              <div class="title">
+              <div class="title" style="margin-top: 40px;">
                 <span>{{ title }}</span>
               </div>
             </div>
@@ -18,7 +18,7 @@
             <img
               :src="image"
               alt="Video Thumbnail"
-              width="90%"
+              width="100%"
               height="45vh"
             />
           </div>
