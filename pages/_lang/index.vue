@@ -287,7 +287,6 @@
               </div>
               <div class="box-content">
                 {{ $t('platforms.brokerageDesc') }}
-                <div class="empty-space height30"></div>
                 <div style="margin-top: 25px;">
                   <NuxtLink
                     :to="localePath('brokerage')"
@@ -315,7 +314,6 @@
               </div>
               <div class="box-content">
                 {{ $t('platforms.agentDesc') }}
-                <div class="empty-space height30"></div>
                 <div style="margin-top: 25px;">
                   <NuxtLink
                     :to="localePath('agent')"
@@ -343,7 +341,6 @@
               </div>
               <div class="box-content">
                 {{ $t('platforms.landlordDesc') }}
-                <div class="empty-space height30"></div>
                 <div>
                   <NuxtLink
                     :to="localePath('manager')"
