@@ -35,20 +35,20 @@
       <div class="container">
         <div class="row">
           <template v-for="(product, index) in products">
-           <div :key="product.id">
-            <!-- Use ImageLeftTextRight for even indices and ImageRightTextLeft for odd indices -->
-            <ImageLeftTextRight
-              v-if="index % 2 === 0"
-              :title="product.title"
-              :description="product.description"
-              :image="product.image"
-            />
-            <ImageRightTextLeft
-              v-else
-              :title="product.title"
-              :description="product.description"
-              :image="product.image"
-            />
+            <div :key="product.id">
+              <!-- Use ImageLeftTextRight for even indices and ImageRightTextLeft for odd indices -->
+              <ImageLeftTextRight
+                v-if="index % 2 === 0"
+                :title="product.title"
+                :description="product.description"
+                :image="product.image"
+              />
+              <ImageRightTextLeft
+                v-else
+                :title="product.title"
+                :description="product.description"
+                :image="product.image"
+              />
             </div>
           </template>
         </div>
@@ -88,31 +88,32 @@ export default {
           id: 1,
           title: this.$t('featuresProducts.products.eform.title'),
           description: this.$t('featuresProducts.products.eform.description'),
-          image: "https://www.globalsign.com/application/files/9615/9111/8053/advanced_vs_qualified_electronic_signatures.jpg",
-        },
+          image: "https://resources.gonitro.com/dims4/default/79c6c38/2147483647/strip/true/crop/800x420+0+33/resize/1200x630!/quality/90/?url=http%3A%2F%2Fnitro-brightspot.s3.us-west-2.amazonaws.com%2F16%2F64%2F2af204f34b20a19b7a47c3a8519f%2Felectronic-signature.png"
+
+               },
         {
           id: 2,
           title: this.$t('featuresProducts.products.showingManagement.title'),
           description: this.$t('featuresProducts.products.showingManagement.description'),
-          image: 'https://pilbox.themuse.com/image.jpg?filter=antialias&h=343&opt=1&pos=top-left&prog=1&q=keep&url=https%3A%2F%2Fcms-assets.themuse.com%2Fmedia%2Flead%2F9264.jpg&w=700'
+          image: 'https://cdn.create.vista.com/api/media/medium/358868776/stock-photo-side-view-employee-holding-clipboard-resume-recruiters-table?token='
         },
         {
           id: 3,
           title: this.$t('featuresProducts.products.offerManagement.title'),
           description: this.$t('featuresProducts.products.offerManagement.description'),
-          image: 'https://rciars.com/hubfs/Untitled%20design%20%281%29-1.png',
+          image: 'https://cdn.create.vista.com/api/media/medium/63887629/stock-photo-successful-businessmen-handshaking?token=',
         },
         {
           id: 4,
           title: this.$t('featuresProducts.products.transactionManagement.title'),
           description: this.$t('featuresProducts.products.transactionManagement.description'),
-          image: 'https://imgcdn.agendadigitale.eu/wp-content/uploads/2019/05/15100405/Digital-Transaction-Management.jpg'
+          image: 'https://novateus.com/blog/wp-content/uploads/2020/07/19-scaled.jpg'
         },
         {
           id: 5,
           title: this.$t('featuresProducts.products.rent.title'),
           description: this.$t('featuresProducts.products.rent.description'),
-          image: 'https://www.investopedia.com/thmb/DB67n15J_x4wUNqCWachp6ylHa0=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/_PropertyManagement_anyaberkut-81d439d832e745229cad8de3835a5869.jpg'
+          image: 'https://learn.roofstock.com/hs-fs/hubfs/iStock-1167467499.jpg?width=767&name=iStock-1167467499.jpg'
         },
       ]
     }
