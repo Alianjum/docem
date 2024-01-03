@@ -81,8 +81,8 @@ export default {
       desc: 'Spend your time selling and chasing more leads, less paper.',
     },
     slide4: {
-      title: 'for Property Manager & Landlord',
-      desc: 'A simple way to manage and collect faster.',
+      title: 'for Property Manager',
+      desc: 'A simple way to manage and collect faster',
     },
     slide5: {
       title: 'for Associations Boards',
