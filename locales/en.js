@@ -18,7 +18,7 @@ export default {
   },
   links: {
     home: 'Home',
-    brokerage: 'Brokerage',
+    brokerage: 'Brokerages',
     association_boards: 'Association & Boards',
     products: 'Products',
     eForm_and_eSignature: 'eForm and eSignature',
@@ -36,8 +36,8 @@ export default {
     Ledgers: 'Ledgers',
     Rent: 'Rent',
     Workflow: 'Workflow',
-    agent: 'Agent',
-    manager: 'Property Manager & Landlord',
+    agent: 'Agents',
+    manager: 'Property Managers',
     landlord: 'Landlord',
     about: 'About',
     contact: 'Contact',
@@ -48,7 +48,7 @@ export default {
     portal: 'Login to Portal',
     privacy_policy: 'Privacy Policy',
     terms_of_services: 'Terms of Services',
-    request:"Request a Demo",
+    request: 'Request a Demo',
     BookaDemo1: 'Book a Demo',
   },
   province: {
@@ -91,14 +91,14 @@ export default {
   },
   about: {
     video: {
-      title: 'Makes it Easy',
+      title: 'Property Manager’s Solution',
       desc1:
         'DocEM is a self-serve front/back office application designed for real estate brokerages,',
       desc2: 'independent brokers',
       desc3:
         'and agents who want to optimize their workflow with a paperless solution for day-to-day business operations. An intuitive dashboard that’s easy to master, DocEM is an efficient way to acquire, file, track, store and archive the dozens of documents required for each real estate transaction; It also allows you to manage your showings, invoices, payments and much more. It’s web based, with secure access via the internet, so agents benefit from the convenience of a mobile office.',
     },
-    agent:{
+    agent: {
       title: 'give you time and money',
       desc: 'DocEM is a self-serve application designed for agents who want to optimize their workflow with a paperless solution for day-to-day business operations. An intuitive dashboard that’s easy to master, DocEM is an efficient way to collaborate with other agents on offers; It also allows you to manage your showings, offers, and much more. It’s web based, with secure access via the internet, so agents benefit from the convenience of a mobile office.',
     },
@@ -111,12 +111,12 @@ export default {
   },
   platforms: {
     title: 'Our Platform',
-    subTitle: 'Select a platform to learn more.',
+    subTitle: 'Select a solution to learn more',
     brokerageDesc: 'A paperless solution for day-to-day business operations.',
     agentDesc: 'Spend your time selling and chasing more leads, less paper.',
     managerDesc: 'A simple way to manage and collect faster.',
-    landlordDesc: 'Better screening, chase less and collect smarter.',
-    association_boardsDesc: 'Standardize the practice.',
+    landlordDesc: 'A simple way to manage and collect faster.',
+    association_boardsDesc: 'Better Screening, chase less and collect smarter.',
   },
   benefits: {
     title: 'Benefits',
@@ -188,7 +188,7 @@ export default {
         description2: 'Eliminate the duplication of entries.',
       },
       association: {
-        title: 'Association',
+        title: 'Associations',
         description:
           'DocEM standardizes the practice across your members providing them with the tool that allows them to be better agents, not compromising client privacy. enhance security, streamline operations, improve compliance, and deliver superior client experience, ultimately contributing to greater efficiency, trust, and success in the real estate market.',
       },
@@ -324,24 +324,31 @@ export default {
     },
     association: {
       box1: {
-        title: 'eForm/eSign/IDV',
+        title: 'eForm/eSign',
         subtitle:
           'Completely paperless, safe without compromising the identity of your clients.',
         list: {
           list1: 'Online form access',
           list2: 'Unlimited eSignature',
-          list3: 'Remote client identity verification',
-          list2: 'Compliance and privacy',
         },
       },
       box2: {
+        title: 'IDV',
+        subtitle:
+          'Completely paperless, safe without compromising the identity of your clients.',
+        list: {
+          list1: 'Remote client identity verification',
+          list2: 'Compliance and privacy',
+        },
+      },
+      box3: {
         title: 'Showing',
         list: {
           list1: 'Online showing appointments',
           list2: 'Owner access',
         },
       },
-      box3: {
+      box4: {
         title: 'Offer management',
         list: {
           list1: 'Submit/Receive offer online',

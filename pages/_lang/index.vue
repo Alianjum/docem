@@ -278,7 +278,7 @@
             <div class="iconbox center circle large platform_card_main">
               <div class="box-header">
                 <!-- <img src="~assets/images/icon/icon4.svg" alt="icon" /> -->
-                <div><i class="fa fa-file"></i></div>
+                <div><i class="fa fa-exchange"></i></div>
                 <div class="box-title">
                   <NuxtLink :to="localePath('brokerage')">
                     {{ $t('links.brokerage') }}
