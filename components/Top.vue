@@ -53,7 +53,7 @@
             </ul>
             <div class="flat-analysis">
               <div class="flat-language">
-                <ul class="unstyled">
+                <ul class="unstyled"> 
                   <li class="current">
                     <span class="login"
                       ><i class="icon-login"></i> {{ $t('links.portal') }}</span
@@ -61,7 +61,7 @@
                     <ul class="unstyled province">
                       <li>
                         <a href="https://on.docem.ca" target="_blank">{{
-                          $t('province.on')
+                          $t('province.ca')
                         }}</a>
                       </li>
                       <li>
@@ -71,57 +71,7 @@
                       </li>
                       <li>
                         <a href="https://on.docem.ca" target="_blank">{{
-                          $t('province.bc')
-                        }}</a>
-                      </li>
-                      <li>
-                        <a href="https://on.docem.ca" target="_blank">{{
-                          $t('province.ab')
-                        }}</a>
-                      </li>
-                      <li>
-                        <a href="https://on.docem.ca" target="_blank">{{
-                          $t('province.sk')
-                        }}</a>
-                      </li>
-                      <li>
-                        <a href="https://on.docem.ca" target="_blank">{{
-                          $t('province.mb')
-                        }}</a>
-                      </li>
-                      <li>
-                        <a href="https://on.docem.ca" target="_blank">{{
-                          $t('province.ns')
-                        }}</a>
-                      </li>
-                      <li>
-                        <a href="https://on.docem.ca" target="_blank">{{
-                          $t('province.nb')
-                        }}</a>
-                      </li>
-                      <li>
-                        <a href="https://on.docem.ca" target="_blank">{{
-                          $t('province.pe')
-                        }}</a>
-                      </li>
-                      <li>
-                        <a href="https://on.docem.ca" target="_blank">{{
-                          $t('province.nl')
-                        }}</a>
-                      </li>
-                      <li>
-                        <a href="https://on.docem.ca" target="_blank">{{
-                          $t('province.nt')
-                        }}</a>
-                      </li>
-                      <li>
-                        <a href="https://on.docem.ca" target="_blank">{{
-                          $t('province.nu')
-                        }}</a>
-                      </li>
-                      <li>
-                        <a href="https://on.docem.ca" target="_blank">{{
-                          $t('province.yt')
+                          $t('province.us')
                         }}</a>
                       </li>
                     </ul>
