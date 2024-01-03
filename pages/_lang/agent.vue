@@ -97,7 +97,7 @@
             <div>
               <NuxtLink
                 v-if="!isOnAbout"
-                :to="isOnAgent ? '#subscription' : '#request_form_section'"
+                :to="isOnAgent ? '#subscriptions' : '#subscription'"
                 class="flat-button border-radius-small"
               >
                 {{ 'Register' }}
