@@ -23,7 +23,7 @@
           <div class="inner-box-about">
             <div class="title-box">
               <div class="title">
-                <span>{{ siteName }}</span> {{ $t('featuresProducts.products.association.title') }}
+                <span>{{ siteName }}</span> {{ $t('featuresProducts.products.association.heading') }}
               </div>
             </div>
             <p>
