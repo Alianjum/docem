@@ -37,7 +37,7 @@ export default {
     Rent: 'Rent',
     Workflow: 'Workflow',
     agent: 'Agents',
-    manager: 'Property Managers',
+    manager: 'Property Manager/Landlord',
     landlord: 'Landlord',
     about: 'About',
     contact: 'Contact',
@@ -103,6 +103,7 @@ export default {
       desc: 'DocEM is a self-serve application designed for agents who want to optimize their workflow with a paperless solution for day-to-day business operations. An intuitive dashboard that’s easy to master, DocEM is an efficient way to collaborate with other agents on offers; It also allows you to manage your showings, offers, and much more. It’s web based, with secure access via the internet, so agents benefit from the convenience of a mobile office.',
     },
     member: {
+      title: 'simplify your management',
       desc: 'DocEM a comprehensive solution that combines digital lease management, online rent collection, landlords and property managers can efficiently manage their properties, reduce administrative overhead, and provide a better experience for their tenants',
     },
     brokerage: {
@@ -115,8 +116,8 @@ export default {
     brokerageDesc: 'A paperless solution for day-to-day business operations.',
     agentDesc: 'Spend your time selling and chasing more leads, less paper.',
     managerDesc: 'A simple way to manage and collect faster.',
-    landlordDesc: 'A simple way to manage and collect faster.',
-    association_boardsDesc: 'Better Screening, chase less and collect smarter.',
+    landlordDesc: 'Meilleur dépistage et collecter intelligemment',
+    association_boardsDesc: 'Standardize the practice.',
   },
   benefits: {
     title: 'Benefits',

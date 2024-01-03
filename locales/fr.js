@@ -18,7 +18,7 @@ export default {
   },
   links: {
     home: 'Accueil',
-    brokerages: 'Agence',
+    brokerage: 'Agence',
     association_boards: 'Association & Boards',
     products: 'Products',
     eForm_and_eSignature: 'eForm and eSignature',
@@ -36,8 +36,8 @@ export default {
     Ledgers: 'Ledgers',
     Rent: 'Rent',
     Workflow: 'Workflow',
-    agents: 'Courtier',
-    manager: 'Gestionnaire immobilier',
+    agent: 'Courtier',
+    manager: 'Gestionnaire d’immeuble/Propriétaire',
     landlord: 'Propriétaire',
     about: 'À propos de',
     contact: 'Contact',
@@ -99,6 +99,7 @@ export default {
       desc: "DocEM est un portail libre-service de gestion interne et externe conçu pour les courtiers immobiliers qui veulent optimiser leur productivité et améliorer leurs opérations quotidiennes à l'aide d'une solution de gestion d’offres. Doté d'un tableau de bord intuitif et facile à maitriser, DocEM est un moyen efficace de gérer vos offres et de collaborer avec les courtiers. Il permet aussi de gérer vos visites et plus encore. C'est un logiciel sur le web, offrant un accès sécurisé via Internet, afin que les courtiers bénéficient de la facilité d'un bureau mobile.",
     },
     member: {
+      title: 'Vous redonne temps en argent',
       desc: "DocEM est un portail libre-service de gestion interne et externe conçu pour les courtiers immobiliers qui veulent optimiser leur productivité et améliorer leurs opérations quotidiennes à l'aide d'une solution de gestion d’offres. Doté d'un tableau de bord intuitif et facile à maitriser, DocEM est un moyen efficace de gérer vos offres et de collaborer avec les courtiers. Il permet aussi de gérer vos visites et plus encore. C'est un logiciel sur le web, offrant un accès sécurisé via Internet, afin que les courtiers bénéficient de la facilité d'un bureau mobile.",
     },
     brokerage: {
@@ -115,7 +116,7 @@ export default {
     managerDesc: 'Pour une gestion et collecte rapide',
     landlordDesc: 'A simple way to manage and collect faster.',
     association_boardsDesc:
-      'Un meilleur dépistage, chassez moins et collectez plus intelligemment.',
+      'Normaliser la pratique',
   },
   benefits: {
     title: 'Avantages',

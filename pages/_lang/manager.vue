@@ -22,7 +22,7 @@
             <div class="inner-box-about">
               <div class="title-box">
                 <div class="title">
-                  <span>{{ siteName }}</span> {{ $t('about.video.title') }}
+                  <span>{{ siteName }}</span> {{ $t('about.member.title') }}
                 </div>
               </div>
               <p>
@@ -31,7 +31,7 @@
               <div>
                 <NuxtLink
                   v-if="!isOnAbout"
-                  :to="isOnAgent ? '#subscription' : '#request_form_section'"
+                  :to="'#request_form_section'"
                   class="flat-button border-radius-small"
                 >
                   {{ $t('links.request') }}
