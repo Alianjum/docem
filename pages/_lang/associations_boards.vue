@@ -288,9 +288,10 @@ export default {
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
   padding: 14px;
   border-radius: 4px;
-  height: 15vw;
+  height: 20vw;
   margin-bottom: 1%;
   margin-top: 1%;
+  background-color: #fff;
 }
 
 .flex{
