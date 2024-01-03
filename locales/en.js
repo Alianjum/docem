@@ -37,7 +37,7 @@ export default {
     Rent: 'Rent',
     Workflow: 'Workflow',
     agent: 'Agents',
-    manager: 'Property Manager/Landlord',
+    manager: 'Property Manager',
     landlord: 'Landlord',
     about: 'About',
     contact: 'Contact',
@@ -190,7 +190,7 @@ export default {
       },
       association: {
         title: 'Associations',
-        heading:'Keep you compliant',
+        heading: 'Keep you compliant',
         description:
           'DocEM standardizes the practice across your members providing them with the tool that allows them to be better agents, not compromising client privacy. enhance security, streamline operations, improve compliance, and deliver superior client experience, ultimately contributing to greater efficiency, trust, and success in the real estate market.',
       },
