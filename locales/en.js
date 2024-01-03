@@ -91,7 +91,7 @@ export default {
   },
   about: {
     video: {
-      title: 'Property Manager’s Solution',
+      title: 'simplify your management',
       desc1:
         'DocEM is a self-serve front/back office application designed for real estate brokerages,',
       desc2: 'independent brokers',
