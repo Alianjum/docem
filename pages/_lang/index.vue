@@ -260,7 +260,6 @@
               </div>
               <div class="box-content">
                 {{ $t('platforms.association_boardsDesc') }}
-                <div class="empty-space height30"></div>
                 <div style="margin-top: 25px;">
                   <NuxtLink
                     :to="localePath('associations_boards')"
@@ -341,7 +340,7 @@
               </div>
               <div class="box-content">
                 {{ $t('platforms.landlordDesc') }}
-                <div>
+                <div style="margin-top: 25px;">
                   <NuxtLink
                     :to="localePath('manager')"
                     class="flat-button border-radius-small"
@@ -440,4 +439,4 @@ export default {
     }
   },
 }
-</script>
+</script>z
