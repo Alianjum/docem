@@ -27,6 +27,7 @@
               </div>
               <p>
                 {{ $t('about.member.desc') }}
+                </p>
               <div class="empty-space height30"></div>
               <div>
                 <NuxtLink
@@ -132,7 +133,7 @@
             <div class="title-section">
               <i class="fa fa-line-chart" aria-hidden="true"></i>
               <h1 class="title">
-                {{ $t('features.manager.title') }}
+                {{ $t('featuresProducts.products.propertyManager.title') }}
               </h1>
               <div class="sub-title">
                 {{ $t('features.manager.subTitle') }}

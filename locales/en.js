@@ -91,7 +91,7 @@ export default {
   },
   about: {
     video: {
-      title: 'Property Manager’s Solution',
+      title: 'simplify your management',
       desc1:
         'DocEM is a self-serve front/back office application designed for real estate brokerages,',
       desc2: 'independent brokers',
@@ -103,7 +103,7 @@ export default {
       desc: 'DocEM is a self-serve application designed for agents who want to optimize their workflow with a paperless solution for day-to-day business operations. An intuitive dashboard that’s easy to master, DocEM is an efficient way to collaborate with other agents on offers; It also allows you to manage your showings, offers, and much more. It’s web based, with secure access via the internet, so agents benefit from the convenience of a mobile office.',
     },
     member: {
-      desc: 'DocEM a comprehensive solution that combines digital lease management, online rent collection, landlords and property managers can efficiently manage their properties, reduce administrative overhead, and provide a better experience for their tenants',
+      desc: 'DocEM a comprehensive solution that combines digital lease management, online rent collection, landlords and property managers can efficiently manage their properties, reduce administrative overhead, and provide a better experience for their tenants.',
     },
     brokerage: {
       desc: 'DocEM is a self-serve front/back office application designed for real estate brokerages who want to optimize their workflow with a paperless solution for day-to-day business operations. An intuitive dashboard that’s easy to master, DocEM is an efficient way to acquire, file, track, store and archive the dozens of documents required for each real estate transaction; It also allows you to manage your showings, invoices, payments and much more. ',
