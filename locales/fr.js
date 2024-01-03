@@ -114,7 +114,7 @@ export default {
     agentDesc:
       'Consacrez plus de temps à vendre et moins de temps aux paperasses',
     managerDesc: 'Pour une gestion et collecte rapide',
-    landlordDesc: 'A simple way to manage and collect faster.',
+    landlordDesc: 'Meilleur dépistage et collecter intelligemment',
     association_boardsDesc:
       'Normaliser la pratique',
   },

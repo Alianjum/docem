@@ -116,7 +116,7 @@ export default {
     brokerageDesc: 'A paperless solution for day-to-day business operations.',
     agentDesc: 'Spend your time selling and chasing more leads, less paper.',
     managerDesc: 'A simple way to manage and collect faster.',
-    landlordDesc: 'Meilleur dépistage et collecter intelligemment',
+    landlordDesc: 'Better screening, chase less and collect faster.',
     association_boardsDesc: 'Standardize the practice.',
   },
   benefits: {
