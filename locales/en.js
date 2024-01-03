@@ -19,7 +19,7 @@ export default {
   links: {
     home: 'Home',
     brokerage: 'Brokerages',
-    association_boards: 'Association & Boards',
+    association_boards: 'Associations & Boards',
     products: 'Products',
     eForm_and_eSignature: 'eForm and eSignature',
     Showing_Requests: 'Showing Requests',
