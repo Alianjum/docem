@@ -109,14 +109,14 @@
               <div class="video-thumbnail">
                 <img
                   v-if="$i18n.locale === 'en'"
-                  src="~assets/images/agent page.webp"
+                  src="~assets/images/agent page.jpg"
                   alt="Video Thumbnail"
                   width="100%"
                   height="315"
                 />
                 <img
                   v-else
-                  src="~assets/images/agent page.webp"
+                  src="~assets/images/agent page.jpg"
                   alt="Video Thumbnail"
                   width="100%"
                   height="315"
