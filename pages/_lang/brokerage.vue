@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- Page title -->
-    <PageTitle class="parallax1">
+    <PageTitle class="parallax-brokerages">
       <template v-slot:title>
         {{ $t('links.brokerage') }}
       </template>

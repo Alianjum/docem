@@ -68,7 +68,7 @@ export default {
   components: {
     PageTitle,
     ImageLeftTextRight,
-    ImageRightTextLeft
+    ImageRightTextLeft,
   },
   data() {
     return {
@@ -88,34 +88,44 @@ export default {
           id: 1,
           title: this.$t('featuresProducts.products.eform.title'),
           description: this.$t('featuresProducts.products.eform.description'),
-          image: "https://resources.gonitro.com/dims4/default/79c6c38/2147483647/strip/true/crop/800x420+0+33/resize/1200x630!/quality/90/?url=http%3A%2F%2Fnitro-brightspot.s3.us-west-2.amazonaws.com%2F16%2F64%2F2af204f34b20a19b7a47c3a8519f%2Felectronic-signature.png"
-
-               },
+          image:
+            'https://resources.gonitro.com/dims4/default/79c6c38/2147483647/strip/true/crop/800x420+0+33/resize/1200x630!/quality/90/?url=http%3A%2F%2Fnitro-brightspot.s3.us-west-2.amazonaws.com%2F16%2F64%2F2af204f34b20a19b7a47c3a8519f%2Felectronic-signature.png',
+        },
         {
           id: 2,
           title: this.$t('featuresProducts.products.showingManagement.title'),
-          description: this.$t('featuresProducts.products.showingManagement.description'),
-          image: 'https://cdn.create.vista.com/api/media/medium/358868776/stock-photo-side-view-employee-holding-clipboard-resume-recruiters-table?token='
+          description: this.$t(
+            'featuresProducts.products.showingManagement.description'
+          ),
+          image: require('@/assets/images/showing management.jpeg'),
         },
         {
           id: 3,
           title: this.$t('featuresProducts.products.offerManagement.title'),
-          description: this.$t('featuresProducts.products.offerManagement.description'),
-          image: 'https://cdn.create.vista.com/api/media/medium/63887629/stock-photo-successful-businessmen-handshaking?token=',
+          description: this.$t(
+            'featuresProducts.products.offerManagement.description'
+          ),
+          image:
+            'https://cdn.create.vista.com/api/media/medium/63887629/stock-photo-successful-businessmen-handshaking?token=',
         },
         {
           id: 4,
-          title: this.$t('featuresProducts.products.transactionManagement.title'),
-          description: this.$t('featuresProducts.products.transactionManagement.description'),
-          image: 'https://novateus.com/blog/wp-content/uploads/2020/07/19-scaled.jpg'
+          title: this.$t(
+            'featuresProducts.products.transactionManagement.title'
+          ),
+          description: this.$t(
+            'featuresProducts.products.transactionManagement.description'
+          ),
+          image: require('@/assets/images/Transaction Management 1.jpeg'),
         },
         {
           id: 5,
           title: this.$t('featuresProducts.products.rent.title'),
           description: this.$t('featuresProducts.products.rent.description'),
-          image: 'https://learn.roofstock.com/hs-fs/hubfs/iStock-1167467499.jpg?width=767&name=iStock-1167467499.jpg'
+          image:
+            'https://learn.roofstock.com/hs-fs/hubfs/iStock-1167467499.jpg?width=767&name=iStock-1167467499.jpg',
         },
-      ]
+      ],
     }
   },
   head() {

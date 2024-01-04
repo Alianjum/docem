@@ -60,17 +60,17 @@
                     >
                     <ul class="unstyled province">
                       <li>
-                        <a href="https://on.docem.ca" target="_blank">{{
+                        <a href="https://ca.docem.net" target="_blank">{{
                           $t('province.ca')
                         }}</a>
                       </li>
                       <li>
-                        <a href="https://qc.docem.ca" target="_blank">{{
+                        <a href="https://qc.docem.net" target="_blank">{{
                           $t('province.qc')
                         }}</a>
                       </li>
                       <li>
-                        <a href="https://on.docem.ca" target="_blank">{{
+                        <a href="https://ca.docem.net" target="_blank">{{
                           $t('province.us')
                         }}</a>
                       </li>

@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- Page title -->
-    <PageTitle class="parallax1">
+    <PageTitle class="parallax2">
       <template v-slot:title>
         {{ $t('links.association_boards') }}
       </template>
