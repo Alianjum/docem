@@ -21,9 +21,11 @@ export default {
     brokerage: 'Agence',
     association_boards: 'Association & Boards',
     products: 'Products',
-    eForm_and_eSignature: 'eForm and eSignature',
-    Showing_Requests: 'Showing Requests',
-    Transaction_management: 'Transaction management',
+    eForm_and_eSignature: 'eForm/eSign/VID',
+    Showing_Requests: 'Gestion de rendez-vous',
+    Transaction_management: 'Gestion d’offres',
+    Offer_management: 'Gestion de transactions',
+    Rent_management: 'Gestion de loyer',
     Integrated_with_MLS: 'Integrated with MLS',
     Accounting: 'Accounting',
     Tax_Report: 'Tax Report',
@@ -518,52 +520,52 @@ export default {
           'Une approche efficace pour gérer votre propriété et suivre les tâches les plus importantes.',
       },
     },
-    pricing: {
-      agent: {
-        plan1: {
-          title: 'PLAN STANDARD',
-          subTitle: 'Rapide, sûr, sécurisé.',
-          time: 'SIGNATURE ILLIMITÉ',
-          creditNote: 'Frais additionnels pour les rapport de crédit',
-        },
-        plan2: {
-          title: 'PLAN STANDARD',
-          subTitle: 'Rapide, sûr, sécurisé.',
-          time: 'SIGNATURE ILLIMITÉ',
-          creditNote: 'Frais additionnels pour les rapport de crédit',
-        },
+  },
+  pricing: {
+    agent: {
+      plan1: {
+        title: 'PLAN STANDARD',
+        subTitle: 'Rapide, sûr, sécurisé.',
+        time: 'SIGNATURE ILLIMITÉ',
+        creditNote: 'Frais additionnels pour les rapport de crédit',
+      },
+      plan2: {
+        title: 'PLAN STANDARD',
+        subTitle: 'Rapide, sûr, sécurisé.',
+        time: 'SIGNATURE ILLIMITÉ',
+        creditNote: 'Frais additionnels pour les rapport de crédit',
       },
     },
-    testimonials: {
-      title: 'Témoignages',
-      brokerage: {
-        testimonial1: {
-          comment:
-            "Ce fut un plaisir de travailler avec Docem au cours des 3 dernières années. La meilleure partie est l'attention personnelle que nous avons toujours eue chaque fois que nécessaire. Nous étions très nerveux au début de notre nouveau courtage, mais Docem nous a soutenus et guidés tout au long du processus. Nous remercions vraiment Docem pour son soutien continu et les améliorations qu'ils apportent au logiciel sur la base des commentaires de notre part et de RECO. Nous souhaitons à Docem une croissance continue et espérons que son équipe maintiendra les normes de service auxquelles nous sommes si habitués.",
-          name: 'Aitzaz Ahmad',
-          company: 'Broker - CITI BROKERS REALTY INC. BROKERAGE',
-        },
-        testimonial2: {
-          comment:
-            'C’est impressionnant de voir à quel que DocEM a évolué.  On était parmi les premier clients en 2013, avec beaucoup mois de courtiers.  Maintenant avec des centaines de courtiers et un plus gros volume de transactions, on ne pourrait pas gérer nos opérations sans cet outil.  On profite de tous les avantages offerts par la plateforme.  Définitivement, il améliore et simplifie nos processus.  Ils continuent d’innover rapidement et de rencontrer nos besoins spécifiques.  Ils sont toujours disponibles pour notre équipe.',
-          name: 'Andreas Patogiannis',
-          company: 'Dirigeant & Cofondateur – LES IMMEUBLES CHARISMA',
-        },
-        testimonial3: {
-          comment:
-            'On a commencé à utiliser DocEM en 2014 et on n’a jamais regarder en arrière.  On recherchait une plateforme facile à utiliser, fiable, pour gérer nos documents et nos courtiers.  DocEM est systématique, présente une interface conviviale, est aussi pratique non seulement pour les administrateurs mais aussi pour les courtiers.  Le service à la clientèle n’a pas d’équivalent.  Anderson et son équipe sont toujours disponible pour nous aider quand on en a de besoin, d’autant plus il travaille avec toi pour s’assure que leur plateforme adresse nos besoins uniques.  Ils sont très professionnels.  On est content de travailler avec une équipe aussi dédiée et compétente.  On planifie être avec eux pour les années à venir.',
-          name: 'Sid Levy',
-          company:
-            'Directeur exécutif et co-propriétaire de VANTAGE MORTGAGE & REALTY GROUP',
-        },
+  },
+  testimonials: {
+    title: 'Témoignages',
+    brokerage: {
+      testimonial1: {
+        comment:
+          "Ce fut un plaisir de travailler avec Docem au cours des 3 dernières années. La meilleure partie est l'attention personnelle que nous avons toujours eue chaque fois que nécessaire. Nous étions très nerveux au début de notre nouveau courtage, mais Docem nous a soutenus et guidés tout au long du processus. Nous remercions vraiment Docem pour son soutien continu et les améliorations qu'ils apportent au logiciel sur la base des commentaires de notre part et de RECO. Nous souhaitons à Docem une croissance continue et espérons que son équipe maintiendra les normes de service auxquelles nous sommes si habitués.",
+        name: 'Aitzaz Ahmad',
+        company: 'Broker - CITI BROKERS REALTY INC. BROKERAGE',
       },
-      agent: {
-        testimonial1: {
-          comment:
-            'Depuis que notre agence Himalaya utilise les services de ce système de gestion de documents et autres services, je peux vous dire qu’un coup qu’on le saisit bien qu’il est facile à utiliser et très ‘user friendly’.  Aussi le service à la clientèle, pour ma part, est excellent!',
-          name: 'Sylvie C.',
-          company: 'Agent - IMMOBILIER HIMALAYA REAL ESTATE CORP.',
-        },
+      testimonial2: {
+        comment:
+          'C’est impressionnant de voir à quel que DocEM a évolué.  On était parmi les premier clients en 2013, avec beaucoup mois de courtiers.  Maintenant avec des centaines de courtiers et un plus gros volume de transactions, on ne pourrait pas gérer nos opérations sans cet outil.  On profite de tous les avantages offerts par la plateforme.  Définitivement, il améliore et simplifie nos processus.  Ils continuent d’innover rapidement et de rencontrer nos besoins spécifiques.  Ils sont toujours disponibles pour notre équipe.',
+        name: 'Andreas Patogiannis',
+        company: 'Dirigeant & Cofondateur – LES IMMEUBLES CHARISMA',
+      },
+      testimonial3: {
+        comment:
+          'On a commencé à utiliser DocEM en 2014 et on n’a jamais regarder en arrière.  On recherchait une plateforme facile à utiliser, fiable, pour gérer nos documents et nos courtiers.  DocEM est systématique, présente une interface conviviale, est aussi pratique non seulement pour les administrateurs mais aussi pour les courtiers.  Le service à la clientèle n’a pas d’équivalent.  Anderson et son équipe sont toujours disponible pour nous aider quand on en a de besoin, d’autant plus il travaille avec toi pour s’assure que leur plateforme adresse nos besoins uniques.  Ils sont très professionnels.  On est content de travailler avec une équipe aussi dédiée et compétente.  On planifie être avec eux pour les années à venir.',
+        name: 'Sid Levy',
+        company:
+          'Directeur exécutif et co-propriétaire de VANTAGE MORTGAGE & REALTY GROUP',
+      },
+    },
+    agent: {
+      testimonial1: {
+        comment:
+          'Depuis que notre agence Himalaya utilise les services de ce système de gestion de documents et autres services, je peux vous dire qu’un coup qu’on le saisit bien qu’il est facile à utiliser et très ‘user friendly’.  Aussi le service à la clientèle, pour ma part, est excellent!',
+        name: 'Sylvie C.',
+        company: 'Agent - IMMOBILIER HIMALAYA REAL ESTATE CORP.',
       },
     },
   },

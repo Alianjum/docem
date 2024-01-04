@@ -154,11 +154,11 @@ html {
 }
 
 .parallax1 {
-  background-image: url('~assets/images/parallax/banner.jpeg');
+  background-image: url('~assets/images/parallax/banner.jpg');
   background-size: 100% 100%;
 }
 .parallax-brokerages {
-  background-image: url('~assets/images/parallax/banner 2.jpeg');
+  background-image: url('~assets/images/parallax/banner 2.jpg');
   background-size: 100% 100%;
 }
 
@@ -597,7 +597,7 @@ html {
     rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
   padding: 14px;
   border-radius: 4px;
-  height: 15vw;
+  height: 20vw;
   position: relative;
   .position-absolute {
     position: absolute;
@@ -610,7 +610,7 @@ html {
     bottom: 20px;
   }
   .button-center {
-    left: 25%;
+    left: 70px;
   }
 }
 .home_feature {
