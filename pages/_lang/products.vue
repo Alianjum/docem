@@ -35,7 +35,7 @@
       <div class="container">
         <div class="row">
           <template v-for="(product, index) in products">
-            <div :key="product.id">
+            <div :key="product.id" :id="formatClass(product.title)">
               <!-- Use ImageLeftTextRight for even indices and ImageRightTextLeft for odd indices -->
               <ImageLeftTextRight
                 v-if="index % 2 === 0"
@@ -69,6 +69,11 @@ export default {
     PageTitle,
     ImageLeftTextRight,
     ImageRightTextLeft,
+  },
+  methods: {
+    formatClass(title) {
+      return title.replace(/[\s,]+/g, '_');
+    }
   },
   data() {
     return {

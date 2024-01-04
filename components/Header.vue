@@ -34,27 +34,27 @@
                   </NuxtLink>
                   <ul v-if="isDropdownOpen" class="dropdown-content">
                     <li>
-                      <NuxtLink :to="localePath('products')">
+                      <NuxtLink :to="'products#eForm_eSignature_and_IDV'">
                         {{ $t('links.eForm_and_eSignature') }}
                       </NuxtLink>
                     </li>
                     <li>
-                      <NuxtLink :to="localePath('products')">
+                      <NuxtLink :to="'products#Showing_Management'">
                         {{ $t('links.Showing_Requests') }}
                       </NuxtLink>
                     </li>
                     <li>
-                      <NuxtLink :to="localePath('products')">
+                      <NuxtLink :to="'products#Offer_Management'">
                         {{ $t('links.Offer_management') }}
                       </NuxtLink>
                     </li>
                     <li>
-                      <NuxtLink :to="localePath('products')">
+                      <NuxtLink :to="'products#Transaction_Management'">
                         {{ $t('links.Transaction_management') }}
                       </NuxtLink>
                     </li>
                     <li>
-                      <NuxtLink :to="localePath('products')">
+                      <NuxtLink :to="'products#Rent_Management'">
                         {{ $t('links.Rent_management') }}
                       </NuxtLink>
                     </li>
