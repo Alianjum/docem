@@ -110,7 +110,7 @@ export default {
   },
   platforms: {
     title: 'Nos plateformes',
-    subTitle: 'Sélectionner une plateforme pour en savoir plus',
+    subTitle: 'Sélectionner une pour en savoir plus',
     brokerageDesc:
       'Une solution sans papier pour les opérations commerciales quotidiennes.',
     agentDesc:
