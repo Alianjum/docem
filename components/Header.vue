@@ -45,57 +45,17 @@
                     </li>
                     <li>
                       <NuxtLink :to="localePath('products')">
+                        {{ $t('links.Offer_management') }}
+                      </NuxtLink>
+                    </li>
+                    <li>
+                      <NuxtLink :to="localePath('products')">
                         {{ $t('links.Transaction_management') }}
                       </NuxtLink>
                     </li>
                     <li>
                       <NuxtLink :to="localePath('products')">
-                        {{ $t('links.Integrated_with_MLS') }}
-                      </NuxtLink>
-                    </li>
-                    <li>
-                      <NuxtLink :to="localePath('products')">
-                        {{ $t('links.Accounting') }}
-                      </NuxtLink>
-                    </li>
-                    <li>
-                      <NuxtLink :to="localePath('products')">
-                        {{ $t('links.Tax_Report') }}
-                      </NuxtLink>
-                    </li>
-                    <li>
-                      <NuxtLink :to="localePath('products')">
-                        {{ $t('links.Electronic_Document_Management') }}
-                      </NuxtLink>
-                    </li>
-                    <li>
-                      <NuxtLink :to="localePath('products')">
-                        {{ $t('links.Reporting') }}
-                      </NuxtLink>
-                    </li>
-                    <li>
-                      <NuxtLink :to="localePath('products')">
-                        {{ $t('links.Online_Payments') }}
-                      </NuxtLink>
-                    </li>
-                    <li>
-                      <NuxtLink :to="localePath('products')">
-                        {{ $t('links.Direct_Deposit') }}
-                      </NuxtLink>
-                    </li>
-                    <li>
-                      <NuxtLink :to="localePath('products')">
-                        {{ $t('links.Invoicing') }}
-                      </NuxtLink>
-                    </li>
-                    <li>
-                      <NuxtLink :to="localePath('products')">
-                        {{ $t('links.Restricted_Access') }}
-                      </NuxtLink>
-                    </li>
-                    <li>
-                      <NuxtLink :to="localePath('products')">
-                        {{ $t('links.Ledgers') }}
+                        {{ $t('links.Rent_management') }}
                       </NuxtLink>
                     </li>
                   </ul>

@@ -5,21 +5,20 @@ import ClientOnly from 'vue-client-only'
 import NoSsr from 'vue-no-ssr'
 import { createRouter } from './router.js'
 import NuxtChild from './components/nuxt-child.js'
-import NuxtError from '../layouts/error.vue'
+import NuxtError from '..\\layouts\\error.vue'
 import Nuxt from './components/nuxt.js'
 import App from './App.js'
 import { setContext, getLocation, getRouteData, normalizeError } from './utils'
 
 /* Plugins */
 
-import nuxt_plugin_pluginutils_60353b96 from 'nuxt_plugin_pluginutils_60353b96' // Source: ./nuxt-i18n/plugin.utils.js (mode: 'all')
-import nuxt_plugin_pluginseo_6edb426e from 'nuxt_plugin_pluginseo_6edb426e' // Source: ./nuxt-i18n/plugin.seo.js (mode: 'all')
-import nuxt_plugin_pluginrouting_22163640 from 'nuxt_plugin_pluginrouting_22163640' // Source: ./nuxt-i18n/plugin.routing.js (mode: 'all')
-import nuxt_plugin_pluginmain_05485d2f from 'nuxt_plugin_pluginmain_05485d2f' // Source: ./nuxt-i18n/plugin.main.js (mode: 'all')
-import nuxt_plugin_workbox_b4a9673c from 'nuxt_plugin_workbox_b4a9673c' // Source: ./workbox.js (mode: 'client')
-import nuxt_plugin_metaplugin_c1a9dd16 from 'nuxt_plugin_metaplugin_c1a9dd16' // Source: ./pwa/meta.plugin.js (mode: 'all')
-import nuxt_plugin_iconplugin_b85a922e from 'nuxt_plugin_iconplugin_b85a922e' // Source: ./pwa/icon.plugin.js (mode: 'all')
-import nuxt_plugin_googleanalytics_5f434fa0 from 'nuxt_plugin_googleanalytics_5f434fa0' // Source: ./google-analytics.js (mode: 'client')
+import nuxt_plugin_workbox_29224fe0 from 'nuxt_plugin_workbox_29224fe0' // Source: .\\workbox.js (mode: 'client')
+import nuxt_plugin_nuxticons_6e5871d4 from 'nuxt_plugin_nuxticons_6e5871d4' // Source: .\\nuxt-icons.js (mode: 'all')
+import nuxt_plugin_pluginutils_170344fa from 'nuxt_plugin_pluginutils_170344fa' // Source: .\\nuxt-i18n\\plugin.utils.js (mode: 'all')
+import nuxt_plugin_pluginseo_4637a264 from 'nuxt_plugin_pluginseo_4637a264' // Source: .\\nuxt-i18n\\plugin.seo.js (mode: 'all')
+import nuxt_plugin_pluginrouting_19467bc5 from 'nuxt_plugin_pluginrouting_19467bc5' // Source: .\\nuxt-i18n\\plugin.routing.js (mode: 'all')
+import nuxt_plugin_pluginmain_7b308dca from 'nuxt_plugin_pluginmain_7b308dca' // Source: .\\nuxt-i18n\\plugin.main.js (mode: 'all')
+import nuxt_plugin_googleanalytics_6191f09c from 'nuxt_plugin_googleanalytics_6191f09c' // Source: .\\google-analytics.js (mode: 'client')
 
 // Component: <ClientOnly>
 Vue.component(ClientOnly.name, ClientOnly)
@@ -70,7 +69,7 @@ async function createApp(ssrContext, config = {}) {
   // here we inject the router and store to all child components,
   // making them available everywhere as `this.$router` and `this.$store`.
   const app = {
-    head: {"title":"DocEM","titleTemplate":"%s - DocEM","meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1, shrink-to-fit=no"},{"http-equiv":"x-ua-compatible","content":"ie=edge"},{"hid":"description","name":"description","content":"DocEM owned and powered by BACC. A leading edge real estate platform for brokers, agents, property managers, landlords and tenants. DocEM is more than a software but a growing community. We are continuing to innovate, reaching wider and further."},{"hid":"twitter:card","name":"twitter:card","content":"summary"},{"hid":"twitter:title","name":"twitter:title","content":"DocEM"},{"hid":"twitter:description","name":"twitter:description","content":"DocEM owned and powered by BACC. A leading edge real estate platform for brokers, agents, property managers, landlords and tenants. DocEM is more than a software but a growing community. We are continuing to innovate, reaching wider and further."},{"hid":"twitter:image","name":"twitter:image","content":"http:\u002F\u002Fwww.docem.ca\u002Ficon.png"},{"hid":"og:title","property":"og:title","content":"DocEM"},{"hid":"og:site_name","property":"og:site_name","content":"DocEM"},{"hid":"og:type","property":"og:type","content":"website"},{"hid":"og:image","property":"og:image","content":"http:\u002F\u002Fwww.docem.ca\u002Ficon.png"},{"hid":"og:description","property":"og:description","content":"DocEM owned and powered by BACC. A leading edge real estate platform for brokers, agents, property managers, landlords and tenants. DocEM is more than a software but a growing community. We are continuing to innovate, reaching wider and further."},{"name":"msapplication-config","content":"\u002Fbrowserconfig.xml"},{"hid":"charset","charset":"utf-8"},{"hid":"mobile-web-app-capable","name":"mobile-web-app-capable","content":"yes"},{"hid":"apple-mobile-web-app-title","name":"apple-mobile-web-app-title","content":"DocEM"},{"hid":"theme-color","name":"theme-color","content":"#00aeff"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.ico"},{"rel":"sitemap","type":"application\u002Fxml","href":"\u002Fsitemap.xml"},{"rel":"stylesheet","type":"text\u002Fcss","href":"\u002Fstyles\u002Fstyle.css"},{"rel":"stylesheet","type":"text\u002Fcss","href":"\u002Fstyles\u002Fresponsive.css"},{"rel":"stylesheet","type":"text\u002Fcss","href":"\u002Fstyles\u002Fanimate.css"},{"hid":"shortcut-icon","rel":"shortcut icon","href":"\u002F_nuxt\u002Ficons\u002Ficon_64x64.7faae5.png"},{"hid":"apple-touch-icon","rel":"apple-touch-icon","href":"\u002F_nuxt\u002Ficons\u002Ficon_512x512.7faae5.png","sizes":"512x512"},{"rel":"manifest","href":"\u002F_nuxt\u002Fmanifest.d810f2b3.json","hid":"manifest"}],"script":[{"src":"https:\u002F\u002Fcode.jquery.com\u002Fjquery-3.5.1.min.js","integrity":"sha256-9\u002FaliU8dGd2tb6OSsuzixeV4y\u002FfaTqgFtohetphbbj0=","crossorigin":"anonymous","type":"text\u002Fjavascript"},{"src":"\u002Fjavascript\u002Fjquery.easing.js","body":true,"type":"text\u002Fjavascript"},{"src":"\u002Fjavascript\u002Fparallax.js","body":true,"type":"text\u002Fjavascript"},{"src":"https:\u002F\u002Fcdnjs.cloudflare.com\u002Fajax\u002Flibs\u002FOwlCarousel2\u002F2.3.4\u002Fowl.carousel.min.js","body":true,"type":"text\u002Fjavascript"},{"src":"\u002Fjavascript\u002Fjquery.themepunch.tools.min.js","body":true,"type":"text\u002Fjavascript"},{"src":"\u002Fjavascript\u002Fjquery.themepunch.revolution.min.js","body":true,"type":"text\u002Fjavascript"}],"style":[],"htmlAttrs":{"lang":"en"}},
+    head: {"title":"DocEM","titleTemplate":"%s - DocEM","meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1, shrink-to-fit=no"},{"http-equiv":"x-ua-compatible","content":"ie=edge"},{"hid":"description","name":"description","content":"DocEM owned and powered by BACC. A leading edge real estate platform for brokers, agents, property managers, landlords and tenants. DocEM is more than a software but a growing community. We are continuing to innovate, reaching wider and further."},{"hid":"twitter:card","name":"twitter:card","content":"summary"},{"hid":"twitter:title","name":"twitter:title","content":"DocEM"},{"hid":"twitter:description","name":"twitter:description","content":"DocEM owned and powered by BACC. A leading edge real estate platform for brokers, agents, property managers, landlords and tenants. DocEM is more than a software but a growing community. We are continuing to innovate, reaching wider and further."},{"hid":"twitter:image","name":"twitter:image","content":"http:\u002F\u002Fwww.docem.ca\u002Ficon.png"},{"hid":"og:title","property":"og:title","content":"DocEM"},{"hid":"og:site_name","property":"og:site_name","content":"DocEM"},{"hid":"og:type","property":"og:type","content":"website"},{"hid":"og:image","property":"og:image","content":"http:\u002F\u002Fwww.docem.ca\u002Ficon.png"},{"hid":"og:description","property":"og:description","content":"DocEM owned and powered by BACC. A leading edge real estate platform for brokers, agents, property managers, landlords and tenants. DocEM is more than a software but a growing community. We are continuing to innovate, reaching wider and further."},{"name":"msapplication-config","content":"\u002Fbrowserconfig.xml"},{"hid":"mobile-web-app-capable","name":"mobile-web-app-capable","content":"yes"},{"hid":"apple-mobile-web-app-title","name":"apple-mobile-web-app-title","content":"DocEM"},{"hid":"theme-color","name":"theme-color","content":"#00aeff"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.ico"},{"rel":"sitemap","type":"application\u002Fxml","href":"\u002Fsitemap.xml"},{"rel":"stylesheet","type":"text\u002Fcss","href":"\u002Fstyles\u002Fstyle.css"},{"rel":"stylesheet","type":"text\u002Fcss","href":"\u002Fstyles\u002Fresponsive.css"},{"rel":"stylesheet","type":"text\u002Fcss","href":"\u002Fstyles\u002Fanimate.css"},{"rel":"manifest","href":"\u002F_nuxt\u002Fmanifest.ad0f12b5.json"},{"rel":"shortcut icon","href":"\u002F_nuxt\u002Ficons\u002Ficon_64.7faae5.png"},{"rel":"apple-touch-icon","href":"\u002F_nuxt\u002Ficons\u002Ficon_512.7faae5.png","sizes":"512x512"}],"script":[{"src":"https:\u002F\u002Fcode.jquery.com\u002Fjquery-3.5.1.min.js","integrity":"sha256-9\u002FaliU8dGd2tb6OSsuzixeV4y\u002FfaTqgFtohetphbbj0=","crossorigin":"anonymous","type":"text\u002Fjavascript"},{"src":"\u002Fjavascript\u002Fjquery.easing.js","body":true,"type":"text\u002Fjavascript"},{"src":"\u002Fjavascript\u002Fparallax.js","body":true,"type":"text\u002Fjavascript"},{"src":"https:\u002F\u002Fcdnjs.cloudflare.com\u002Fajax\u002Flibs\u002FOwlCarousel2\u002F2.3.4\u002Fowl.carousel.min.js","body":true,"type":"text\u002Fjavascript"},{"src":"\u002Fjavascript\u002Fjquery.themepunch.tools.min.js","body":true,"type":"text\u002Fjavascript"},{"src":"\u002Fjavascript\u002Fjquery.themepunch.revolution.min.js","body":true,"type":"text\u002Fjavascript"}],"style":[],"htmlAttrs":{"lang":"en"}},
 
     router,
     nuxt: {
@@ -185,36 +184,32 @@ async function createApp(ssrContext, config = {}) {
   }
   // Plugin execution
 
-  if (typeof nuxt_plugin_pluginutils_60353b96 === 'function') {
-    await nuxt_plugin_pluginutils_60353b96(app.context, inject)
+  if (process.client && typeof nuxt_plugin_workbox_29224fe0 === 'function') {
+    await nuxt_plugin_workbox_29224fe0(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_pluginseo_6edb426e === 'function') {
-    await nuxt_plugin_pluginseo_6edb426e(app.context, inject)
+  if (typeof nuxt_plugin_nuxticons_6e5871d4 === 'function') {
+    await nuxt_plugin_nuxticons_6e5871d4(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_pluginrouting_22163640 === 'function') {
-    await nuxt_plugin_pluginrouting_22163640(app.context, inject)
+  if (typeof nuxt_plugin_pluginutils_170344fa === 'function') {
+    await nuxt_plugin_pluginutils_170344fa(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_pluginmain_05485d2f === 'function') {
-    await nuxt_plugin_pluginmain_05485d2f(app.context, inject)
+  if (typeof nuxt_plugin_pluginseo_4637a264 === 'function') {
+    await nuxt_plugin_pluginseo_4637a264(app.context, inject)
   }
 
-  if (process.client && typeof nuxt_plugin_workbox_b4a9673c === 'function') {
-    await nuxt_plugin_workbox_b4a9673c(app.context, inject)
+  if (typeof nuxt_plugin_pluginrouting_19467bc5 === 'function') {
+    await nuxt_plugin_pluginrouting_19467bc5(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_metaplugin_c1a9dd16 === 'function') {
-    await nuxt_plugin_metaplugin_c1a9dd16(app.context, inject)
+  if (typeof nuxt_plugin_pluginmain_7b308dca === 'function') {
+    await nuxt_plugin_pluginmain_7b308dca(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_iconplugin_b85a922e === 'function') {
-    await nuxt_plugin_iconplugin_b85a922e(app.context, inject)
-  }
-
-  if (process.client && typeof nuxt_plugin_googleanalytics_5f434fa0 === 'function') {
-    await nuxt_plugin_googleanalytics_5f434fa0(app.context, inject)
+  if (process.client && typeof nuxt_plugin_googleanalytics_6191f09c === 'function') {
+    await nuxt_plugin_googleanalytics_6191f09c(app.context, inject)
   }
 
   // Lock enablePreview in context

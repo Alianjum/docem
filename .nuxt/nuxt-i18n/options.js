@@ -17,7 +17,7 @@ export const options = {
   sortRoutes: true,
   strategy: "prefix_except_default",
   lazy: true,
-  langDir: "/workspaces/docem/locales",
+  langDir: "F:\\fiverr\\Gcmconsultingin\\repo\\New folder\\docem\\locales",
   rootRedirect: null,
   detectBrowserLanguage: {"alwaysRedirect":false,"cookieCrossOrigin":false,"cookieDomain":null,"cookieKey":"i18n_redirected","cookieSecure":false,"fallbackLocale":"","onlyOnNoPrefix":false,"onlyOnRoot":false,"useCookie":true},
   differentDomains: false,
@@ -35,6 +35,6 @@ export const options = {
 }
 
 export const localeMessages = {
-  'en.js': () => import('../../locales/en.js' /* webpackChunkName: "lang-en.js" */),
-  'fr.js': () => import('../../locales/fr.js' /* webpackChunkName: "lang-fr.js" */),
+  'en.js': () => import('../..\\locales\\en.js' /* webpackChunkName: "lang-en.js" */),
+  'fr.js': () => import('../..\\locales\\fr.js' /* webpackChunkName: "lang-fr.js" */),
 }

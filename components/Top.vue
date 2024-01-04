@@ -70,7 +70,7 @@
                         }}</a>
                       </li>
                       <li>
-                        <a href="https://ca.docem.net" target="_blank">{{
+                        <a href="https://us.docem.net" target="_blank">{{
                           $t('province.us')
                         }}</a>
                       </li>
