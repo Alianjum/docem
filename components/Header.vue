@@ -34,68 +34,28 @@
                   </NuxtLink>
                   <ul v-if="isDropdownOpen" class="dropdown-content">
                     <li>
-                      <NuxtLink :to="localePath('products')">
+                      <NuxtLink :to="'products#eForm_eSignature_and_IDV'">
                         {{ $t('links.eForm_and_eSignature') }}
                       </NuxtLink>
                     </li>
                     <li>
-                      <NuxtLink :to="localePath('products')">
+                      <NuxtLink :to="'products#Showing_Management'">
                         {{ $t('links.Showing_Requests') }}
                       </NuxtLink>
                     </li>
                     <li>
-                      <NuxtLink :to="localePath('products')">
+                      <NuxtLink :to="'products#Offer_Management'">
+                        {{ $t('links.Offer_management') }}
+                      </NuxtLink>
+                    </li>
+                    <li>
+                      <NuxtLink :to="'products#Transaction_Management'">
                         {{ $t('links.Transaction_management') }}
                       </NuxtLink>
                     </li>
                     <li>
-                      <NuxtLink :to="localePath('products')">
-                        {{ $t('links.Integrated_with_MLS') }}
-                      </NuxtLink>
-                    </li>
-                    <li>
-                      <NuxtLink :to="localePath('products')">
-                        {{ $t('links.Accounting') }}
-                      </NuxtLink>
-                    </li>
-                    <li>
-                      <NuxtLink :to="localePath('products')">
-                        {{ $t('links.Tax_Report') }}
-                      </NuxtLink>
-                    </li>
-                    <li>
-                      <NuxtLink :to="localePath('products')">
-                        {{ $t('links.Electronic_Document_Management') }}
-                      </NuxtLink>
-                    </li>
-                    <li>
-                      <NuxtLink :to="localePath('products')">
-                        {{ $t('links.Reporting') }}
-                      </NuxtLink>
-                    </li>
-                    <li>
-                      <NuxtLink :to="localePath('products')">
-                        {{ $t('links.Online_Payments') }}
-                      </NuxtLink>
-                    </li>
-                    <li>
-                      <NuxtLink :to="localePath('products')">
-                        {{ $t('links.Direct_Deposit') }}
-                      </NuxtLink>
-                    </li>
-                    <li>
-                      <NuxtLink :to="localePath('products')">
-                        {{ $t('links.Invoicing') }}
-                      </NuxtLink>
-                    </li>
-                    <li>
-                      <NuxtLink :to="localePath('products')">
-                        {{ $t('links.Restricted_Access') }}
-                      </NuxtLink>
-                    </li>
-                    <li>
-                      <NuxtLink :to="localePath('products')">
-                        {{ $t('links.Ledgers') }}
+                      <NuxtLink :to="'products#Rent_Management'">
+                        {{ $t('links.Rent_management') }}
                       </NuxtLink>
                     </li>
                   </ul>

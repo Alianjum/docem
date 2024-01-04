@@ -31,151 +31,26 @@
         </div>
       </div>
 
-      <!-- cards -->
-      <div class="row" style="margin-left: 70px">
-        <div
-          class="col-lg-4 col-md-6 margin-30px-bottom products_row_1 display_feature"
-        >
-          <div class="iconbox center circle large services-block-three">
-            <a href="javascript:void(0)" class="service_block_a">
-              <div class="box-header custom_icons">
-                <div><i class="fa fa-file-text-o"></i></div>
-                <div class="box-title">
-                  {{ $t('featuresProducts.products.eform.title') }}
-                </div>
-              </div>
-              <div class="box-content">
-                <ul>
-                  <li>
-                    {{ $t('featuresProducts.products.eform.description') }}
-                  </li>
-                </ul>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div
-          class="col-lg-4 col-md-6 margin-30px-bottom products_row_1 display_feature"
-        >
-          <div class="iconbox center circle large services-block-three">
-            <a href="javascript:void(0)" class="service_block_a">
-              <div class="box-header custom_icons">
-                <div><i class="fa fa-calendar"></i></div>
-                <div class="box-title">
-                  {{ $t('featuresProducts.products.showingManagement.title') }}
-                </div>
-              </div>
-              <div class="box-content">
-                <ul>
-                  <li>
-                    {{
-                      $t(
-                        'featuresProducts.products.showingManagement.description'
-                      )
-                    }}
-                  </li>
-                </ul>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div
-          class="col-lg-4 col-md-6 margin-30px-bottom products_row_1 display_feature"
-        >
-          <div class="iconbox center circle large services-block-three">
-            <a href="javascript:void(0)" class="service_block_a">
-              <div class="box-header custom_icons">
-                <div><i class="fa fa-usd"></i></div>
-                <div class="box-title">
-                  {{ $t('featuresProducts.products.offerManagement.title') }}
-                </div>
-              </div>
-              <div class="box-content">
-                <ul>
-                  <li>
-                    {{
-                      $t(
-                        'featuresProducts.products.offerManagement.description'
-                      )
-                    }}
-                  </li>
-                </ul>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 margin-30px-bottom products_row_1 display_feature" >
-          <div class="iconbox center circle large services-block-three">
-            <a href="javascript:void(0)" class="service_block_a">
-              <div class="box-header custom_icons">
-                <div><i class="fa fa-exchange"></i></div>
-                <div class="box-title">
-                  {{
-                    $t('featuresProducts.products.transactionManagement.title')
-                  }}
-                </div>
-              </div>
-              <div class="box-content">
-                <ul>
-                  <li>
-                    {{
-                      $t(
-                        'featuresProducts.products.transactionManagement.description'
-                      )
-                    }}
-                  </li>
-                </ul>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div
-          class="col-lg-4 col-md-6 margin-30px-bottom products_row_1 display_feature"
-        >
-          <div class="iconbox center circle large services-block-three">
-            <a href="javascript:void(0)" class="service_block_a">
-              <div class="box-header custom_icons">
-                <div><i class="fa fa-users"></i></div>
-                <div class="box-title">
-                  {{ $t('featuresProducts.products.rent.title') }}
-                </div>
-              </div>
-              <div class="box-content">
-                <ul>
-                  <li>
-                    {{
-                      $t('featuresProducts.products.rent.description')
-                    }}
-                  </li>
-                </ul>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div
-          class="col-lg-4 col-md-6 margin-30px-bottom products_row_1 display_feature"
-        >
-          <div class="iconbox center circle large services-block-three">
-            <a href="javascript:void(0)" class="service_block_a">
-              <div class="box-header custom_icons">
-                <div><i class="fa fa-home"></i></div>
-                <div class="box-title">
-                  {{ $t('featuresProducts.products.propertyManager.title') }}
-                </div>
-              </div>
-              <div class="box-content">
-                <ul>
-                  <li>
-                    {{
-                      $t(
-                        'featuresProducts.products.propertyManager.description'
-                      )
-                    }}
-                  </li>
-                </ul>
-              </div>
-            </a>
-          </div>
+      <!-- Cards using ImageLeftTextRight and ImageRightTextLeft components -->
+      <div class="container">
+        <div class="row">
+          <template v-for="(product, index) in products">
+            <div :key="product.id" :id="formatClass(product.title)">
+              <!-- Use ImageLeftTextRight for even indices and ImageRightTextLeft for odd indices -->
+              <ImageLeftTextRight
+                v-if="index % 2 === 0"
+                :title="product.title"
+                :description="product.description"
+                :image="product.image"
+              />
+              <ImageRightTextLeft
+                v-else
+                :title="product.title"
+                :description="product.description"
+                :image="product.image"
+              />
+            </div>
+          </template>
         </div>
       </div>
     </section>
@@ -186,10 +61,19 @@
 // import $ from 'jquery'
 import config from '~/data/siteConfig'
 import PageTitle from '~/components/PageTitle.vue'
+import ImageLeftTextRight from '~/components/ImageLeftTextRight.vue'
+import ImageRightTextLeft from '~/components/ImageRightTextLeft.vue'
 
 export default {
   components: {
     PageTitle,
+    ImageLeftTextRight,
+    ImageRightTextLeft,
+  },
+  methods: {
+    formatClass(title) {
+      return title.replace(/[\s,]+/g, '_');
+    }
   },
   data() {
     return {
@@ -203,15 +87,49 @@ export default {
         { id: 2, value: 'qc', province: this.$t('province.qc') },
         { id: 3, value: 'bc', province: this.$t('province.bc') },
         { id: 4, value: 'ab', province: this.$t('province.ab') },
-        { id: 5, value: 'sk', province: this.$t('province.sk') },
-        { id: 6, value: 'mb', province: this.$t('province.mb') },
-        { id: 7, value: 'ns', province: this.$t('province.ns') },
-        { id: 8, value: 'nb', province: this.$t('province.nb') },
-        { id: 9, value: 'pe', province: this.$t('province.pe') },
-        { id: 10, value: 'nl', province: this.$t('province.nl') },
-        { id: 11, value: 'nt', province: this.$t('province.nt') },
-        { id: 12, value: 'nu', province: this.$t('province.nu') },
-        { id: 13, value: 'yt', province: this.$t('province.yt') },
+      ],
+      products: [
+        {
+          id: 1,
+          title: this.$t('featuresProducts.products.eform.title'),
+          description: this.$t('featuresProducts.products.eform.description'),
+          image:
+            'https://resources.gonitro.com/dims4/default/79c6c38/2147483647/strip/true/crop/800x420+0+33/resize/1200x630!/quality/90/?url=http%3A%2F%2Fnitro-brightspot.s3.us-west-2.amazonaws.com%2F16%2F64%2F2af204f34b20a19b7a47c3a8519f%2Felectronic-signature.png',
+        },
+        {
+          id: 2,
+          title: this.$t('featuresProducts.products.showingManagement.title'),
+          description: this.$t(
+            'featuresProducts.products.showingManagement.description'
+          ),
+          image: require('@/assets/images/showing management.jpeg'),
+        },
+        {
+          id: 3,
+          title: this.$t('featuresProducts.products.offerManagement.title'),
+          description: this.$t(
+            'featuresProducts.products.offerManagement.description'
+          ),
+          image:
+            'https://cdn.create.vista.com/api/media/medium/63887629/stock-photo-successful-businessmen-handshaking?token=',
+        },
+        {
+          id: 4,
+          title: this.$t(
+            'featuresProducts.products.transactionManagement.title'
+          ),
+          description: this.$t(
+            'featuresProducts.products.transactionManagement.description'
+          ),
+          image: require('@/assets/images/Transaction Management 1.jpeg'),
+        },
+        {
+          id: 5,
+          title: this.$t('featuresProducts.products.rent.title'),
+          description: this.$t('featuresProducts.products.rent.description'),
+          image:
+            'https://learn.roofstock.com/hs-fs/hubfs/iStock-1167467499.jpg?width=767&name=iStock-1167467499.jpg',
+        },
       ],
     }
   },

@@ -1,0 +1,282 @@
+[
+  {
+    "name": "agent___en",
+    "path": "/agent",
+    "component": "F:\\\\fiverr\\\\Gcmconsultingin\\\\repo\\\\New folder\\\\docem\\\\pages\\\\agent.vue",
+    "chunkName": "pages/agent",
+    "_name": "_a6048f6e"
+  },
+  {
+    "name": "associations_boards___en",
+    "path": "/associations_boards",
+    "component": "F:\\\\fiverr\\\\Gcmconsultingin\\\\repo\\\\New folder\\\\docem\\\\pages\\\\associations_boards.vue",
+    "chunkName": "pages/associations_boards",
+    "_name": "_0080c4de"
+  },
+  {
+    "name": "brokerage___en",
+    "path": "/brokerage",
+    "component": "F:\\\\fiverr\\\\Gcmconsultingin\\\\repo\\\\New folder\\\\docem\\\\pages\\\\brokerage.vue",
+    "chunkName": "pages/brokerage",
+    "_name": "_8888c56c"
+  },
+  {
+    "name": "contact-us___en",
+    "path": "/contact-us",
+    "component": "F:\\\\fiverr\\\\Gcmconsultingin\\\\repo\\\\New folder\\\\docem\\\\pages\\\\contact-us.vue",
+    "chunkName": "pages/contact-us",
+    "_name": "_5dc332d7"
+  },
+  {
+    "name": "index___fr",
+    "path": "/fr",
+    "component": "F:\\\\fiverr\\\\Gcmconsultingin\\\\repo\\\\New folder\\\\docem\\\\pages\\\\index.vue",
+    "chunkName": "pages/index",
+    "_name": "_3b8020d4"
+  },
+  {
+    "name": "landlord___en",
+    "path": "/landlord",
+    "component": "F:\\\\fiverr\\\\Gcmconsultingin\\\\repo\\\\New folder\\\\docem\\\\pages\\\\landlord.vue",
+    "chunkName": "pages/landlord",
+    "_name": "_172efd68"
+  },
+  {
+    "name": "manager___en",
+    "path": "/manager",
+    "component": "F:\\\\fiverr\\\\Gcmconsultingin\\\\repo\\\\New folder\\\\docem\\\\pages\\\\manager.vue",
+    "chunkName": "pages/manager",
+    "_name": "_433a55f1"
+  },
+  {
+    "name": "privacy_policy___en",
+    "path": "/privacy_policy",
+    "component": "F:\\\\fiverr\\\\Gcmconsultingin\\\\repo\\\\New folder\\\\docem\\\\pages\\\\privacy_policy.vue",
+    "chunkName": "pages/privacy_policy",
+    "_name": "_49e6e035"
+  },
+  {
+    "name": "products___en",
+    "path": "/products",
+    "component": "F:\\\\fiverr\\\\Gcmconsultingin\\\\repo\\\\New folder\\\\docem\\\\pages\\\\products.vue",
+    "chunkName": "pages/products",
+    "_name": "_1b054550"
+  },
+  {
+    "name": "terms_of_services___en",
+    "path": "/terms_of_services",
+    "component": "F:\\\\fiverr\\\\Gcmconsultingin\\\\repo\\\\New folder\\\\docem\\\\pages\\\\terms_of_services.vue",
+    "chunkName": "pages/terms_of_services",
+    "_name": "_7d595c5c"
+  },
+  {
+    "name": "agent___fr",
+    "path": "/fr/agent",
+    "component": "F:\\\\fiverr\\\\Gcmconsultingin\\\\repo\\\\New folder\\\\docem\\\\pages\\\\agent.vue",
+    "chunkName": "pages/agent",
+    "_name": "_a6048f6e"
+  },
+  {
+    "name": "associations_boards___fr",
+    "path": "/fr/associations_boards",
+    "component": "F:\\\\fiverr\\\\Gcmconsultingin\\\\repo\\\\New folder\\\\docem\\\\pages\\\\associations_boards.vue",
+    "chunkName": "pages/associations_boards",
+    "_name": "_0080c4de"
+  },
+  {
+    "name": "brokerage___fr",
+    "path": "/fr/brokerage",
+    "component": "F:\\\\fiverr\\\\Gcmconsultingin\\\\repo\\\\New folder\\\\docem\\\\pages\\\\brokerage.vue",
+    "chunkName": "pages/brokerage",
+    "_name": "_8888c56c"
+  },
+  {
+    "name": "contact-us___fr",
+    "path": "/fr/contact-us",
+    "component": "F:\\\\fiverr\\\\Gcmconsultingin\\\\repo\\\\New folder\\\\docem\\\\pages\\\\contact-us.vue",
+    "chunkName": "pages/contact-us",
+    "_name": "_5dc332d7"
+  },
+  {
+    "name": "landlord___fr",
+    "path": "/fr/landlord",
+    "component": "F:\\\\fiverr\\\\Gcmconsultingin\\\\repo\\\\New folder\\\\docem\\\\pages\\\\landlord.vue",
+    "chunkName": "pages/landlord",
+    "_name": "_172efd68"
+  },
+  {
+    "name": "manager___fr",
+    "path": "/fr/manager",
+    "component": "F:\\\\fiverr\\\\Gcmconsultingin\\\\repo\\\\New folder\\\\docem\\\\pages\\\\manager.vue",
+    "chunkName": "pages/manager",
+    "_name": "_433a55f1"
+  },
+  {
+    "name": "privacy_policy___fr",
+    "path": "/fr/privacy_policy",
+    "component": "F:\\\\fiverr\\\\Gcmconsultingin\\\\repo\\\\New folder\\\\docem\\\\pages\\\\privacy_policy.vue",
+    "chunkName": "pages/privacy_policy",
+    "_name": "_49e6e035"
+  },
+  {
+    "name": "products___fr",
+    "path": "/fr/products",
+    "component": "F:\\\\fiverr\\\\Gcmconsultingin\\\\repo\\\\New folder\\\\docem\\\\pages\\\\products.vue",
+    "chunkName": "pages/products",
+    "_name": "_1b054550"
+  },
+  {
+    "name": "terms_of_services___fr",
+    "path": "/fr/terms_of_services",
+    "component": "F:\\\\fiverr\\\\Gcmconsultingin\\\\repo\\\\New folder\\\\docem\\\\pages\\\\terms_of_services.vue",
+    "chunkName": "pages/terms_of_services",
+    "_name": "_7d595c5c"
+  },
+  {
+    "name": "index___en",
+    "path": "/",
+    "component": "F:\\\\fiverr\\\\Gcmconsultingin\\\\repo\\\\New folder\\\\docem\\\\pages\\\\index.vue",
+    "chunkName": "pages/index",
+    "_name": "_3b8020d4"
+  },
+  {
+    "name": "lang___fr",
+    "path": "/fr/:lang",
+    "component": "F:\\\\fiverr\\\\Gcmconsultingin\\\\repo\\\\New folder\\\\docem\\\\pages\\\\_lang\\\\index.vue",
+    "chunkName": "pages/_lang/index",
+    "_name": "_8e57995e"
+  },
+  {
+    "name": "lang-agent___fr",
+    "path": "/fr/:lang/agent",
+    "component": "F:\\\\fiverr\\\\Gcmconsultingin\\\\repo\\\\New folder\\\\docem\\\\pages\\\\_lang\\\\agent.vue",
+    "chunkName": "pages/_lang/agent",
+    "_name": "_f8dc07f8"
+  },
+  {
+    "name": "lang-associations_boards___fr",
+    "path": "/fr/:lang/associations_boards",
+    "component": "F:\\\\fiverr\\\\Gcmconsultingin\\\\repo\\\\New folder\\\\docem\\\\pages\\\\_lang\\\\associations_boards.vue",
+    "chunkName": "pages/_lang/associations_boards",
+    "_name": "_57ab354e"
+  },
+  {
+    "name": "lang-brokerage___fr",
+    "path": "/fr/:lang/brokerage",
+    "component": "F:\\\\fiverr\\\\Gcmconsultingin\\\\repo\\\\New folder\\\\docem\\\\pages\\\\_lang\\\\brokerage.vue",
+    "chunkName": "pages/_lang/brokerage",
+    "_name": "_3a7ce8f6"
+  },
+  {
+    "name": "lang-contact___fr",
+    "path": "/fr/:lang/contact",
+    "component": "F:\\\\fiverr\\\\Gcmconsultingin\\\\repo\\\\New folder\\\\docem\\\\pages\\\\_lang\\\\contact.vue",
+    "chunkName": "pages/_lang/contact",
+    "_name": "_74358c42"
+  },
+  {
+    "name": "lang-landlord___fr",
+    "path": "/fr/:lang/landlord",
+    "component": "F:\\\\fiverr\\\\Gcmconsultingin\\\\repo\\\\New folder\\\\docem\\\\pages\\\\_lang\\\\landlord.vue",
+    "chunkName": "pages/_lang/landlord",
+    "_name": "_77c3409e"
+  },
+  {
+    "name": "lang-manager___fr",
+    "path": "/fr/:lang/manager",
+    "component": "F:\\\\fiverr\\\\Gcmconsultingin\\\\repo\\\\New folder\\\\docem\\\\pages\\\\_lang\\\\manager.vue",
+    "chunkName": "pages/_lang/manager",
+    "_name": "_7466d228"
+  },
+  {
+    "name": "lang-privacy_policy___fr",
+    "path": "/fr/:lang/privacy_policy",
+    "component": "F:\\\\fiverr\\\\Gcmconsultingin\\\\repo\\\\New folder\\\\docem\\\\pages\\\\_lang\\\\privacy_policy.vue",
+    "chunkName": "pages/_lang/privacy_policy",
+    "_name": "_44139eda"
+  },
+  {
+    "name": "lang-products___fr",
+    "path": "/fr/:lang/products",
+    "component": "F:\\\\fiverr\\\\Gcmconsultingin\\\\repo\\\\New folder\\\\docem\\\\pages\\\\_lang\\\\products.vue",
+    "chunkName": "pages/_lang/products",
+    "_name": "_2a89b896"
+  },
+  {
+    "name": "lang-terms_of_services___fr",
+    "path": "/fr/:lang/terms_of_services",
+    "component": "F:\\\\fiverr\\\\Gcmconsultingin\\\\repo\\\\New folder\\\\docem\\\\pages\\\\_lang\\\\terms_of_services.vue",
+    "chunkName": "pages/_lang/terms_of_services",
+    "_name": "_435e55e6"
+  },
+  {
+    "name": "lang___en",
+    "path": "/:lang",
+    "component": "F:\\\\fiverr\\\\Gcmconsultingin\\\\repo\\\\New folder\\\\docem\\\\pages\\\\_lang\\\\index.vue",
+    "chunkName": "pages/_lang/index",
+    "_name": "_8e57995e"
+  },
+  {
+    "name": "lang-agent___en",
+    "path": "/:lang/agent",
+    "component": "F:\\\\fiverr\\\\Gcmconsultingin\\\\repo\\\\New folder\\\\docem\\\\pages\\\\_lang\\\\agent.vue",
+    "chunkName": "pages/_lang/agent",
+    "_name": "_f8dc07f8"
+  },
+  {
+    "name": "lang-associations_boards___en",
+    "path": "/:lang/associations_boards",
+    "component": "F:\\\\fiverr\\\\Gcmconsultingin\\\\repo\\\\New folder\\\\docem\\\\pages\\\\_lang\\\\associations_boards.vue",
+    "chunkName": "pages/_lang/associations_boards",
+    "_name": "_57ab354e"
+  },
+  {
+    "name": "lang-brokerage___en",
+    "path": "/:lang/brokerage",
+    "component": "F:\\\\fiverr\\\\Gcmconsultingin\\\\repo\\\\New folder\\\\docem\\\\pages\\\\_lang\\\\brokerage.vue",
+    "chunkName": "pages/_lang/brokerage",
+    "_name": "_3a7ce8f6"
+  },
+  {
+    "name": "lang-contact___en",
+    "path": "/:lang/contact",
+    "component": "F:\\\\fiverr\\\\Gcmconsultingin\\\\repo\\\\New folder\\\\docem\\\\pages\\\\_lang\\\\contact.vue",
+    "chunkName": "pages/_lang/contact",
+    "_name": "_74358c42"
+  },
+  {
+    "name": "lang-landlord___en",
+    "path": "/:lang/landlord",
+    "component": "F:\\\\fiverr\\\\Gcmconsultingin\\\\repo\\\\New folder\\\\docem\\\\pages\\\\_lang\\\\landlord.vue",
+    "chunkName": "pages/_lang/landlord",
+    "_name": "_77c3409e"
+  },
+  {
+    "name": "lang-manager___en",
+    "path": "/:lang/manager",
+    "component": "F:\\\\fiverr\\\\Gcmconsultingin\\\\repo\\\\New folder\\\\docem\\\\pages\\\\_lang\\\\manager.vue",
+    "chunkName": "pages/_lang/manager",
+    "_name": "_7466d228"
+  },
+  {
+    "name": "lang-privacy_policy___en",
+    "path": "/:lang/privacy_policy",
+    "component": "F:\\\\fiverr\\\\Gcmconsultingin\\\\repo\\\\New folder\\\\docem\\\\pages\\\\_lang\\\\privacy_policy.vue",
+    "chunkName": "pages/_lang/privacy_policy",
+    "_name": "_44139eda"
+  },
+  {
+    "name": "lang-products___en",
+    "path": "/:lang/products",
+    "component": "F:\\\\fiverr\\\\Gcmconsultingin\\\\repo\\\\New folder\\\\docem\\\\pages\\\\_lang\\\\products.vue",
+    "chunkName": "pages/_lang/products",
+    "_name": "_2a89b896"
+  },
+  {
+    "name": "lang-terms_of_services___en",
+    "path": "/:lang/terms_of_services",
+    "component": "F:\\\\fiverr\\\\Gcmconsultingin\\\\repo\\\\New folder\\\\docem\\\\pages\\\\_lang\\\\terms_of_services.vue",
+    "chunkName": "pages/_lang/terms_of_services",
+    "_name": "_435e55e6"
+  }
+]

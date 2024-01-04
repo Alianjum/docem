@@ -20,10 +20,10 @@
             <div>
               <NuxtLink
                 v-if="!isOnAbout"
-                :to="isOnBrokerage ? '#subscription' : '#request_form_section'"
+                :to="isOnAgent ? '#subscription' : '#request_form_section'"
                 class="flat-button border-radius-small"
               >
-                {{ $t('links.BookaDemo') }}
+                {{ dynamicButtonText }}
               </NuxtLink>
             </div>
           </div>
@@ -32,14 +32,14 @@
           <div class="video-thumbnail">
             <img
               v-if="$i18n.locale === 'en'"
-              src="https://img.youtube.com/vi/WcUfcP1l0gg/maxresdefault.jpg"
+              src="~assets/images/borkers-bg.jpg"
               alt="Video Thumbnail"
               width="100%"
               height="315"
             />
             <img
               v-else
-              src="https://img.youtube.com/vi/8ElBHdL5mhw/maxresdefault.jpg"
+              src="~assets/images/borkers-bg.jpg"
               alt="Video Thumbnail"
               width="100%"
               height="315"
@@ -55,20 +55,31 @@
 import config from '~/data/siteConfig'
 
 export default {
+  props: {
+    buttonText: {
+      type: String,
+      default: 'Book a Demo', // Default value if not provided
+    },
+  },
   data() {
     return {
       siteName: config.siteTitle,
-    }
-  },
+    }; 
+  }, 
   computed: {
     isOnAbout() {
       return this.$route.fullPath.startsWith('/about') ||
         this.$route.fullPath.startsWith('/fr/about');
     },
-    isOnBrokerage() {
+    isOnAgent() {
       return this.$route.fullPath.startsWith('/agent') ||
         this.$route.fullPath.startsWith('/fr/agent');
     },
+    dynamicButtonText() {
+      // Return 'Register' if on an agent page, otherwise use the prop value
+      return this.isOnAgent ? 'Register' : this.buttonText;
+    },
   },
 }
+
 </script>

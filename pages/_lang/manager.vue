@@ -14,6 +14,53 @@
       </template>
     </PageTitle>
 
+    <!-- Video Section -->
+    <section class="flat-row background-color">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="inner-box-about">
+              <div class="title-box">
+                <div class="title">
+                  <span>{{ siteName }}</span> {{ $t('about.member.title') }}
+                </div>
+              </div>
+              <p>
+                {{ $t('about.member.desc') }}
+              </p>
+              <div class="empty-space height30"></div>
+              <div>
+                <NuxtLink
+                  v-if="!isOnAbout"
+                  :to="'#request_form_section'"
+                  class="flat-button border-radius-small"
+                >
+                  {{ $t('links.request') }}
+                </NuxtLink>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="video-thumbnail">
+              <img
+                v-if="$i18n.locale === 'en'"
+                src="~assets/images/property manager.jpeg"
+                alt="Video Thumbnail"
+                width="100%"
+                height="315"
+              />
+              <img
+                v-else
+                src="~assets/images/property manager.jpeg"
+                alt="Video Thumbnail"
+                width="100%"
+                height="315"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- Province Select 
     <section class="flat-row background-theme row-promobox">
       <div class="container">
@@ -86,7 +133,7 @@
             <div class="title-section">
               <i class="fa fa-line-chart" aria-hidden="true"></i>
               <h1 class="title">
-                {{ $t('features.manager.title') }}
+                {{ $t('featuresProducts.products.propertyManager.title') }}
               </h1>
               <div class="sub-title">
                 {{ $t('features.manager.subTitle') }}
@@ -97,12 +144,12 @@
 
         <div class="row">
           <div
-            class="col-lg-4 col-md-6 margin-30px-bottom products_row_3 display_feature"
+            class="col-lg-4 col-md-6 products_row_1 home_feature display_feature"
           >
             <div class="iconbox center circle large services-block-three">
               <a href="javascript:void(0)" class="service_block_a">
                 <div class="box-header custom_icons">
-                  <div><i class="fa fa-envelope"></i></div>
+                  <div><i class="fa fa-pencil-square-o"></i></div>
                   <div class="box-title">
                     {{ $t('features.manager.box1.title') }}
                   </div>
@@ -117,12 +164,26 @@
             </div>
           </div>
           <div
-            class="col-lg-4 col-md-6 margin-30px-bottom products_row_3 display_feature"
+            class="col-lg-4 col-md-6 products_row_1 home_feature display_feature"
           >
             <div class="iconbox center circle large services-block-three">
               <a href="javascript:void(0)" class="service_block_a">
                 <div class="box-header custom_icons">
-                  <div><i class="fa fa-usd"></i></div>
+                  <div class="flex justify-center" style="margin-bottom: 17px">
+                    <div class="custom-blue-bg">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="40"
+                        width="30"
+                        viewBox="0 0 576 512"
+                      >
+                        <path
+                          fill="#ffffff"
+                          d="M0 96l576 0c0-35.3-28.7-64-64-64H64C28.7 32 0 60.7 0 96zm0 32V416c0 35.3 28.7 64 64 64H512c35.3 0 64-28.7 64-64V128H0zM64 405.3c0-29.5 23.9-53.3 53.3-53.3H234.7c29.5 0 53.3 23.9 53.3 53.3c0 5.9-4.8 10.7-10.7 10.7H74.7c-5.9 0-10.7-4.8-10.7-10.7zM176 192a64 64 0 1 1 0 128 64 64 0 1 1 0-128zm176 16c0-8.8 7.2-16 16-16H496c8.8 0 16 7.2 16 16s-7.2 16-16 16H368c-8.8 0-16-7.2-16-16zm0 64c0-8.8 7.2-16 16-16H496c8.8 0 16 7.2 16 16s-7.2 16-16 16H368c-8.8 0-16-7.2-16-16zm0 64c0-8.8 7.2-16 16-16H496c8.8 0 16 7.2 16 16s-7.2 16-16 16H368c-8.8 0-16-7.2-16-16z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
                   <div class="box-title">
                     {{ $t('features.manager.box2.title') }}
                   </div>
@@ -131,20 +192,32 @@
                   <ul>
                     <li>{{ $t('features.manager.box2.list.list1') }}</li>
                     <li>{{ $t('features.manager.box2.list.list2') }}</li>
-                    <li>{{ $t('features.manager.box2.list.list3') }}</li>
-                    <li>{{ $t('features.manager.box2.list.list4') }}</li>
                   </ul>
                 </div>
               </a>
             </div>
           </div>
           <div
-            class="col-lg-4 col-md-6 margin-30px-bottom products_row_3 display_feature"
+            class="col-lg-4 col-md-6 products_row_1 home_feature display_feature"
           >
             <div class="iconbox center circle large services-block-three">
               <a href="javascript:void(0)" class="service_block_a">
                 <div class="box-header custom_icons">
-                  <div><i class="fa fa-file"></i></div>
+                  <div class="flex justify-center" style="margin-bottom: 17px">
+                    <div class="custom-blue-bg">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="30"
+                        width="40"
+                        viewBox="0 0 576 512"
+                      >
+                        <path
+                          d="M271.1 144.3l54.3 14.3a8.6 8.6 0 0 1 6.6 8.1c0 4.6-4.1 8.4-9.1 8.4h-35.6a30 30 0 0 1 -11.2-2.2c-5.2-2.2-11.3-1.7-15.3 2l-19 17.5a11.7 11.7 0 0 0 -2.3 2.7 11.4 11.4 0 0 0 3.9 15.7 83.8 83.8 0 0 0 34.5 11.5V240c0 8.8 7.8 16 17.4 16h17.4c9.6 0 17.4-7.2 17.4-16V222.4c32.9-3.6 57.8-31 53.5-63-3.2-23-22.5-41.3-46.6-47.7L282.7 97.4a8.6 8.6 0 0 1 -6.6-8.1c0-4.6 4.1-8.4 9.1-8.4h35.6A30 30 0 0 1 332 83.1c5.2 2.2 11.3 1.7 15.3-2l19-17.5A11.3 11.3 0 0 0 368.5 61a11.4 11.4 0 0 0 -3.8-15.8 83.8 83.8 0 0 0 -34.5-11.5V16c0-8.8-7.8-16-17.4-16H295.4C285.8 0 278 7.2 278 16V33.6c-32.9 3.6-57.9 31-53.5 63C227.6 119.6 247 137.9 271.1 144.3zM565.3 328.1c-11.8-10.7-30.2-10-42.6 0L430.3 402a63.6 63.6 0 0 1 -40 14H272a16 16 0 0 1 0-32h78.3c15.9 0 30.7-10.9 33.3-26.6a31.2 31.2 0 0 0 .5-5.5A32 32 0 0 0 352 320H192a117.7 117.7 0 0 0 -74.1 26.3L71.4 384H16A16 16 0 0 0 0 400v96a16 16 0 0 0 16 16H372.8a64 64 0 0 0 40-14L564 377a32 32 0 0 0 1.3-48.9z"
+                          fill="#fff"
+                        />
+                      </svg>
+                    </div>
+                  </div>
                   <div class="box-title">
                     {{ $t('features.manager.box3.title') }}
                   </div>
@@ -159,95 +232,90 @@
             </div>
           </div>
           <div
-            class="col-lg-4 col-md-6 margin-30px-bottom products_row_3 display_feature"
+            class="col-lg-4 col-md-6 products_row_1 home_feature display_feature"
           >
             <div class="iconbox center circle large services-block-three">
               <a href="javascript:void(0)" class="service_block_a">
                 <div class="box-header custom_icons">
-                  <div><i class="fa fa-check"></i></div>
+                  <div><i class="fa fa-money" aria-hidden="true"></i></div>
                   <div class="box-title">
                     {{ $t('features.manager.box4.title') }}
                   </div>
                 </div>
                 <div class="box-content">
                   <ul>
-                    <li v-if="selected != 1">
+                    <li>
                       {{ $t('features.manager.box4.list.list1') }}
                     </li>
-                    <li v-else>
-                      {{ $t('features.manager.box4.list.list1On') }}
-                    </li>
-                    <li v-if="selected != 1">
+                    <li>
                       {{ $t('features.manager.box4.list.list2') }}
                     </li>
-                    <li v-else>
-                      {{ $t('features.manager.box4.list.list2On') }}
-                    </li>
-                    <li>
-                      {{ $t('features.manager.box4.list.list3') }}
-                    </li>
-                    <li>
-                      {{ $t('features.manager.box4.list.list4') }}
-                    </li>
-                  </ul>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 margin-30px-bottom products_row_3 display_feature">
-            <div class="iconbox center circle large services-block-three">
-              <a href="javascript:void(0)" class="service_block_a">
-                <div class="box-header custom_icons">
-                  <div><i class="fa fa-comment"></i></div>
-                  <div class="box-title">
-                    {{ $t('features.manager.box6.title') }}
-                  </div>
-                </div>
-                <div class="box-content">
-                  <ul>
-                    <li>{{ $t('features.manager.box6.list.list1') }}</li>
-                    <li>{{ $t('features.manager.box6.list.list2') }}</li>
-                    <li>{{ $t('features.manager.box6.list.list3') }}</li>
-                    <li>{{ $t('features.manager.box6.list.list4') }}</li>
                   </ul>
                 </div>
               </a>
             </div>
           </div>
           <div
-            class="col-lg-4 col-md-6 margin-30px-bottom products_row_3 display_feature"
+            class="col-lg-4 col-md-6 products_row_1 home_feature display_feature"
           >
             <div class="iconbox center circle large services-block-three">
               <a href="javascript:void(0)" class="service_block_a">
                 <div class="box-header custom_icons">
-                  <div><i class="fa fa-file-text-o"></i></div>
+                  <div class="flex justify-center" style="margin-bottom: 17px">
+                    <div class="custom-blue-bg">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 100 125"
+                        width="50"
+                        height="50"
+                        fill="#fff"
+                      >
+                        <g
+                          transform="matrix(0.978262,0,0,0.978262,1.28941,1.28956)"
+                        >
+                          <path
+                            d="M81.354,39.096C81.356,38.985 81.339,38.876 81.306,38.774L81.304,38.766C81.249,38.6 81.151,38.45 81.018,38.332L81.011,38.325C80.899,38.228 80.765,38.154 80.614,38.114L80.557,38.1L74.116,36.766L74.116,14.357C74.116,14.012 73.938,13.691 73.645,13.508C73.352,13.326 72.986,13.307 72.676,13.459L69.242,15.14L69.242,11.757C69.242,11.417 69.069,11.1 68.783,10.916C68.497,10.732 68.137,10.706 67.827,10.847L64.818,12.22L64.818,9.248C64.818,8.912 64.649,8.598 64.368,8.413C64.087,8.228 63.732,8.197 63.423,8.33L60.218,9.707L60.218,7.302C60.218,6.969 60.053,6.658 59.777,6.472C59.501,6.286 59.15,6.25 58.842,6.375L55.198,7.858L55.198,4.793C55.198,4.459 55.031,4.146 54.753,3.961C54.474,3.775 54.122,3.741 53.813,3.87L26.857,15.102L19.447,13.472C19.151,13.407 18.841,13.479 18.605,13.669C18.369,13.859 18.232,14.145 18.232,14.448L18.232,89.375C18.232,89.847 18.562,90.255 19.024,90.353L44.508,95.772L44.695,95.793L44.883,95.778L45.051,95.734L45.155,95.69L80.797,78.092C81.138,77.923 81.354,77.576 81.354,77.195L81.354,39.096ZM43.712,20.858L43.712,93.558C43.712,93.558 20.232,88.565 20.232,88.565C20.232,88.565 20.232,15.692 20.232,15.692L43.712,20.858ZM45.712,22.827L45.712,93.184C45.712,93.184 79.354,76.574 79.354,76.574C79.354,76.574 79.354,40.625 79.354,40.625L66.287,46.491L66.11,46.551L65.93,46.578L65.749,46.571L65.555,46.525L65.39,46.452L65.239,46.349L65.107,46.217L48.941,26.72C48.895,26.683 48.851,26.641 48.812,26.595L46.066,23.253L45.712,22.827ZM39.277,76.508C39.277,76.034 38.945,75.625 38.481,75.529L25.367,72.79C25.073,72.728 24.766,72.803 24.532,72.993C24.299,73.183 24.163,73.468 24.163,73.769L24.163,81.439C24.163,81.912 24.495,82.321 24.959,82.418L38.072,85.156C38.367,85.218 38.674,85.144 38.907,84.954C39.141,84.764 39.277,84.479 39.277,84.178L39.277,76.508ZM37.277,77.32L37.277,82.947C37.277,82.947 26.163,80.626 26.163,80.626C26.163,80.626 26.163,74.999 26.163,74.999L37.277,77.32ZM72.116,41.682L72.116,15.96L68.641,17.661L51.168,26.273L66.162,44.355L72.116,41.682ZM74.116,40.784L77.127,39.432L74.116,38.808L74.116,40.784ZM49.822,24.65C49.822,24.65 47.804,22.178 47.804,22.178C47.804,22.177 67.242,13.312 67.242,13.312L67.242,16.111L49.822,24.65ZM43.974,18.868L44.927,19.077L45.027,19.105C45.129,19.139 45.224,19.188 45.308,19.251L45.357,19.289C45.403,19.329 45.446,19.372 45.484,19.419L46.461,20.592L62.818,13.132L62.818,10.767L43.974,18.868ZM40.624,18.131L37.136,17.363C37.136,17.363 58.218,8.788 58.218,8.788C58.218,8.788 58.218,10.567 58.218,10.567L40.624,18.131ZM30.26,15.851L53.198,6.293L53.198,8.671L33.691,16.606L30.26,15.851Z"
+                          />
+                        </g>
+                      </svg>
+                    </div>
+                  </div>
                   <div class="box-title">
-                    {{ $t('features.manager.box8.title') }}
+                    {{ $t('features.manager.box5.title') }}
                   </div>
                 </div>
                 <div class="box-content">
                   <ul>
-                    <li>{{ $t('features.manager.box8.list.list1') }}</li>
-                    <li>{{ $t('features.manager.box8.list.list2') }}</li>
+                    <li>
+                      {{ $t('features.manager.box5.list.list1') }}
+                    </li>
+                    <li>
+                      {{ $t('features.manager.box5.list.list2') }}
+                    </li>
                   </ul>
                 </div>
               </a>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 margin-30px-bottom products_row_3 display_feature" style="width: 96%; height: 12%;">
+          <div
+            class="col-lg-4 col-md-6 products_row_1 home_feature display_feature"
+          >
             <div class="iconbox center circle large services-block-three">
               <a href="javascript:void(0)" class="service_block_a">
                 <div class="box-header custom_icons">
-                  <div><i class="fa fa-retweet"></i></div>
+                  <div><i class="fa fa-unlock-alt" aria-hidden="true"></i></div>
                   <div class="box-title">
-                    {{ $t('features.manager.box7.title') }}
+                    {{ $t('features.manager.box6.title') }}
                   </div>
                 </div>
                 <div class="box-content">
                   <ul>
-                    <li>{{ $t('features.manager.box7.list.list1') }}</li>
-                    <li>{{ $t('features.manager.box7.list.list2') }}</li>
-                    <li>{{ $t('features.manager.box7.list.list3') }}</li>
+                    <li>
+                      {{ $t('features.manager.box6.list.list1') }}
+                    </li>
+                    <li>
+                      {{ $t('features.manager.box6.list.list2') }}
+                    </li>
                   </ul>
                 </div>
               </a>
@@ -256,6 +324,10 @@
         </div>
       </div>
     </section>
+    <!-- Request For Proposal -->
+    <Rfp pricing="150" footnote-alt2></Rfp>
+    <!-- Promobox -->
+    <Promobox></Promobox>
   </div>
 </template>
 
@@ -263,10 +335,16 @@
 // import $ from 'jquery'
 import config from '~/data/siteConfig'
 import PageTitle from '~/components/PageTitle.vue'
+import VideoSection from '~/components/VideoSection.vue'
+import Rfp from '~/components/Rfp.vue'
+import Promobox from '~/components/Promobox.vue'
 
 export default {
   components: {
     PageTitle,
+    VideoSection,
+    Rfp,
+    Promobox,
   },
   data() {
     return {
@@ -274,6 +352,7 @@ export default {
       metaDesc: this.$t('meta.desc.home'),
       siteName: config.siteTitle,
       selected: '0',
+      customButtonText: 'Request a Demo',
       options: [
         { id: 0, value: '', province: this.$t('province.default') },
         { id: 1, value: 'on', province: this.$t('province.on') },
@@ -340,3 +419,24 @@ export default {
   },
 }
 </script>
+
+<style>
+.flex {
+  display: flex;
+}
+.justify-center {
+  justify-content: center;
+}
+
+.custom-blue-bg {
+  background-color: #00aeff;
+  border-radius: 100px;
+  font-size: 30px;
+  width: 60px;
+  height: 60px;
+  line-height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+</style>

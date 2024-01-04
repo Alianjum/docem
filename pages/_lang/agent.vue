@@ -78,7 +78,55 @@
       </div>
     </section> -->
     <!-- Video Section -->
-    <VideoSection></VideoSection>
+    <!-- <VideoSection></VideoSection> -->
+    <template>
+      <section class="flat-row background-color">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="inner-box-about">
+                <div class="title-box">
+                  <div class="title">
+                    <span>{{ siteName }}</span> {{ $t('about.agent.title') }}
+                  </div>
+                </div>
+                <p>
+                  {{ $t('about.agent.desc') }}
+                </p>
+                <div class="empty-space height30"></div>
+                <div>
+                  <NuxtLink
+                    v-if="!isOnAbout"
+                    :to="isOnAgent ? '#subscriptions' : '#subscription'"
+                    class="flat-button border-radius-small"
+                  >
+                    {{ 'Register' }}
+                  </NuxtLink>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="video-thumbnail">
+                <img
+                  v-if="$i18n.locale === 'en'"
+                  src="~assets/images/agent page.jpg"
+                  alt="Video Thumbnail"
+                  width="100%"
+                  height="315"
+                />
+                <img
+                  v-else
+                  src="~assets/images/agent page.jpg"
+                  alt="Video Thumbnail"
+                  width="100%"
+                  height="315"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </template>
 
     <!-- <div v-if="selected != 0"> -->
     <div>
@@ -103,100 +151,204 @@
             <!-- Features Icons -->
             <div class="col-md-12">
               <div class="row">
-                <div class="col-lg-4 col-md-6 products_row_1 home_feature">
+                <div class="col-lg-4 col-md-6 products_row_1 display_feature">
                   <div class="iconbox center circle large services-block-three">
                     <a href="javascript:void(0)" class="service_block_a">
                       <div class="box-header custom_icons">
-                        <div><i class="fa fa-check"></i></div>
+                        <div><i class="fa fa-pencil-square-o"></i></div>
                         <div class="box-title">
-                          {{ $t('features.agent.box3.title') }}
+                          {{ $t('features.agent.box1.title') }}
                         </div>
                       </div>
                       <div class="box-content">
                         <ul>
-                          <li v-if="selected === 1">
-                            {{ $t('features.agent.box3.list.list1') }}
-                          </li>
-                          <!-- <li>{{ $t('features.agent.box3.list.list2') }}</li> -->
-                          <li>{{ $t('features.agent.box3.list.list3') }}</li>
-                          <li>{{ $t('features.agent.box3.list.list4') }}</li>
+                          <li>{{ $t('features.agent.box1.list.list1') }}</li>
+                          <!-- <li>{{ $t('features.agent.box1.list.list2') }}</li> -->
+                          <li>{{ $t('Unlimited eSignature') }}</li>
                         </ul>
                       </div>
                     </a>
                   </div>
                 </div>
-                <div class="col-lg-4 col-md-6 margin-30px-bottom products_row_1 home_feature">
+                <div class="col-lg-4 col-md-6 products_row_1 display_feature">
                   <div class="iconbox center circle large services-block-three">
                     <a href="javascript:void(0)" class="service_block_a">
                       <div class="box-header custom_icons">
-                        <div><i class="fa fa-file-text-o"></i></div>
-                        <div class="box-title">
-                          {{ $t('featuresProducts.products.idv.title') }}
+                        <div
+                          class="flex justify-center"
+                          style="margin-bottom: 17px"
+                        >
+                          <div class="custom-blue-bg">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              height="40"
+                              width="30"
+                              viewBox="0 0 576 512"
+                            >
+                              <path
+                                fill="#ffffff"
+                                d="M0 96l576 0c0-35.3-28.7-64-64-64H64C28.7 32 0 60.7 0 96zm0 32V416c0 35.3 28.7 64 64 64H512c35.3 0 64-28.7 64-64V128H0zM64 405.3c0-29.5 23.9-53.3 53.3-53.3H234.7c29.5 0 53.3 23.9 53.3 53.3c0 5.9-4.8 10.7-10.7 10.7H74.7c-5.9 0-10.7-4.8-10.7-10.7zM176 192a64 64 0 1 1 0 128 64 64 0 1 1 0-128zm176 16c0-8.8 7.2-16 16-16H496c8.8 0 16 7.2 16 16s-7.2 16-16 16H368c-8.8 0-16-7.2-16-16zm0 64c0-8.8 7.2-16 16-16H496c8.8 0 16 7.2 16 16s-7.2 16-16 16H368c-8.8 0-16-7.2-16-16zm0 64c0-8.8 7.2-16 16-16H496c8.8 0 16 7.2 16 16s-7.2 16-16 16H368c-8.8 0-16-7.2-16-16z"
+                              />
+                            </svg>
+                          </div>
                         </div>
-                      </div>
-                      <div class="box-content">
-                        <ul>
-                          <li>
-                            {{ $t('featuresProducts.products.idv.description') }}
-                          </li>
-                        </ul>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-                <div class="col-lg-4 col-md-6 products_row_1 home_feature">
-                  <div class="iconbox center circle large services-block-three">
-                    <a href="javascript:void(0)" class="service_block_a">
-                      <div class="box-header custom_icons">
-                        <div><i class="fa fa-usd"></i></div>
-                        <div class="box-title">
-                          {{ $t('featuresProducts.products.offerManagement.title') }}
-                        </div>
-                      </div>
-                      <div class="box-content">
-                        <ul>
-                          <li v-if="selected === 2">
-                            {{ $t('features.agent.box2.list.list1') }}
-                          </li>
-                          <li>{{ $t('features.agent.box2.list.list2') }}</li>
-                          <li v-if="selected === 1">
-                            {{ $t('features.agent.box2.list.list3') }}
-                          </li>
-                          <li v-if="selected === 2">
-                            {{ $t('features.agent.box2.list.list4') }}
-                          </li>
-                        </ul>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-                <div class="col-lg-4 col-md-6 products_row_1 home_feature">
-                  <div class="iconbox center circle large services-block-three">
-                    <a href="javascript:void(0)" class="service_block_a">
-                      <div class="box-header custom_icons">
-                        <div><i class="fa fa-file"></i></div>
                         <div class="box-title">
                           {{ $t('features.agent.box2.title') }}
                         </div>
                       </div>
                       <div class="box-content">
                         <ul>
-                          <li v-if="selected === 2">
-                            {{ $t('features.agent.box2.list.list1') }}
+                          <li>{{ $t('features.agent.box2.list.list1') }}</li>
+                          <!-- <li>{{ $t('features.agent.box2.list.list2') }}</li> -->
+                          <li>{{ $t('Unlimited eSignature') }}</li>
+                        </ul>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 products_row_1 display_feature">
+                  <div class="iconbox center circle large services-block-three">
+                    <a href="javascript:void(0)" class="service_block_a">
+                      <div class="box-header custom_icons">
+                        <div><i class="fa fa-calendar"></i></div>
+                        <div class="box-title">
+                          {{ $t('features.agent.box3.title') }}
+                        </div>
+                      </div>
+                      <div class="box-content">
+                        <ul>
+                          <li>{{ $t('features.agent.box3.list.list1') }}</li>
+                          <li>{{ $t('features.agent.box3.list.list2') }}</li>
+                        </ul>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 products_row_1 display_feature">
+                  <div class="iconbox center circle large services-block-three">
+                    <a href="javascript:void(0)" class="service_block_a">
+                      <div class="box-header custom_icons">
+                        <div
+                          class="flex justify-center"
+                          style="margin-bottom: 17px"
+                        >
+                          <div class="custom-blue-bg">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              height="30"
+                              width="40"
+                              viewBox="0 0 576 512"
+                            >
+                              <path
+                                d="M271.1 144.3l54.3 14.3a8.6 8.6 0 0 1 6.6 8.1c0 4.6-4.1 8.4-9.1 8.4h-35.6a30 30 0 0 1 -11.2-2.2c-5.2-2.2-11.3-1.7-15.3 2l-19 17.5a11.7 11.7 0 0 0 -2.3 2.7 11.4 11.4 0 0 0 3.9 15.7 83.8 83.8 0 0 0 34.5 11.5V240c0 8.8 7.8 16 17.4 16h17.4c9.6 0 17.4-7.2 17.4-16V222.4c32.9-3.6 57.8-31 53.5-63-3.2-23-22.5-41.3-46.6-47.7L282.7 97.4a8.6 8.6 0 0 1 -6.6-8.1c0-4.6 4.1-8.4 9.1-8.4h35.6A30 30 0 0 1 332 83.1c5.2 2.2 11.3 1.7 15.3-2l19-17.5A11.3 11.3 0 0 0 368.5 61a11.4 11.4 0 0 0 -3.8-15.8 83.8 83.8 0 0 0 -34.5-11.5V16c0-8.8-7.8-16-17.4-16H295.4C285.8 0 278 7.2 278 16V33.6c-32.9 3.6-57.9 31-53.5 63C227.6 119.6 247 137.9 271.1 144.3zM565.3 328.1c-11.8-10.7-30.2-10-42.6 0L430.3 402a63.6 63.6 0 0 1 -40 14H272a16 16 0 0 1 0-32h78.3c15.9 0 30.7-10.9 33.3-26.6a31.2 31.2 0 0 0 .5-5.5A32 32 0 0 0 352 320H192a117.7 117.7 0 0 0 -74.1 26.3L71.4 384H16A16 16 0 0 0 0 400v96a16 16 0 0 0 16 16H372.8a64 64 0 0 0 40-14L564 377a32 32 0 0 0 1.3-48.9z"
+                                fill="#fff"
+                              />
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="box-title">
+                          {{ $t('features.agent.box4.title') }}
+                        </div>
+                      </div>
+                      <div class="box-content">
+                        <ul>
+                          <li>
+                            {{ $t('features.agent.box4.list.list1') }}
                           </li>
-                          <li>{{ $t('features.agent.box2.list.list2') }}</li>
-                          <li v-if="selected === 1">
-                            {{ $t('features.agent.box2.list.list3') }}
-                          </li>
-                          <li v-if="selected === 2">
-                            {{ $t('features.agent.box2.list.list4') }}
+                          <li>
+                            {{ $t('features.agent.box4.list.list2') }}
                           </li>
                         </ul>
                       </div>
                     </a>
                   </div>
                 </div>
-                
+                <div class="col-lg-4 col-md-6 products_row_1 display_feature">
+                  <div class="iconbox center circle large services-block-three">
+                    <a href="javascript:void(0)" class="service_block_a">
+                      <div class="box-header custom_icons">
+                        <div
+                          class="flex justify-center"
+                          style="margin-bottom: 17px"
+                        >
+                          <div class="custom-blue-bg">
+                            <svg
+                              fill="#fff"
+                              xmlns="http://www.w3.org/2000/svg"
+                              height="40"
+                              width="30"
+                              viewBox="0 0 190 200"
+                            >
+                              <g>
+                                <path
+                                  d="M122.901,0H19.699v192.287h152.889v-142.6L122.901,0z M146.981,45.299h-19.686V25.612L146.981,45.299z M34.699,177.287V15
+		h77.596v37.799c0,4.142,3.357,7.5,7.5,7.5h37.793v116.988H34.699z"
+                                />
+                                <rect
+                                  x="53.141"
+                                  y="149.004"
+                                  width="86.006"
+                                  height="10"
+                                />
+                                <rect
+                                  x="53.141"
+                                  y="55.101"
+                                  width="51.058"
+                                  height="10"
+                                />
+                                <polygon
+                                  points="121.248,86.935 126.79,86.935 105.371,108.353 88.623,91.605 51.597,128.634 58.667,135.706 88.623,105.748 
+		105.371,122.495 133.861,94.005 133.861,99.535 143.861,99.535 143.861,76.935 121.248,76.935 	"
+                                />
+                                <rect
+                                  x="53.141"
+                                  y="33.283"
+                                  width="51.058"
+                                  height="10"
+                                />
+                              </g>
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="box-title">
+                          {{ $t('features.agent.box5.title') }}
+                        </div>
+                      </div>
+                      <div class="box-content">
+                        <ul>
+                          <li>
+                            {{ $t('features.agent.box5.list.list1') }}
+                          </li>
+                          <li>
+                            {{ $t('features.agent.box5.list.list2') }}
+                          </li>
+                        </ul>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 products_row_1 display_feature">
+                  <div class="iconbox center circle large services-block-three">
+                    <a href="javascript:void(0)" class="service_block_a">
+                      <div class="box-header custom_icons">
+                        <div><i class="fa fa-key"></i></div>
+                        <div class="box-title">
+                          {{ $t('features.agent.box6.title') }}
+                        </div>
+                      </div>
+                      <div class="box-content">
+                        <ul>
+                          <li>
+                            {{ $t('features.agent.box6.list.list1') }}
+                          </li>
+                          <li>
+                            {{ $t('features.agent.box6.list.list2') }}
+                          </li>
+                        </ul>
+                      </div>
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -204,7 +356,10 @@
       </section>
     </div>
     <!-- Pricing -->
-    <div class="col-md-12 col-lg-12 col-xl-12" style="padding: 0; border-radius: 0; margin-bottom: 80px;">
+    <div
+      class="col-md-12 col-lg-12 col-xl-12"
+      style="padding: 0; border-radius: 0; margin-bottom: 80px"
+    >
       <section id="subscription">
         <div class="flat-price-table">
           <h4 class="price-title">
@@ -213,12 +368,12 @@
           <div class="sub-title">
             {{ $t('pricing.agent.plan1.subTitle') }}
           </div>
-          <div v-if="$i18n.locale == 'fr'" class="price ">
+          <div v-if="$i18n.locale == 'fr'" class="price">
             <span class="money">29.99</span>
             <span class="currency-unit">$</span>
             <span class="time">{{ $t('pricing.agent.plan1.time') }}</span>
           </div>
-          <div v-else class="price ">
+          <div v-else class="price">
             <span class="currency-unit">$</span>
             <span class="money">29.99</span>
             <span class="time">{{ $t('pricing.agent.plan1.time') }}</span>
@@ -226,7 +381,7 @@
           <!-- <div class="sub-title pt-15">
             * {{ $t('pricing.agent.plan1.creditNote') }}
           </div> -->
-          <div class="p-15 background-light ">
+          <div class="p-15 background-light">
             <label
               for="province-select"
               style="text-align: left; margin: 0 0 10px; display: block"
@@ -341,7 +496,6 @@
           </div>
         </div>
       </section>
-
     </div>
 
     <!-- Request For Proposal -->
@@ -366,6 +520,7 @@ export default {
     return {
       metaTitle: this.$t('links.agent'),
       metaDesc: this.$t('meta.desc.home'),
+      siteName: config.siteTitle,
       selected: '0',
       options: [
         { id: 0, value: '', province: this.$t('province.default') },
@@ -444,3 +599,23 @@ export default {
   },
 }
 </script>
+
+<style>
+.flex {
+  display: flex;
+}
+.justify-center {
+  justify-content: center;
+}
+.custom-blue-bg {
+  background-color: #00aeff;
+  border-radius: 100px;
+  font-size: 30px;
+  width: 60px;
+  height: 60px;
+  line-height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+</style>
